@@ -44,9 +44,10 @@
   {{ end }}
   {{ partial "seo.html" . }}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/main.css">
+  <!-- cache-busting version tag: bump ?v= whenever main.css changes, so visitors never see stale CSS -->
+  <link rel="stylesheet" href="/css/main.css?v=7">
   {{ if .Site.Params.adsenseEnabled }}
-  <!-- Google AdSense auto ads (enable in hugo.toml after approval) -->
+  <!-- Google AdSense loader (auto ads; ads appear after the account is approved) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsenseClient }}" crossorigin="anonymous"></script>
   {{ end }}
 </head>

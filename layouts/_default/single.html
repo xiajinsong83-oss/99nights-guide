@@ -14,7 +14,7 @@
   {{ with .Params.image }}
   <figure class="featured-img">
     <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="lazy">
-    {{ with $.Params.imageCredit }}<figcaption>📸 {{ . }}</figcaption>{{ end }}
+    {{ with $.Params.imageCredit }}<figcaption>{{ partial "icon" (dict "name" "camera") }} {{ . }}</figcaption>{{ end }}
   </figure>
   {{ end }}
   <div class="layout-2col">

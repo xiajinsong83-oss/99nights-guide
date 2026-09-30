@@ -3,6 +3,16 @@
 A fan guide site for **99 Nights in the Forest** (Roblox), built as a **data-driven static site** with Hugo.
 Static HTML + zero server + Cloudflare Pages auto-builds = Route A "dynamic updates" (edit one data file → push → live in ~1 minute).
 
+## v8 changelog — all icons are now inline SVG (no emoji fonts)
+
+- Every emoji icon across templates and content (nav, logo, homepage cards, section lists,
+  videos, feedback votes, notices) was replaced with an inline **SVG line icon** (`layouts/partials/icon.html`,
+  lucide-style, 28 icons). Icons inherit `currentColor`, so they render identically on every OS/browser
+  — including Linux machines without an emoji font (the white-box/tofu problem is gone).
+- Content front-matter `icon` values changed from emoji to icon names (`fish`, `skull`, `fire`, ...).
+- `⚠️` → `⚠` in notices (text-presentation warning sign renders in regular fonts).
+- CSS cache marker bumped to `?v=7`.
+
 ## Project layout
 
 ```
@@ -10,9 +20,14 @@ portalaser-99nights/
 ├── hugo.toml              # site config (baseURL, params, AdSense switch)
 ├── data/
 │   ├── codes.yaml         # ⭐ working/expired codes — THE codes source
+│   ├── comments.yaml      # ⭐ player feedback shown on /feedback/
 │   └── videos.yaml        # ⭐ video archive source (61 real videos, 15/page)
 ├── scripts/
-│   └── gen_videos.py      # regenerates video pages from videos.yaml (run after editing it)
+│   ├── gen_videos.py      # regenerates video pages from videos.yaml (run after editing it)
+│   └── gen_comments.py    # regenerates comment pages from comments.yaml (run after editing it)
+├── .github/
+│   ├── workflows/freshness-reminder.yml  # every-48h content freshness reminder
+│   └── scripts/freshness_check.py        # opens/closes "stale data" issues (read-only)
 ├── content/
 │   ├── codes/             # Codes hub + How to Redeem
 │   ├── guide/             # How to Play, First 10 Nights, Campfire, Base Building
@@ -22,7 +37,10 @@ portalaser-99nights/
 │   ├── media/
 │   │   ├── _index.md      # Videos archive hub (paginated list)
 │   │   └── videos/        # auto-generated stubs (do not hand-edit; run the script)
-│   ├── updates/           # Changelog / Roadmap
+│   ├── feedback/
+│   │   ├── _index.md      # Player feedback hub (paginated comments)
+│   │   └── comments/      # auto-generated stubs (do not hand-edit; run the script)
+│   ├── legal/             # Privacy Policy, About Us, Contact (AdSense review pages)
 │   └── faq.md             # FAQ (drives FAQPage JSON-LD)
 ├── layouts/               # templates (header/footer/baseof/section layouts)
 ├── static/
@@ -56,21 +74,51 @@ hugo server               # http://localhost:1313
 | A code died / new code out | `data/codes.yaml` | `git push` |
 | Freshness month in title | `content/codes/_index.md` (title) + `data/codes.yaml` (lastVerified) | `git push` |
 | Add a quest video | `data/videos.yaml` (real YouTube id) | `python3 scripts/gen_videos.py` then `git push` |
+| Publish a new player comment | `data/comments.yaml` (from feedback emails) | `python3 scripts/gen_comments.py` then `git push` |
 | New guide page | new file under `content/<section>/` | `git push` |
 | Site-wide text | `hugo.toml` params, `layouts/` | `git push` |
 
-The video archive is paginated automatically (15 videos per page, with First / Prev / Next / Last controls at `/media/`). Add as many real video ids as you want to `data/videos.yaml` — pages grow on their own.
+The video archive and the player feedback feed are both paginated automatically (15 per page, with First / Prev / Next / Last controls at `/media/` and `/feedback/`). Add as many real video ids or comments as you want to the YAML files — pages grow on their own.
 
 No CMS, no server, no database — the push is the update.
+
+## 48-hour freshness automation (what auto-runs, and what does not)
+
+A GitHub Action (`.github/workflows/freshness-reminder.yml`) runs **every 48 hours** and:
+
+- reads git history to see when `data/codes.yaml` and `data/comments.yaml` were last updated;
+- if `codes.yaml` is older than **28 days** (or `comments.yaml` older than **45 days**), it **opens a reminder Issue** in the repo;
+- when you refresh the file and push, the next run **closes that Issue automatically**.
+
+This is a genuine scheduled automation, but it **never generates or publishes content by itself**. Content stays hand-written original — that is what Google ranks and what AdSense requires.
+
+## Why the site does not auto-scrape or "spin" content
+
+The request "scrape the web for comments and publish re-written versions automatically" is **not implemented, on purpose**:
+
+- **Google AdSense policy** explicitly prohibits scraped or duplicated content. A site that auto-publishes scraped comments is rejected at review or banned afterwards.
+- **Copyright** — comments belong to their authors; republishing (even re-worded) without permission is infringement and can get the site taken down.
+- **Google Search quality** — "spun" (pseudo-original) text is detected as thin content and demoted, killing the rankings the whole project depends on.
+
+The legitimate equivalent: collect feedback **through the site's own channels** (the mailto form → your mailbox → curated into `data/comments.yaml`) or via **giscus** (GitHub Discussions — players comment directly on the site, no scraping). Content is written originally from verified facts, with "Verify in-game" notices where numbers are not yet confirmed.
 
 ## AdSense activation checklist
 
 1. Get the site live at `https://portalaser.com` (already configured: DNS on Cloudflare, Pages project active, `www` → apex 301 redirect in place).
-2. Submit to AdSense with the live URL and wait for approval.
-3. After approval:
-   - Open `hugo.toml` → set `params.adsenseEnabled = true` and `params.adsenseClient = "ca-pub-XXXX"` → push.
+2. **Policy pages are live** — Privacy Policy / About Us / Contact are in the footer at `/legal/…` (required for AdSense review). Before applying: confirm the contact mailbox `39918849@qq.com` is actively monitored (it is set in `content/legal/` and `layouts/feedback/list.html`).
+3. Replace the two **example comments** in `data/comments.yaml` with real player feedback (or delete them — `example: true` entries render with an amber tag).
+4. Submit to AdSense with the live URL and wait for approval.
+5. **AdSense loader is already live sitewide (v9)**: `hugo.toml` has `params.adsenseEnabled = true` and
+   `params.adsenseClient = "ca-pub-3866829862674413"`; every page loads
+   `pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3866829862674413` in `<head>`, and
+   `/ads.txt` serves `google.com, pub-3866829862674413, DIRECT, f08c47fec0942fa0`.
+   No ad units render until AdSense approves the site (auto ads then start automatically; tune them in the AdSense dashboard).
    - Replace the placeholder in `static/ads.txt` with your real AdSense line (Account → Settings → "Show ads.txt") → push.
-4. Codes pages rank on freshness: keep `lastVerified` + month-in-title updated monthly.
+6. Codes pages rank on freshness: keep `lastVerified` + month-in-title updated monthly.
+
+## Player feedback & vote buttons (honest note)
+
+The `/feedback/` page shows comments from `data/comments.yaml` (paginated 15/page, same First/Prev/Next/Last controls as the video archive) and lets visitors like / dislike / pass by each one. Because Route A is a **static site with no server**, votes are recorded in the visitor's browser only — they are not stored globally. Upgrade path (real votes + comment submission stored in the cloud): add a Cloudflare Pages **Function + KV namespace** (Route C component) — documented later when you are ready.
 
 ## Verify in-game notes
 

@@ -12,7 +12,7 @@
   <div class="grid grid-3" style="margin-top:28px;">
     {{ range .Pages.ByWeight }}
     <a class="entry-card" href="{{ .RelPermalink }}">
-      <div class="ic">{{ .Params.icon | default "📄" }}</div>
+      <div class="ic">{{ partial "icon" (dict "name" (.Params.icon | default "doc")) }}</div>
       <h3>{{ .Title }}</h3>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
       <span class="go">Read guide →</span>

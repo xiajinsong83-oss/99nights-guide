@@ -24,9 +24,9 @@
           </div>
           <p class="comment-text">{{ $p.text }}</p>
           <div class="vote-row" data-cid="{{ $p.cid }}">
-            <button class="vote-btn like" data-vote="like" type="button" aria-label="Like this comment"><span class="v-ic">👍</span><span class="v-count">{{ $p.likes }}</span></button>
-            <button class="vote-btn dislike" data-vote="dislike" type="button" aria-label="Dislike this comment"><span class="v-ic">👎</span><span class="v-count">{{ $p.dislikes }}</span></button>
-            <button class="vote-btn pass" data-vote="pass" type="button" aria-label="Pass by this comment"><span class="v-ic">🚶</span><span class="v-count">{{ $p.pass }}</span></button>
+            <button class="vote-btn like" data-vote="like" type="button" aria-label="Like this comment"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-up") }}</span><span class="v-count">{{ $p.likes }}</span></button>
+            <button class="vote-btn dislike" data-vote="dislike" type="button" aria-label="Dislike this comment"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-down") }}</span><span class="v-count">{{ $p.dislikes }}</span></button>
+            <button class="vote-btn pass" data-vote="pass" type="button" aria-label="Pass by this comment"><span class="v-ic">{{ partial "icon" (dict "name" "walk") }}</span><span class="v-count">{{ $p.pass }}</span></button>
           </div>
         </article>
         {{ end }}
@@ -36,7 +36,7 @@
       <p class="vote-note">Vote counts are tallied by the site owner when feedback is reviewed. To make your voice count, send a comment via the form below.</p>
       {{ else }}
       <div class="comment-empty">
-        <div class="ce-icon">💬</div>
+        <div class="ce-icon">{{ partial "icon" (dict "name" "chat") }}</div>
         <b>No feedback yet</b>
         <span>Be the first player to share your thoughts — use the form below.</span>
       </div>
@@ -48,15 +48,15 @@
         <input id="fbName" type="text" placeholder="e.g. NightOwl99" maxlength="40">
         <label for="fbText">Your comment or review</label>
         <textarea id="fbText" rows="5" placeholder="What helped you? What should we fix or add next?" maxlength="800"></textarea>
-        <button class="btn-primary" id="fbSend" type="button">Send Feedback ✉️</button>
+        <button class="btn-primary" id="fbSend" type="button">Send Feedback {{ partial "icon" (dict "name" "send") }}</button>
         <p class="fb-note">Opens your email app with the message pre-filled. Published comments appear here after review.</p>
       </div>
     </div>
     <aside class="aside">
       <div class="toc"><h4>How comments work</h4><ul>
-        <li>💬 Every comment on this page was sent by a real player and reviewed before publishing.</li>
-        <li>📧 To leave yours, use the form — it opens your email app.</li>
-        <li>🔄 New comments are published with each site update (target: every few days).</li>
+        <li>{{ partial "icon" (dict "name" "chat") }} Every comment on this page was sent by a real player and reviewed before publishing.</li>
+        <li>{{ partial "icon" (dict "name" "mail") }} To leave yours, use the form — it opens your email app.</li>
+        <li>{{ partial "icon" (dict "name" "refresh") }} New comments are published with each site update (target: every few days).</li>
       </ul></div>
       {{ partial "related.html" . }}
       {{ if .Site.Params.adsenseEnabled }}<div class="ad-slot">Ad space</div>{{ end }}
@@ -83,7 +83,7 @@
       var n = parseInt(count.textContent, 10) || 0;
       count.textContent = n + 1;
       btn.classList.add('voted');
-      toast('Thanks! 👍 Your vote is noted.');
+      toast('Thanks! {{ partial "icon" (dict "name" "thumb-up") }} Your vote is noted.');
     });
   });
 })();

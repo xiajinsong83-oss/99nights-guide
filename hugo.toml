@@ -16,8 +16,8 @@ disableKinds = ["taxonomy", "term"]
   game = "99 Nights in the Forest"
   gameUrl = "https://www.roblox.com/games/"
   lastVerified = "late August 2026"
-  adsenseEnabled = false
-  adsenseClient = "ca-pub-0000000000000000"
+  adsenseEnabled = true
+  adsenseClient = "ca-pub-3866829862674413"
   adSlotInArticle = "0000000000"
 
 [taxonomies]

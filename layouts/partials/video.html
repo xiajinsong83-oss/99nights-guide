@@ -4,7 +4,7 @@
   <div class="video-frame">
     {{ if or (eq $id "") (eq $id "REPLACE_WITH_REAL_ID") }}
       <div class="video-placeholder">
-        <div class="vp-icon">🎥</div>
+        <div class="vp-icon">{{ partial "icon" (dict "name" "video") }}</div>
         <b>{{ .title }}</b>
         <span>Video placeholder — add the real YouTube ID in <code>data/videos.yaml</code>, then push to publish.</span>
       </div>

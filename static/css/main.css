@@ -169,7 +169,7 @@ img{max-width:100%;}
 
 /* footer */
 .footer{background:#0a110d;border-top:1px solid var(--line);margin-top:40px;}
-.footer-inner{max-width:1200px;margin:0 auto;padding:48px 20px 28px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px;}
+.footer-inner{max-width:1200px;margin:0 auto;padding:48px 20px 28px;display:grid;grid-template-columns:1.4fr minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:32px;}
 .footer h4{font-size:14px;margin-bottom:14px;color:var(--text);}
 .footer li{list-style:none;font-size:13px;color:var(--sub);margin-bottom:9px;cursor:pointer;}
 .footer li a:hover{color:var(--green);}
@@ -330,3 +330,18 @@ img{max-width:100%;}
 .feedback-form input:focus,.feedback-form textarea:focus{outline:none;border-color:#9fe870;}
 .feedback-form .btn-primary{margin-top:16px;}
 .fb-note{font-size:12.5px;color:var(--muted,#8fa393);margin-top:10px;}
+
+/* --- v8: SVG icons (no emoji font dependency) --- */
+.icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;flex:none;}
+.logo-icon .icon{width:22px;height:22px;color:#06250f;}
+.ic .icon{width:22px;height:22px;}
+.vote-btn .icon{width:15px;height:15px;}
+.vp-icon .icon{width:34px;height:34px;color:#9fe870;}
+.ce-icon .icon{width:34px;height:34px;color:#9fe870;}
+.toc ul li{display:flex;gap:8px;align-items:flex-start;}
+.toc .icon{width:14px;height:14px;color:#9fe870;flex:none;margin-top:3px;}
+.faq-chip .icon{width:16px;height:16px;color:#9fe870;margin-right:8px;vertical-align:-2px;}
+.hero-badge .icon{width:15px;height:15px;margin-right:6px;vertical-align:-2px;}
+.btn-primary .icon,.btn-outline .icon{width:15px;height:15px;margin-right:6px;vertical-align:-2px;}
+.dropdown a .icon{width:15px;height:15px;margin-right:7px;vertical-align:-2px;}
+.featured-img figcaption .icon{width:14px;height:14px;color:var(--muted,#8fa393);vertical-align:-2px;margin-right:4px;}

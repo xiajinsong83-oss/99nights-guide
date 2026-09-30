@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-inner">
     <a class="logo" href="{{ .Site.Home.RelPermalink }}">
-      <div class="logo-icon">🌲</div>
+      <div class="logo-icon">{{ partial "icon" (dict "name" "tree") }}</div>
       <div class="logo-text">{{ .Site.Title | truncate 22 }}<small>{{ .Site.Params.game }} · Fan Guides</small></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -11,36 +11,36 @@
       <div class="nav-item has-dropdown {{ if eq .Section "guide" }}active{{ end }}">
         <a class="drop-toggle" href="{{ "guide/" | relURL }}">Guides <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ "guide/how-to-play/" | relURL }}">🎮 How to Play</a>
-          <a href="{{ "guide/first-10-nights/" | relURL }}">🏕️ First 10 Nights Route</a>
-          <a href="{{ "guide/campfire-upgrades/" | relURL }}">🔥 Campfire Upgrades</a>
-          <a href="{{ "guide/base-building/" | relURL }}">🧱 Base Building</a>
+          <a href="{{ "guide/how-to-play/" | relURL }}">{{ partial "icon" (dict "name" "gamepad") }} How to Play</a>
+          <a href="{{ "guide/first-10-nights/" | relURL }}">{{ partial "icon" (dict "name" "tent") }} First 10 Nights Route</a>
+          <a href="{{ "guide/campfire-upgrades/" | relURL }}">{{ partial "icon" (dict "name" "fire") }} Campfire Upgrades</a>
+          <a href="{{ "guide/base-building/" | relURL }}">{{ partial "icon" (dict "name" "wall") }} Base Building</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "classes" }}active{{ end }}">
         <a class="drop-toggle" href="{{ "classes/" | relURL }}">Classes <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ "classes/" | relURL }}">👥 Class Compendium</a>
-          <a href="{{ "classes/tier-list/" | relURL }}">🏆 Tier List</a>
+          <a href="{{ "classes/" | relURL }}">{{ partial "icon" (dict "name" "users") }} Class Compendium</a>
+          <a href="{{ "classes/tier-list/" | relURL }}">{{ partial "icon" (dict "name" "trophy") }} Tier List</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "monsters" }}active{{ end }}">
         <a class="drop-toggle" href="{{ "monsters/" | relURL }}">Monsters <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ "monsters/" | relURL }}">🦌 Counter Guide</a>
-          <a href="{{ "monsters/deer/" | relURL }}">🎯 How to Beat The Deer</a>
+          <a href="{{ "monsters/" | relURL }}">{{ partial "icon" (dict "name" "paw") }} Counter Guide</a>
+          <a href="{{ "monsters/deer/" | relURL }}">{{ partial "icon" (dict "name" "target") }} How to Beat The Deer</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "advanced" }}active{{ end }}">
         <a class="drop-toggle" href="{{ "advanced/" | relURL }}">Advanced <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ "advanced/weapons-tools/" | relURL }}">🪓 Weapons &amp; Tools</a>
-          <a href="{{ "advanced/modifier-flames/" | relURL }}">🔥 Modifier Flames</a>
-          <a href="{{ "advanced/fishing-taming/" | relURL }}">🎣 Fishing &amp; Taming</a>
-          <a href="{{ "advanced/forest-rage-hard-mode/" | relURL }}">💀 Forest Rage (Hard Mode)</a>
+          <a href="{{ "advanced/weapons-tools/" | relURL }}">{{ partial "icon" (dict "name" "axe") }} Weapons &amp; Tools</a>
+          <a href="{{ "advanced/modifier-flames/" | relURL }}">{{ partial "icon" (dict "name" "fire") }} Modifier Flames</a>
+          <a href="{{ "advanced/fishing-taming/" | relURL }}">{{ partial "icon" (dict "name" "fish") }} Fishing &amp; Taming</a>
+          <a href="{{ "advanced/forest-rage-hard-mode/" | relURL }}">{{ partial "icon" (dict "name" "skull") }} Forest Rage (Hard Mode)</a>
         </div>
       </div>
 
