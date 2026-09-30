@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary">
+  {{ partial "seo.html" . }}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+  {{ if .Site.Params.adsenseEnabled }}
+  <!-- Google AdSense auto ads (enable in hugo.toml after approval) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsenseClient }}" crossorigin="anonymous"></script>
+  {{ end }}
+</head>
+<body>
+{{ partial "header.html" . }}
+<main id="main">
+  {{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+
+<script>
+(function(){
+  function $(s){return document.querySelector(s);}
+  function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s));}
+
+  var burger=$('#burger');
+  if(burger){burger.addEventListener('click',function(){$('#mobileNav').classList.toggle('show');});}
+
+  $$('.has-dropdown').forEach(function(item){
+    item.addEventListener('mouseenter',function(){item.classList.add('open');});
+    item.addEventListener('mouseleave',function(){item.classList.remove('open');});
+    item.querySelector('.drop-toggle') && item.querySelector('.drop-toggle').addEventListener('click',function(e){e.preventDefault();item.classList.toggle('open');});
+  });
+  $$('#mobileNav .drop-toggle').forEach(function(t){
+    t.addEventListener('click',function(e){e.preventDefault();var li=t.parentElement;li.classList.toggle('open');var d=li.querySelector('.dropdown');if(d)d.classList.toggle('show');});
+  });
+
+  window.copyCode=function(code,btn){
+    function done(){if(btn){btn.textContent='Copied ✓';btn.classList.add('copied');}toast('Copied: '+code);if(btn){setTimeout(function(){btn.textContent='Copy Code';btn.classList.remove('copied');},2000);}}
+    function fallback(){
+      var ta=document.createElement('textarea');ta.value=code;ta.style.position='fixed';ta.style.opacity='0';
+      document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');done();}catch(e){toast('Copy failed — select the code manually');}
+      document.body.removeChild(ta);
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(done).catch(fallback);}else{fallback();}
+  };
+  function toast(msg){
+    var t=$('#toast');if(!t)return;
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2000);
+  }
+  window.toast=toast;
+})();
+</script>
+</body>
+</html>

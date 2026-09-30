@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advanced Guides — Crafting, Flames, Fishing &amp; Hard Mode on 99 Nights Guide Hub — 99 Nights in the Forest Guides</title><link>https://portalaser.com/advanced/</link><description>Recent content in Advanced Guides — Crafting, Flames, Fishing &amp; Hard Mode on 99 Nights Guide Hub — 99 Nights in the Forest Guides</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://portalaser.com/advanced/index.xml" rel="self" type="application/rss+xml"/><item><title>Fishing &amp; Animal Taming in 99 Nights in the Forest</title><link>https://portalaser.com/advanced/fishing-taming/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://portalaser.com/advanced/fishing-taming/</guid><description>&lt;p>Fishing is the most famous side activity in 99 Nights in the Forest — because it hides a working chat code. Taming is the animal companion system that helps gatherers and scouts.&lt;/p>
+&lt;h2 id="fishing--unlock-and-use">Fishing — unlock and use&lt;/h2>
+&lt;ol>
+&lt;li>Upgrade your &lt;strong>Campfire to level 2&lt;/strong>.&lt;/li>
+&lt;li>Craft/obtain the &lt;strong>fishing rod&lt;/strong>.&lt;/li>
+&lt;li>Go to a &lt;strong>fishing spot&lt;/strong> and cast the rod into the water.&lt;/li>
+&lt;li>Wait for the bite, then reel in.&lt;/li>
+&lt;/ol>
+&lt;h3 id="the-yay-fishing-chat-code">The yay fishing chat code&lt;/h3>
+&lt;p>While the rod is in the water at a fishing spot, press &lt;strong>/&lt;/strong> to open chat and type:&lt;/p></description></item><item><title>Forest Rage Hard Mode in 99 Nights in the Forest — Corruption, Rifts &amp; Research Outpost</title><link>https://portalaser.com/advanced/forest-rage-hard-mode/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://portalaser.com/advanced/forest-rage-hard-mode/</guid><description>&lt;p>Forest Rage is the hard-mode layer of 99 Nights in the Forest — reached after the main run, it raises threat scaling and adds the Corruption mechanic, Rift clearing and the Research Outpost end-game objective.&lt;/p>
+&lt;div class="notice">&lt;b>⚠️ In progress:&lt;/b> This guide is part of the writing queue — the systems below are the confirmed direction (Corruption / Rift clearing / Research Outpost) with the detailed numbers and strats being verified. Treat everything as framework content for now.&lt;/div>
+
+&lt;h2 id="what-changes-in-forest-rage">What changes in Forest Rage&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Threat scaling&lt;/strong> — monsters hit harder, spawn earlier and scale faster.&lt;/li>
+&lt;li>&lt;strong>Corruption&lt;/strong> — corrupted zones spread across the map and must be managed.&lt;/li>
+&lt;li>&lt;strong>Rifts&lt;/strong> — clearing Rifts is the way to push back Corruption.&lt;/li>
+&lt;li>&lt;strong>Research Outpost&lt;/strong> — the late-game objective that ties the hard-mode loop together.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-prepare">How to prepare&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Max the campfire and bench&lt;/strong> before entering — hard mode punishes weak cores.&lt;/li>
+&lt;li>&lt;strong>Stockpile wood and food&lt;/strong> — double what a normal run needs.&lt;/li>
+&lt;li>&lt;strong>Collect Modifier Flames early&lt;/strong> — &lt;a href="https://portalaser.com/advanced/modifier-flames/">Flames&lt;/a> are the real damage multiplier in hard mode.&lt;/li>
+&lt;li>&lt;strong>Squad up&lt;/strong> — hard mode is brutal solo.&lt;/li>
+&lt;/ol>
+&lt;h2 id="the-hard-mode-loop-framework">The hard-mode loop (framework)&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Day&lt;/strong>: clear Corruption at the edges, gather, upgrade.&lt;/li>
+&lt;li>&lt;strong>Dusk&lt;/strong>: close the base — hard-mode nights attack harder and smarter.&lt;/li>
+&lt;li>&lt;strong>Rift windows&lt;/strong>: when a Rift is active, a strike squad clears it to reduce Corruption pressure.&lt;/li>
+&lt;li>&lt;strong>Outpost&lt;/strong>: repair and research at the Research Outpost to progress the final objective.&lt;/li>
+&lt;/ol>
+&lt;h2 id="current-knowledge-gaps">Current knowledge gaps&lt;/h2>
+&lt;ul>
+&lt;li>Exact Corruption spread rate and Rift timers — &lt;strong>being verified&lt;/strong>.&lt;/li>
+&lt;li>Research Outpost repair costs — &lt;strong>being verified&lt;/strong>.&lt;/li>
+&lt;li>Whether late nights change the spawn schedule — &lt;strong>being verified&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>New findings land in &lt;a href="https://portalaser.com/updates/">Updates&lt;/a> — and in the video section as walkthroughs become available.&lt;/p></description></item><item><title>Modifier Flames in 99 Nights in the Forest — What They Do and How to Use Them</title><link>https://portalaser.com/advanced/modifier-flames/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://portalaser.com/advanced/modifier-flames/</guid><description>&lt;p>Modifier Flames are upgrade items that attach to your weapons and tools to change how they behave. They&amp;rsquo;re one of the main reasons late-game loadouts feel completely different from early-game ones.&lt;/p>
+&lt;h2 id="what-flames-do">What Flames do&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Modify equipment&lt;/strong> — attach to a weapon/tool to change its properties (damage type, effects, resource yield).&lt;/li>
+&lt;li>&lt;strong>Stack with tiers&lt;/strong> — a good Flame on an upgraded weapon beats a plain top-tier weapon.&lt;/li>
+&lt;li>&lt;strong>Are random&lt;/strong> — code rewards like &lt;strong>forestwakesup26&lt;/strong> grant &lt;em>random&lt;/em> Flames, so collection is part of the loop.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-flames">How to get Flames&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Code rewards&lt;/strong> — e.g. the current working code gives &lt;strong>3 random Flames&lt;/strong> (see &lt;a href="https://portalaser.com/codes/">Codes&lt;/a>).&lt;/li>
+&lt;li>&lt;strong>Gameplay drops&lt;/strong> — late-night kills and event content drop Flames.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-apply-them">How to apply them&lt;/h2>
+&lt;ol>
+&lt;li>Open your inventory/equipment menu.&lt;/li>
+&lt;li>Select the weapon or tool you want to modify.&lt;/li>
+&lt;li>Attach the Flame (check the compatibility note — some Flames only fit certain item types).&lt;/li>
+&lt;li>Confirm — the item&amp;rsquo;s stats update immediately.&lt;/li>
+&lt;/ol>
+&lt;h2 id="quick-tips">Quick tips&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Don&amp;rsquo;t waste good Flames on starter tools&lt;/strong> — wait until mid-tier at least.&lt;/li>
+&lt;li>&lt;strong>Match Flame type to role&lt;/strong> — combat classes want damage Flames; Lumberjack/Scavenger prefer resource-yield Flames.&lt;/li>
+&lt;li>&lt;strong>Flames are often the difference&lt;/strong> in &lt;a href="https://portalaser.com/advanced/forest-rage-hard-mode/">Forest Rage hard mode&lt;/a> — start collecting early.&lt;/li>
+&lt;/ul>
+&lt;div class="notice">&lt;b>⚠️ Verify in-game:&lt;/b> Flame names, effects and compatibility are balance-sensitive — confirm the current behavior in-game before planning builds around a specific Flame.&lt;/div></description></item><item><title>Weapons &amp; Tools in 99 Nights in the Forest — Crafting Tiers and Loadouts</title><link>https://portalaser.com/advanced/weapons-tools/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://portalaser.com/advanced/weapons-tools/</guid><description>&lt;p>Your crafting bench is the whole economy of 99 Nights in the Forest. Everything you survive with — tools, weapons, armor, map and compass — comes out of it, and its upgrade level gates what you can build.&lt;/p>
+&lt;h2 id="crafting-bench-tiers-framework">Crafting bench tiers (framework)&lt;/h2>
+&lt;p>The bench upgrades unlock recipe groups in order. The exact item names and material costs shift with updates — this is the progression shape, not a fixed price table.&lt;/p></description></item></channel></rss>

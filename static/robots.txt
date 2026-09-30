@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portalaser.com/sitemap.xml

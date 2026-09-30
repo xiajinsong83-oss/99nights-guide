@@ -1,0 +1,26 @@
+# ============================================================
+# Quest / walkthrough videos for the Videos page
+# ROUTE A: replace the placeholder ids with real YouTube video ids,
+# then git push — the page updates automatically.
+# To embed: set "id" to the 11-character YouTube video id.
+# ============================================================
+videos:
+  - title: "99 Nights in the Forest — Full First 10 Nights Walkthrough"
+    id: "REPLACE_WITH_REAL_ID"
+    category: "Quest Walkthrough"
+    description: "The complete early-game route: chop wood, upgrade benches, level the campfire and defend through night 10."
+
+  - title: "How to Beat The Deer — Boss Strategy Guide"
+    id: "REPLACE_WITH_REAL_ID"
+    category: "Boss Guide"
+    description: "Learn The Deer's patrol patterns and the safe counter strategy for solo and squad play."
+
+  - title: "All Codes & How to Redeem (October 2026)"
+    id: "REPLACE_WITH_REAL_ID"
+    category: "Codes"
+    description: "Every working code right now, plus the yay fishing chat-code trick, shown step by step."
+
+  - title: "Forest Rage Hard Mode — Corruption, Rifts & Research Outpost"
+    id: "REPLACE_WITH_REAL_ID"
+    category: "Hard Mode"
+    description: "Survive Corruption, clear Rifts and repair the Research Outpost in the late-game mode."

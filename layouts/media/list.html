@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="page-banner">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="prose">{{ .Content }}</div>
+  <div class="grid grid-2" style="margin-top:28px;">
+    {{ range site.Data.videos.videos }}
+      {{ partial "video.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,31 @@
+baseURL = "https://portalaser.com/"
+languageCode = "en-us"
+title = "99 Nights Guide Hub — 99 Nights in the Forest Guides"
+enableRobotsTXT = false
+buildDrafts = false
+pygmentsCodeFences = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "99 Nights in the Forest fan guides: working Roblox codes, first-10-nights survival route, class tier list, monster counter guide, crafting, modifier flames, fishing, Forest Rage hard mode and quest walkthrough videos."
+  author = "99 Nights Guide Hub"
+  game = "99 Nights in the Forest"
+  gameUrl = "https://www.roblox.com/games/"
+  lastVerified = "late August 2026"
+  adsenseEnabled = false
+  adsenseClient = "ca-pub-0000000000000000"
+  adSlotInArticle = "0000000000"
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[minify]
+  minifyOutput = true
+
+[markup.goldmark.renderer]
+  unsafe = true

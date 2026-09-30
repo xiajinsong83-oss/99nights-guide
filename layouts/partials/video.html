@@ -1,0 +1,20 @@
+{{/* Video embed card. Expects a map with: title, id, category, description */}}
+{{ $id := .id | default "" }}
+<div class="video-card">
+  <div class="video-frame">
+    {{ if or (eq $id "") (eq $id "REPLACE_WITH_REAL_ID") }}
+      <div class="video-placeholder">
+        <div class="vp-icon">🎥</div>
+        <b>{{ .title }}</b>
+        <span>Video placeholder — add the real YouTube ID in <code>data/videos.yaml</code>, then push to publish.</span>
+      </div>
+    {{ else }}
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {{ end }}
+  </div>
+  <div class="video-body">
+    {{ with .category }}<span class="code-tag chat">{{ . }}</span>{{ end }}
+    <h3>{{ .title }}</h3>
+    {{ with .description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
