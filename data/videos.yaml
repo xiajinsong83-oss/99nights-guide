@@ -1,26 +1,36 @@
 # ============================================================
 # Quest / walkthrough videos for the Videos page
-# ROUTE A: replace the placeholder ids with real YouTube video ids,
-# then git push — the page updates automatically.
-# To embed: set "id" to the 11-character YouTube video id.
+# ROUTE A: edit the id values, then git push — the page updates automatically.
+# IDs verified via YouTube search index (Sep 30, 2026).
+# If any embed is refused by the channel owner, swap in another id.
 # ============================================================
 videos:
-  - title: "99 Nights in the Forest — Full First 10 Nights Walkthrough"
-    id: "REPLACE_WITH_REAL_ID"
+  - title: "Tips for Surviving Over 99 Nights in the Forest (Mary Games)"
+    id: "5SNAMCHz1v4"
+    category: "Survival Guide"
+    description: "Beginner-friendly route: use the quiet first night to explore, spear for early combat, and place stakes and walls before difficulty spikes after night 57."
+
+  - title: "How To Find ALL 4 Missing Kids in 99 Nights In The Forest"
+    id: "P4XbLdToBkk"
     category: "Quest Walkthrough"
-    description: "The complete early-game route: chop wood, upgrade benches, level the campfire and defend through night 10."
+    description: "Full rescue quest walkthrough: use the missing-kid bulletin board, follow the red arrow, beat the guardian animal, grab the key and carry the child back to camp."
 
-  - title: "How to Beat The Deer — Boss Strategy Guide"
-    id: "REPLACE_WITH_REAL_ID"
+  - title: "I Built a 3 WALL FORTRESS to Stop the Deer in 99 Nights in the Forest!"
+    id: "0K0lngkDqu8"
     category: "Boss Guide"
-    description: "Learn The Deer's patrol patterns and the safe counter strategy for solo and squad play."
+    description: "The Deer defense strategy in practice: how a triple-wall fortress holds the line at night, plus bear-handling tips. By AJBLOX."
 
-  - title: "All Codes & How to Redeem (October 2026)"
-    id: "REPLACE_WITH_REAL_ID"
+  - title: "NEW CODES — All Working Codes for 99 Nights in the Forest 2026"
+    id: "u2RHiBXps2U"
     category: "Codes"
-    description: "Every working code right now, plus the yay fishing chat-code trick, shown step by step."
+    description: "Working codes demo (afterparty = free diamonds, yay fishing secret method) with a warning that many codes on YouTube are fake or expired."
 
-  - title: "Forest Rage Hard Mode — Corruption, Rifts & Research Outpost"
-    id: "REPLACE_WITH_REAL_ID"
+  - title: "How to Defeat the Cultist King in 99 Nights in the Forest (Full Boss Guide)"
+    id: "Ibe_gW2t_5I"
+    category: "Boss Guide"
+    description: "Late-game boss fight: bring a strong ranged weapon and heals, fight from doorway line-of-sight, and kite him around trees and rocks."
+
+  - title: "How to Beat the Stronghold in 99 Nights in the Forest – Ultimate Pro Guide"
+    id: "DM7h5WtJX_w"
     category: "Hard Mode"
-    description: "Survive Corruption, clear Rifts and repair the Research Outpost in the late-game mode."
+    description: "End-game guide: best weapons to craft early, Stronghold preparation, step-by-step boss fight, and surviving all 99 nights."

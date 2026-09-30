@@ -2,6 +2,8 @@
 title = "First 10 Nights in 99 Nights in the Forest — Day-by-Day Route"
 description = "The safest early-game progression: day-by-day plan for your first 10 nights — wood, crafting bench upgrades, campfire levels, food reserves, walls, traps and exploration."
 icon = "🏕️"
+image = "/img/missing-kids.jpg"
+imageCredit = "Game screenshot via Slyther Games"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

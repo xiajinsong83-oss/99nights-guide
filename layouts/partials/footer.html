@@ -35,3 +35,27 @@
   <div class="footer-bottom">© 2026 {{ .Site.Title }} · Fan site · Codes verified as of {{ .Site.Params.lastVerified }}</div>
 </footer>
 <div class="toast" id="toast"></div>
+<script>
+(function(){
+  function loadVideo(card){
+    var embed = card.getAttribute('data-embed');
+    if(!embed) return;
+    var f = document.createElement('iframe');
+    f.src = embed; f.title = '99 Nights in the Forest guide video';
+    f.loading = 'lazy'; f.setAttribute('frameborder','0');
+    f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    f.allowFullscreen = true;
+    f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+    card.innerHTML = ''; card.appendChild(f);
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target && e.target.closest ? e.target.closest('.video-cover') : null;
+    if(t) loadVideo(t);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key !== 'Enter' && e.key !== ' ') return;
+    var t = e.target && e.target.closest ? e.target.closest('.video-cover') : null;
+    if(t){ e.preventDefault(); loadVideo(t); }
+  });
+})();
+</script>

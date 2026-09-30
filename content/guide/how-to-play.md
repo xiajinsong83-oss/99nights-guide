@@ -2,6 +2,8 @@
 title = "How to Play 99 Nights in the Forest — Beginner's Guide"
 description = "What you actually do in 99 Nights in the Forest: the gather-build-defend loop, your real objectives (protect the campfire, rescue the missing children), and the survival basics every new player needs."
 icon = "🎮"
+image = "/img/hero.jpg"
+imageCredit = "Game screenshot via Eurogamer"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

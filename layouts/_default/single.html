@@ -11,6 +11,12 @@
   </div>
 </section>
 <section class="wrap section">
+  {{ with .Params.image }}
+  <figure class="featured-img">
+    <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="lazy">
+    {{ with $.Params.imageCredit }}<figcaption>📸 {{ . }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
   <div class="layout-2col">
     <article class="prose">
       {{ if .Lastmod }}<div class="lastmod">Last updated: {{ .Lastmod.Format "January 2, 2006" }}</div>{{ end }}

@@ -2,6 +2,8 @@
 title = "How to Beat The Deer in 99 Nights in the Forest — Full Strategy"
 description = "How to survive and beat The Deer in 99 Nights in the Forest: its behavior, the safe counter strategy for solo and squad play, and the gear you need."
 icon = "🎯"
+image = "/img/deer-winter.jpg"
+imageCredit = "Game screenshot via Sportskeeda"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

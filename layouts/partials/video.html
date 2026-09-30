@@ -9,7 +9,11 @@
         <span>Video placeholder — add the real YouTube ID in <code>data/videos.yaml</code>, then push to publish.</span>
       </div>
     {{ else }}
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-cover" data-embed="https://www.youtube-nocookie.com/embed/{{ $id }}?autoplay=1&rel=0" role="button" tabindex="0" aria-label="Play video: {{ .title }}">
+        <img src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ .title }}" loading="lazy" width="480" height="360">
+        <span class="play-btn">▶</span>
+      </div>
+      <noscript><iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></noscript>
     {{ end }}
   </div>
   <div class="video-body">
