@@ -37,4 +37,4 @@ Forest Rage is the hard-mode layer of 99 Nights in the Forest — reached after 
 - Research Outpost repair costs — **being verified**.
 - Whether late nights change the spawn schedule — **being verified**.
 
-> New findings land in [Updates](/updates/) — and in the video section as walkthroughs become available.
+> New findings land in the [video section](/media/) as walkthroughs become available.

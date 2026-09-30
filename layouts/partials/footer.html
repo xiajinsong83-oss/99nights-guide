@@ -26,13 +26,21 @@
       <h4>More</h4>
       <ul>
         <li><a href="{{ "media/" | relURL }}">Quest Videos</a></li>
+        <li><a href="{{ "feedback/" | relURL }}">Player Feedback</a></li>
         <li><a href="{{ "faq/" | relURL }}">Game FAQ</a></li>
-        <li><a href="{{ "updates/" | relURL }}">Updates &amp; Roadmap</a></li>
         <li><a href="{{ "codes/redeem/" | relURL }}">How to Redeem Codes</a></li>
       </ul>
     </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="{{ "legal/privacy-policy/" | relURL }}">Privacy Policy</a></li>
+        <li><a href="{{ "legal/about/" | relURL }}">About Us</a></li>
+        <li><a href="{{ "legal/contact/" | relURL }}">Contact</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom">© 2026 {{ .Site.Title }} · Fan site · Codes verified as of {{ .Site.Params.lastVerified }}</div>
+  <div class="footer-bottom">© 2026 {{ .Site.Title }} · Fan site · Codes verified as of {{ .Site.Params.lastVerified }} · <a href="{{ "legal/privacy-policy/" | relURL }}">Privacy Policy</a> · <a href="{{ "legal/contact/" | relURL }}">Contact</a></div>
 </footer>
 <div class="toast" id="toast"></div>
 <script>

@@ -45,8 +45,8 @@
       </div>
 
       <a class="nav-item {{ if eq .Section "media" }}active{{ end }}" href="{{ "media/" | relURL }}">Videos <span class="nav-badge" style="background:#60a5fa;">NEW</span></a>
+      <a class="nav-item {{ if eq .Section "feedback" }}active{{ end }}" href="{{ "feedback/" | relURL }}">Feedback <span class="nav-badge" style="background:#f59e0b;">NEW</span></a>
       <a class="nav-item {{ if eq .Section "faq" }}active{{ end }}" href="{{ "faq/" | relURL }}">FAQ</a>
-      <a class="nav-item {{ if eq .Section "updates" }}active{{ end }}" href="{{ "updates/" | relURL }}">Updates</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu">☰</button>
   </div>
@@ -86,7 +86,7 @@
       </div>
     </div>
     <a class="nav-item" href="{{ "media/" | relURL }}">Videos</a>
+    <a class="nav-item" href="{{ "feedback/" | relURL }}">Feedback</a>
     <a class="nav-item" href="{{ "faq/" | relURL }}">FAQ</a>
-    <a class="nav-item" href="{{ "updates/" | relURL }}">Updates</a>
   </nav>
 </header>
