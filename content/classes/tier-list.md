@@ -1,7 +1,7 @@
 +++
 title = "Best Class in 99 Nights in the Forest — Tier List (Community)"
 description = "Community tier list for 99 Nights in the Forest classes: which starter class is best for solo, for squads, for new players and for hard mode — with reasoning."
-icon = "🏆"
+icon = "trophy"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

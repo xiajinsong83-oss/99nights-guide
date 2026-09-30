@@ -1,7 +1,7 @@
 +++
 title = "Forest Rage Hard Mode in 99 Nights in the Forest — Corruption, Rifts & Research Outpost"
 description = "Forest Rage hard mode in 99 Nights in the Forest: Corruption spread, Rift clearing and the Research Outpost — what changes and how to prepare."
-icon = "💀"
+icon = "skull"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

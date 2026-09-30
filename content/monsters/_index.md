@@ -13,13 +13,13 @@ Know your enemy. These are the night threats in 99 Nights in the Forest, what ea
 
 | Monster | Threat | What it does |
 |---|---|---|
-| The Deer | ⚠️⚠️⚠️⚠️ | Signature night stalker — circles your fire |
-| Cultists | ⚠️⚠️⚠️⚠️ | Attack the camp in groups on a timer |
-| The Owl | ⚠️⚠️⚠️ | Messes with your light sources |
-| Ram | ⚠️⚠️⚠️ | Charges and breaks wooden walls |
-| Wolves | ⚠️⚠️⚠️ | Pack hunters, lethal to solo explorers |
-| Bear | ⚠️⚠️⚠️⚠️⚠️ | Apex threat — do not engage early |
-| Bats | ⚠️⚠️ | Cave swarm — weak but numerous |
+| The Deer | ⚠⚠⚠⚠ | Signature night stalker — circles your fire |
+| Cultists | ⚠⚠⚠⚠ | Attack the camp in groups on a timer |
+| The Owl | ⚠⚠⚠ | Messes with your light sources |
+| Ram | ⚠⚠⚠ | Charges and breaks wooden walls |
+| Wolves | ⚠⚠⚠ | Pack hunters, lethal to solo explorers |
+| Bear | ⚠⚠⚠⚠⚠ | Apex threat — do not engage early |
+| Bats | ⚠⚠ | Cave swarm — weak but numerous |
 
 ## Counter summaries
 

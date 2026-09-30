@@ -1,7 +1,7 @@
 +++
 title = "Modifier Flames in 99 Nights in the Forest — What They Do and How to Use Them"
 description = "Modifier Flames in 99 Nights in the Forest: what they are, how you get them (including the forestwakesup26 code rewards), and how to apply them to your loadout."
-icon = "🔥"
+icon = "fire"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

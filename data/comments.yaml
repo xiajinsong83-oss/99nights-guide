@@ -1,0 +1,26 @@
+# ============================================================
+# Player feedback / comments shown on the /feedback/ page.
+# ROUTE A: players send feedback via the page form (opens your
+# email app) → you review → paste the good ones here → push.
+# Example entries below are marked example: true — delete them
+# and add real feedback as it arrives.
+# Fields: id, author, date, text, likes, dislikes, pass.
+# ============================================================
+comments:
+  - id: "c1"
+    author: "SurvivorSam"
+    date: "2026-09-24"
+    text: "The first-10-nights route saved our squad. We were dying by night 4 before — now we hit the campfire level 3 by night 6. Keep it updated!"
+    likes: 0
+    dislikes: 0
+    pass: 0
+    example: true
+
+  - id: "c2"
+    author: "ForestNoob"
+    date: "2026-09-27"
+    text: "Would love a guide on the Mothership alien event next. The fairy biome page was super clear though."
+    likes: 0
+    dislikes: 0
+    pass: 0
+    example: true

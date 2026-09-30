@@ -1,7 +1,7 @@
 +++
 title = "Weapons & Tools in 99 Nights in the Forest — Crafting Tiers and Loadouts"
 description = "Weapons and tools in 99 Nights in the Forest: axe, spear, guns and armor tiers, the crafting bench upgrade path, and the loadouts that work for each phase."
-icon = "🪓"
+icon = "axe"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Campfire Upgrades in 99 Nights in the Forest — What to Level First"
 description = "Why the campfire is the most important upgrade in 99 Nights in the Forest: what each level does, the level 2 fishing unlock, and the order to level it in."
-icon = "🔥"
+icon = "fire"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

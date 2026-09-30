@@ -1,7 +1,7 @@
 +++
 title = "Base Building in 99 Nights in the Forest — Walls, Traps and Layout"
 description = "How to build a defendable base in 99 Nights in the Forest: wall rings, trap lanes, shelves and crates, night-watch rotation, and common layout mistakes."
-icon = "🧱"
+icon = "wall"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
