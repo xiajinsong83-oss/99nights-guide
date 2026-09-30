@@ -6,6 +6,10 @@ buildDrafts = false
 pygmentsCodeFences = true
 disableKinds = ["taxonomy", "term"]
 
+[pagination]
+  pagerSize = 15
+  path = "page"
+
 [params]
   description = "99 Nights in the Forest fan guides: working Roblox codes, first-10-nights survival route, class tier list, monster counter guide, crafting, modifier flames, fishing, Forest Rage hard mode and quest walkthrough videos."
   author = "99 Nights Guide Hub"

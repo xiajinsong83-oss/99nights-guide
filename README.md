@@ -10,14 +10,18 @@ portalaser-99nights/
 ├── hugo.toml              # site config (baseURL, params, AdSense switch)
 ├── data/
 │   ├── codes.yaml         # ⭐ working/expired codes — THE codes source
-│   └── videos.yaml        # quest/walkthrough video embeds (YouTube ids)
+│   └── videos.yaml        # ⭐ video archive source (61 real videos, 15/page)
+├── scripts/
+│   └── gen_videos.py      # regenerates video pages from videos.yaml (run after editing it)
 ├── content/
 │   ├── codes/             # Codes hub + How to Redeem
 │   ├── guide/             # How to Play, First 10 Nights, Campfire, Base Building
 │   ├── classes/           # Compendium + Tier List
 │   ├── monsters/          # Counter Guide + How to Beat The Deer
 │   ├── advanced/          # Weapons, Modifier Flames, Fishing/Taming, Forest Rage
-│   ├── media/             # Quest & Walkthrough Videos
+│   ├── media/
+│   │   ├── _index.md      # Videos archive hub (paginated list)
+│   │   └── videos/        # auto-generated stubs (do not hand-edit; run the script)
 │   ├── updates/           # Changelog / Roadmap
 │   └── faq.md             # FAQ (drives FAQPage JSON-LD)
 ├── layouts/               # templates (header/footer/baseof/section layouts)
@@ -51,9 +55,11 @@ hugo server               # http://localhost:1313
 |---|---|---|
 | A code died / new code out | `data/codes.yaml` | `git push` |
 | Freshness month in title | `content/codes/_index.md` (title) + `data/codes.yaml` (lastVerified) | `git push` |
-| Add a quest video | `data/videos.yaml` (real YouTube id) | `git push` |
+| Add a quest video | `data/videos.yaml` (real YouTube id) | `python3 scripts/gen_videos.py` then `git push` |
 | New guide page | new file under `content/<section>/` | `git push` |
 | Site-wide text | `hugo.toml` params, `layouts/` | `git push` |
+
+The video archive is paginated automatically (15 videos per page, with First / Prev / Next / Last controls at `/media/`). Add as many real video ids as you want to `data/videos.yaml` — pages grow on their own.
 
 No CMS, no server, no database — the push is the update.
 
