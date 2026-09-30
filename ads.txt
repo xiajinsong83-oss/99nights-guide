@@ -1,0 +1,5 @@
+# ============================================================
+# AdSense ads.txt — owner: portalaser.com
+# Google AdSense publisher: ca-pub-3866829862674413
+# Standard Google line (keep exactly as below):
+google.com, pub-3866829862674413, DIRECT, f08c47fec0942fa0
