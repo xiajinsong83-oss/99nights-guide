@@ -4,13 +4,14 @@
   <div class="wrap">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ .Title }}</span></div>
   </div>
 </section>
 <section class="wrap section">
   <div class="prose">{{ .Content }}</div>
+  {{ if $pag.Pages }}
   <div class="archive-meta">
-    <b>{{ $pag.TotalNumberOfElements }} videos</b> in the archive · {{ $pag.PagerSize }} per page · Page {{ $pag.PageNumber }} of {{ $pag.TotalPages }}
+    <b>{{ $pag.TotalNumberOfElements }} {{ i18n "media.meta" }}</b> · {{ $pag.PagerSize }} {{ i18n "media.perPage" }} · {{ i18n "media.page" }} {{ $pag.PageNumber }} {{ i18n "media.of" }} {{ $pag.TotalPages }}
   </div>
   <div class="grid grid-2" style="margin-top:20px;">
     {{ range $pag.Pages }}
@@ -19,6 +20,14 @@
   </div>
   {{ if gt $pag.TotalPages 1 }}
     {{ partial "pager.html" . }}
+  {{ end }}
+  {{ else }}
+  <div class="comment-empty" style="margin-top:24px">
+    <div class="ce-icon">{{ partial "icon" (dict "name" "video") }}</div>
+    <b>{{ i18n "media.noneTitle" }}</b>
+    <span>{{ i18n "media.noneText" }}</span>
+    <a class="btn-outline" style="margin-top:14px;display:inline-block" href="{{ "media/" | relURL }}">{{ i18n "media.noneCta" }}</a>
+  </div>
   {{ end }}
 </section>
 {{ end }}

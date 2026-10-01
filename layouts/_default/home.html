@@ -8,91 +8,91 @@
   <div class="hero-bg"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-badge">{{ partial "icon" (dict "name" "film") }} Now a 20th Century Studios movie · Constantly updated co-op survival horror on Roblox</div>
-      <h1>99 Nights in the Forest<br><em>Every Guide</em> You Need</h1>
-      <p>Working codes updated monthly, a day-by-day first-10-nights survival route, full class tier breakdowns and counter-strategies for every monster. Survive the night, protect the campfire, rescue the missing children.</p>
+      <div class="hero-badge">{{ partial "icon" (dict "name" "film") }} {{ i18n "home.heroBadge" }}</div>
+      <h1>99 Nights in the Forest<br><em>{{ i18n "home.heroTitle" }}</em></h1>
+      <p>{{ i18n "home.heroP" }}</p>
       <div class="hero-btns">
-        <a class="btn-primary" href="{{ "codes/" | relURL }}">{{ partial "icon" (dict "name" "gift") }} View Latest Codes</a>
-        <a class="btn-outline" href="{{ "guide/first-10-nights/" | relURL }}">Start the Beginner Route →</a>
+        <a class="btn-primary" href="{{ "codes/" | relURL }}">{{ partial "icon" (dict "name" "gift") }} {{ i18n "home.viewCodes" }}</a>
+        <a class="btn-outline" href="{{ "guide/first-10-nights/" | relURL }}">{{ i18n "home.startRoute" }} →</a>
       </div>
     </div>
     <div class="hero-cards">
-      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "gift") }}</div><div><b>{{ len $codes.working }} codes currently working</b><span>Verified {{ $codes.lastVerified }} · re-checked regularly</span></div></div>
-      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "compass") }}</div><div><b>First 10 nights survival route</b><span>Chop wood → upgrade benches → upgrade campfire → defend</span></div></div>
-      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "users") }}</div><div><b>All 7 starter classes explained</b><span>Camper / Medic / Assassin — perks &amp; unlock costs</span></div></div>
+      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "gift") }}</div><div><b>{{ len $codes.working }} {{ i18n "home.codesWorking" }}</b><span>{{ i18n "home.verified" }} {{ $codes.lastVerified }} · {{ i18n "home.rechecked" }}</span></div></div>
+      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "compass") }}</div><div><b>{{ i18n "home.first10Route" }}</b><span>{{ i18n "home.first10RouteSub" }}</span></div></div>
+      <div class="hero-mini"><div class="ic">{{ partial "icon" (dict "name" "users") }}</div><div><b>{{ i18n "home.classesExplained" }}</b><span>{{ i18n "home.classesExplainedSub" }}</span></div></div>
     </div>
   </div>
 </section>
 
 <section class="wrap stats-strip">
-  <div class="stat"><b>{{ len $codes.working }}</b><span>Working codes</span></div>
-  <div class="stat"><b>{{ len $guides }}</b><span>Guide articles</span></div>
-  <div class="stat"><b>{{ len $videos }}</b><span>Videos in the archive</span></div>
-  <div class="stat"><b>99</b><span>Nights to survive</span></div>
+  <div class="stat"><b>{{ len $codes.working }}</b><span>{{ i18n "home.statCodes" }}</span></div>
+  <div class="stat"><b>{{ len $guides }}</b><span>{{ i18n "home.statGuides" }}</span></div>
+  <div class="stat"><b>{{ len $videos }}</b><span>{{ i18n "home.statVideos" }}</span></div>
+  <div class="stat"><b>99</b><span>{{ i18n "home.statNights" }}</span></div>
 </section>
 
 <section class="wrap section" style="padding-top:6px">
   <div class="section-head">
-    <div class="section-tag">Start Here</div>
-    <div class="section-title">Featured Guides</div>
-    <div class="section-sub">The four routes every new survivor should read first</div>
+    <div class="section-tag">{{ i18n "home.startHere" }}</div>
+    <div class="section-title">{{ i18n "home.featured" }}</div>
+    <div class="section-sub">{{ i18n "home.featuredSub" }}</div>
   </div>
   <div class="grid grid-4 feat-grid">
     <a class="feat-card" href="{{ "guide/how-to-play/" | relURL }}">
-      <img src="/img/hero.jpg" alt="How to Play 99 Nights in the Forest" loading="lazy">
-      <div class="feat-body"><h3>How to Play</h3><p>The gather-build-defend loop, explained.</p><span class="go">Read guide →</span></div>
+      <img src="/img/hero.jpg" alt="{{ i18n "home.howToPlay" }}" loading="lazy">
+      <div class="feat-body"><h3>{{ i18n "home.howToPlay" }}</h3><p>{{ i18n "home.howToPlayP" }}</p><span class="go">{{ i18n "home.readGuide" }}</span></div>
     </a>
     <a class="feat-card" href="{{ "guide/first-10-nights/" | relURL }}">
-      <img src="/img/missing-kids.jpg" alt="First 10 Nights Route" loading="lazy">
-      <div class="feat-body"><h3>First 10 Nights Route</h3><p>Day-by-day early survival plan.</p><span class="go">Read guide →</span></div>
+      <img src="/img/missing-kids.jpg" alt="{{ i18n "home.first10Card" }}" loading="lazy">
+      <div class="feat-body"><h3>{{ i18n "home.first10Card" }}</h3><p>{{ i18n "home.first10CardP" }}</p><span class="go">{{ i18n "home.readGuide" }}</span></div>
     </a>
     <a class="feat-card" href="{{ "monsters/deer/" | relURL }}">
-      <img src="/img/deer-winter.jpg" alt="How to Beat The Deer" loading="lazy">
-      <div class="feat-body"><h3>How to Beat The Deer</h3><p>The signature threat, countered.</p><span class="go">Read guide →</span></div>
+      <img src="/img/deer-winter.jpg" alt="{{ i18n "home.beatDeer" }}" loading="lazy">
+      <div class="feat-body"><h3>{{ i18n "home.beatDeer" }}</h3><p>{{ i18n "home.beatDeerP" }}</p><span class="go">{{ i18n "home.readGuide" }}</span></div>
     </a>
     <a class="feat-card" href="{{ "advanced/fishing-taming/" | relURL }}">
-      <img src="/img/fishing.jpg" alt="Fishing and Animal Taming" loading="lazy">
-      <div class="feat-body"><h3>Fishing &amp; Taming</h3><p>Companions and the yay fishing code.</p><span class="go">Read guide →</span></div>
+      <img src="/img/fishing.jpg" alt="{{ i18n "home.fishingTaming" }}" loading="lazy">
+      <div class="feat-body"><h3>{{ i18n "home.fishingTaming" }}</h3><p>{{ i18n "home.fishingTamingP" }}</p><span class="go">{{ i18n "home.readGuide" }}</span></div>
     </a>
   </div>
 </section>
 
 <section class="wrap section">
   <div class="section-head">
-    <div class="section-tag">Core Sections</div>
-    <div class="section-title">Site Content Map</div>
-    <div class="section-sub">Everything a survivor needs — from your first night to Forest Rage hard mode</div>
+    <div class="section-tag">{{ i18n "home.coreSections" }}</div>
+    <div class="section-title">{{ i18n "home.contentMap" }}</div>
+    <div class="section-sub">{{ i18n "home.contentMapSub" }}</div>
   </div>
   <div class="grid grid-3">
     <a class="entry-card" href="{{ "codes/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "gift") }}</div><h3>Latest Codes</h3>
-      <p>The highest-traffic page. Gems / Flames codes re-verified on every game update, with both lobby and chat redemption methods explained.</p>
-      <span class="go">Open page →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "gift") }}</div><h3>{{ i18n "home.latestCodes" }}</h3>
+      <p>{{ i18n "home.latestCodesP" }}</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
     <a class="entry-card" href="{{ "guide/first-10-nights/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "tent") }}</div><h3>First 10 Nights Route</h3>
-      <p>Day-by-day early-game plan: wood, crafting bench upgrades, campfire levels and food stockpiling in the optimal order.</p>
-      <span class="go">Open page →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "tent") }}</div><h3>{{ i18n "home.first10Route2" }}</h3>
+      <p>{{ i18n "home.first10Route2P" }}</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
     <a class="entry-card" href="{{ "classes/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "users") }}</div><h3>Class Compendium</h3>
-      <p>All 7 starter classes: abilities, unlock costs (Free / Gems / Robux) and best playstyles — plus a community tier list.</p>
-      <span class="go">Open page →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "users") }}</div><h3>{{ i18n "home.classCompendium" }}</h3>
+      <p>{{ i18n "home.classCompendiumP" }}</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
     <a class="entry-card" href="{{ "monsters/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "paw") }}</div><h3>Monster Counter Guide</h3>
-      <p>The Deer, Cultists, Owl, Ram, Wolves, Bear and Bats — threat levels, spawn patterns and how to counter each one.</p>
-      <span class="go">Open page →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "paw") }}</div><h3>{{ i18n "home.monsterCounter" }}</h3>
+      <p>{{ i18n "home.monsterCounterP" }}</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
     <a class="entry-card" href="{{ "advanced/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "hammer") }}</div><h3>Crafting &amp; Advanced Systems</h3>
-      <p>Weapons and tools, Modifier Flames, fishing and taming, plus Forest Rage hard mode (Corruption, Rifts, Research Outpost).</p>
-      <span class="go">Open page →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "hammer") }}</div><h3>{{ i18n "home.craftingAdvanced" }}</h3>
+      <p>{{ i18n "home.craftingAdvancedP" }}</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
     <a class="entry-card" href="{{ "media/" | relURL }}">
-      <div class="ic">{{ partial "icon" (dict "name" "video") }}</div><h3>Quest &amp; Walkthrough Videos</h3>
-      <p>An archive of {{ len $videos }} real gameplay and strategy videos — watch the route before you run it.</p>
-      <span class="go">Browse archive →</span>
+      <div class="ic">{{ partial "icon" (dict "name" "video") }}</div><h3>{{ i18n "home.questVideos" }}</h3>
+      <p>{{ i18n "home.questVideosP" }} {{ len $videos }} {{ i18n "home.videos" }}.</p>
+      <span class="go">{{ i18n "home.openPage" }}</span>
     </a>
   </div>
 </section>
@@ -100,16 +100,16 @@
 {{ if $videos }}
 <section class="wrap section" style="padding-top:0">
   <div class="section-head">
-    <div class="section-tag">Watch First</div>
-    <div class="section-title">Latest Quest Videos</div>
-    <div class="section-sub">Newest walkthroughs at the top of the archive</div>
+    <div class="section-tag">{{ i18n "home.watchFirst" }}</div>
+    <div class="section-title">{{ i18n "home.latestVideos" }}</div>
+    <div class="section-sub">{{ i18n "home.latestVideosSub" }}</div>
   </div>
   <div class="grid grid-2">
     {{ range first 2 $videos }}
       {{ partial "video.html" . }}
     {{ end }}
   </div>
-  <div class="more-link"><a class="btn-outline" href="{{ "media/" | relURL }}">Browse all {{ len $videos }} videos →</a></div>
+  <div class="more-link"><a class="btn-outline" href="{{ "media/" | relURL }}">{{ i18n "home.browseAll" }} {{ len $videos }} {{ i18n "home.videos" }} →</a></div>
 </section>
 {{ end }}
 
@@ -117,8 +117,8 @@
 {{ if .Params.faq }}
 <section class="wrap section" style="padding-top:0">
   <div class="section-head">
-    <div class="section-tag">Quick Answers</div>
-    <div class="section-title">Top Player Questions</div>
+    <div class="section-tag">{{ i18n "home.quickAnswers" }}</div>
+    <div class="section-title">{{ i18n "home.topQuestions" }}</div>
   </div>
   <div class="faq-teaser">
     {{ range first 3 .Params.faq }}
@@ -132,9 +132,9 @@
 {{ if $comments }}
 <section class="wrap section" style="padding-top:0">
   <div class="section-head">
-    <div class="section-tag">Community</div>
-    <div class="section-title">Latest Player Feedback</div>
-    <div class="section-sub">What survivors say about the game and these guides</div>
+    <div class="section-tag">{{ i18n "home.community" }}</div>
+    <div class="section-title">{{ i18n "home.latestFeedback" }}</div>
+    <div class="section-sub">{{ i18n "home.latestFeedbackSub" }}</div>
   </div>
   <div class="comment-list">
     {{ range $comments }}
@@ -148,7 +148,7 @@
     </article>
     {{ end }}
   </div>
-  <div class="more-link"><a class="btn-outline" href="{{ "feedback/" | relURL }}">Read all feedback &amp; leave yours →</a></div>
+  <div class="more-link"><a class="btn-outline" href="{{ "feedback/" | relURL }}">{{ i18n "home.readAllFeedback" }}</a></div>
 </section>
 {{ end }}
 {{ end }}

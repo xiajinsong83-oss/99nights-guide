@@ -3,7 +3,7 @@
   <div class="wrap">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ .Title }}</span></div>
   </div>
 </section>
 <section class="wrap section">
@@ -15,7 +15,7 @@
       <div class="ic">{{ partial "icon" (dict "name" (.Params.icon | default "doc")) }}</div>
       <h3>{{ .Title }}</h3>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      <span class="go">Read guide →</span>
+      <span class="go">{{ i18n "common.readGuide" }}</span>
     </a>
     {{ end }}
   </div>

@@ -4,45 +4,45 @@
   <div class="wrap">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>Codes</span></div>
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ i18n "nav.codes" }}</span></div>
   </div>
 </section>
 
 <section class="wrap section">
-  <div class="updated-note">⏱️ Last verified: {{ $codes.lastVerified }} · Codes can expire with any game update — redeem them early</div>
+  <div class="updated-note">⏱️ {{ i18n "codes.lastVerified" }} {{ $codes.lastVerified }} · {{ i18n "codes.expireNote" }}</div>
 
   {{ range $codes.working }}
   <div class="code-card">
     <div class="code-name">{{ .code }}</div>
     <div class="code-info"><b>{{ .reward }}</b><span>{{ .note }}</span></div>
-    {{ if eq .method "chat" }}<span class="code-tag chat">Chat code</span>{{ else }}<span class="code-tag">Lobby code</span>{{ end }}
-    <button class="btn-copy" onclick="copyCode('{{ .code }}',this)">Copy Code</button>
+    {{ if eq .method "chat" }}<span class="code-tag chat">{{ i18n "codes.chatCode" }}</span>{{ else }}<span class="code-tag">{{ i18n "codes.lobbyCode" }}</span>{{ end }}
+    <button class="btn-copy" onclick="copyCode('{{ .code }}',this)">{{ i18n "codes.copyCode" }}</button>
   </div>
   {{ end }}
 
   <div class="section-head" style="margin-top:48px;margin-bottom:0">
-    <div class="section-tag">Redemption</div>
-    <h2 class="section-title" style="font-size:20px">How to Redeem Codes in the Lobby</h2>
+    <div class="section-tag">{{ i18n "codes.redemption" }}</div>
+    <h2 class="section-title" style="font-size:20px">{{ i18n "codes.howRedeemLobby" }}</h2>
   </div>
   <div class="steps">
-    <div class="step-card"><div class="step-num">1</div><p>Launch the game and stay in the <b>Lobby</b></p></div>
-    <div class="step-card"><div class="step-num">2</div><p>Click the <b>diamond icon</b> in the bottom-left corner</p></div>
-    <div class="step-card"><div class="step-num">3</div><p>Press the blue <b>Codes</b> button in the bottom-right</p></div>
-    <div class="step-card"><div class="step-num">4</div><p>Enter the code and hit <b>Submit</b> to claim</p></div>
+    <div class="step-card"><div class="step-num">1</div><p>{{ i18n "codes.step1" }}</p></div>
+    <div class="step-card"><div class="step-num">2</div><p>{{ i18n "codes.step2" }}</p></div>
+    <div class="step-card"><div class="step-num">3</div><p>{{ i18n "codes.step3" }}</p></div>
+    <div class="step-card"><div class="step-num">4</div><p>{{ i18n "codes.step4" }}</p></div>
   </div>
-  <div class="tip-box"><b>{{ partial "icon" (dict "name" "lightbulb") }} Special case:</b> "yay fishing" is NOT redeemed in the lobby. First upgrade your <b>Campfire to level 2</b> and obtain the fishing rod. While the rod is in the water at a fishing spot, press <b>/</b> to open chat and type <b>yay fishing</b> (with the space) to instantly spawn 2 Gems.</div>
-  <p style="margin-top:16px;font-size:14px;color:var(--sub);">Full step-by-step with screenshots: <a href="{{ "codes/redeem/" | relURL }}" style="color:var(--green);">How to Redeem Codes →</a></p>
+  <div class="tip-box"><b>{{ partial "icon" (dict "name" "lightbulb") }} {{ i18n "codes.specialCase" }}</b> {{ i18n "codes.specialText" }}</div>
+  <p style="margin-top:16px;font-size:14px;color:var(--sub);">{{ i18n "codes.fullSteps" }} <a href="{{ "codes/redeem/" | relURL }}" style="color:var(--green);">{{ i18n "footer.howToRedeem" }} →</a></p>
 
   <div class="section-head" style="margin-top:48px;margin-bottom:16px">
-    <div class="section-tag">Archive</div>
-    <h2 class="section-title" style="font-size:20px">Expired Codes</h2>
-    <div class="section-sub" style="margin-top:4px">These codes no longer work. We keep them listed so you don't waste time on outdated info from other sites.</div>
+    <div class="section-tag">{{ i18n "codes.archive" }}</div>
+    <h2 class="section-title" style="font-size:20px">{{ i18n "codes.expired" }}</h2>
+    <div class="section-sub" style="margin-top:4px">{{ i18n "codes.expiredSub" }}</div>
   </div>
   {{ range $codes.expired }}
   <div class="code-card expired">
     <div class="code-name">{{ .code }}</div>
     <div class="code-info"><b>{{ .reward }}</b><span>{{ .note }}</span></div>
-    <span class="code-tag dead">Expired</span>
+    <span class="code-tag dead">{{ i18n "codes.dead" }}</span>
   </div>
   {{ end }}
 </section>
@@ -60,19 +60,19 @@
     },
     {
       "@type": "HowTo",
-      "name": "How to redeem codes in 99 Nights in the Forest",
+      "name": {{ i18n "codes.schemaRedeem" | jsonify }},
       "step": [
-        {"@type":"HowToStep","position":1,"text":"Launch the game and stay in the Lobby."},
-        {"@type":"HowToStep","position":2,"text":"Click the diamond icon in the bottom-left corner."},
-        {"@type":"HowToStep","position":3,"text":"Press the blue Codes button in the bottom-right."},
-        {"@type":"HowToStep","position":4,"text":"Enter the code and hit Submit to claim your reward."}
+        {"@type":"HowToStep","position":1,"text":{{ i18n "codes.step1" | jsonify }}},
+        {"@type":"HowToStep","position":2,"text":{{ i18n "codes.step2" | jsonify }}},
+        {"@type":"HowToStep","position":3,"text":{{ i18n "codes.step3" | jsonify }}},
+        {"@type":"HowToStep","position":4,"text":{{ i18n "codes.step4" | jsonify }}}
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"How do I use the yay fishing code?","acceptedAnswer":{"@type":"Answer","text":"Upgrade your Campfire to level 2, obtain the fishing rod, and while the rod is in the water at a fishing spot, press / to open chat and type: yay fishing (with the space). This spawns 2 Gems."}},
-        {"@type":"Question","name":"Are 99 Nights in the Forest codes case sensitive?","acceptedAnswer":{"@type":"Answer","text":"No. Codes can be entered in any combination of upper and lower case as long as the spelling is correct."}}
+        {"@type":"Question","name":{{ i18n "codes.schemaQ1" | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ i18n "codes.schemaA1" | jsonify }}}},
+        {"@type":"Question","name":{{ i18n "codes.schemaQ2" | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ i18n "codes.schemaA2" | jsonify }}}}
       ]
     }
   ]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,9 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ end }}">
@@ -45,10 +48,33 @@
   {{ partial "seo.html" . }}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <!-- cache-busting version tag: bump ?v= whenever main.css changes, so visitors never see stale CSS -->
-  <link rel="stylesheet" href="/css/main.css?v=7">
+  <link rel="stylesheet" href="/css/main.css?v=8">
   {{ if .Site.Params.adsenseEnabled }}
   <!-- Google AdSense loader (auto ads; ads appear after the account is approved) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsenseClient }}" crossorigin="anonymous"></script>
+  {{ end }}
+  {{ if eq .Language.Lang "en" }}
+  <!-- IP-based auto language switch (English default): maps visitor country to language per the site rules.
+       Manual override: the language switcher sets a site_lang cookie, which always wins. -->
+  <script>
+  (function(){
+    var map={CN:"zh-cn",HK:"zh-tw",MO:"zh-tw",TW:"zh-tw",JP:"ja",KR:"ko",ES:"es",AR:"es",BO:"es",CL:"es",CO:"es",CR:"es",CU:"es",DO:"es",EC:"es",SV:"es",GT:"es",HN:"es",MX:"es",NI:"es",PA:"es",PY:"es",PE:"es",PR:"es",UY:"es",VE:"es",FR:"fr",MC:"fr",AD:"fr",BE:"fr",LU:"fr",CA:"fr",HT:"fr",SN:"fr",CI:"fr",CM:"fr",BF:"fr",ML:"fr",NE:"fr",TG:"fr",BJ:"fr",GA:"fr",CD:"fr",CG:"fr",MG:"fr",RW:"fr",BI:"fr",DE:"de",AT:"de",CH:"de",BR:"pt",PT:"pt"};
+    var known=['en','zh-cn','zh-tw','ja','ko','es','fr','de','pt'];
+    function getCookie(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]*)'));return m?decodeURIComponent(m[1]):null;}
+    function go(lang){
+      var p=location.pathname||'/';
+      if(p.charAt(p.length-1)!=='/'){p+='/';}
+      if(p==='/'||p==='/index.html'){location.replace('/'+lang+'/');}
+      else{location.replace('/'+lang+p);}
+    }
+    var manual=getCookie('site_lang');
+    if(manual && known.indexOf(manual)>-1){ if(manual!=='en'){go(manual);} return; }
+    fetch('/cdn-cgi/trace',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){
+      var m=t.match(/loc=([A-Z]{2})/);
+      if(m && map[m[1]]){ go(map[m[1]]); }
+    }).catch(function(){});
+  })();
+  </script>
   {{ end }}
 </head>
 <body>
@@ -91,6 +117,22 @@
     clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2000);
   }
   window.toast=toast;
+
+  // Language switcher: store the manual choice and navigate to the chosen language URL
+  var langBtn=document.getElementById('langBtn');
+  var langMenu=document.getElementById('langMenu');
+  if(langBtn && langMenu){
+    langBtn.addEventListener('click',function(e){e.stopPropagation();langMenu.classList.toggle('show');langBtn.setAttribute('aria-expanded',langMenu.classList.contains('show'));});
+    document.addEventListener('click',function(e){ if(!e.target.closest('.lang-switcher')){langMenu.classList.remove('show');langBtn.setAttribute('aria-expanded','false');} });
+  }
+  window.setLang=function(code){
+    try{document.cookie='site_lang='+code+';path=/;max-age=31536000;samesite=lax';}catch(e){}
+    var href='/'+code+'/';
+    var p=location.pathname||'/';
+    if(p.charAt(p.length-1)!=='/'){p+='/';}
+    if(p==='/'||p==='/index.html'){location.href=href;}
+    else{location.href='/'+code+p;}
+  };
 })();
 </script>
 </body>

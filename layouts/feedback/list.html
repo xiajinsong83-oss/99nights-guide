@@ -4,7 +4,7 @@
   <div class="wrap">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ .Title }}</span></div>
   </div>
 </section>
 <section class="wrap section">
@@ -17,46 +17,46 @@
         {{ range $pag.Pages }}
         {{ $p := .Params }}
         <article class="comment-card{{ if $p.example }} is-example{{ end }}" id="c-{{ $p.cid }}">
-          {{ if $p.example }}<span class="example-chip">Example — replace with real player feedback</span>{{ end }}
+          {{ if $p.example }}<span class="example-chip">{{ i18n "feedback.example" }}</span>{{ end }}
           <div class="comment-head">
             <span class="comment-author">{{ $p.author }}</span>
             <time class="comment-date">{{ $p.date }}</time>
           </div>
           <p class="comment-text">{{ $p.text }}</p>
           <div class="vote-row" data-cid="{{ $p.cid }}">
-            <button class="vote-btn like" data-vote="like" type="button" aria-label="Like this comment"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-up") }}</span><span class="v-count">{{ $p.likes }}</span></button>
-            <button class="vote-btn dislike" data-vote="dislike" type="button" aria-label="Dislike this comment"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-down") }}</span><span class="v-count">{{ $p.dislikes }}</span></button>
-            <button class="vote-btn pass" data-vote="pass" type="button" aria-label="Pass by this comment"><span class="v-ic">{{ partial "icon" (dict "name" "walk") }}</span><span class="v-count">{{ $p.pass }}</span></button>
+            <button class="vote-btn like" data-vote="like" type="button" aria-label="{{ i18n "feedback.voteUp" }}"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-up") }}</span><span class="v-count">{{ $p.likes }}</span></button>
+            <button class="vote-btn dislike" data-vote="dislike" type="button" aria-label="{{ i18n "feedback.voteDown" }}"><span class="v-ic">{{ partial "icon" (dict "name" "thumb-down") }}</span><span class="v-count">{{ $p.dislikes }}</span></button>
+            <button class="vote-btn pass" data-vote="pass" type="button" aria-label="{{ i18n "feedback.votePass" }}"><span class="v-ic">{{ partial "icon" (dict "name" "walk") }}</span><span class="v-count">{{ $p.pass }}</span></button>
           </div>
         </article>
         {{ end }}
       </div>
-      <div class="archive-meta"><b>{{ $pag.TotalNumberOfElements }} player comments</b> · {{ $pag.PagerSize }} per page · Page {{ $pag.PageNumber }} of {{ $pag.TotalPages }}</div>
+      <div class="archive-meta"><b>{{ $pag.TotalNumberOfElements }} {{ i18n "feedback.metaComments" }}</b> · {{ $pag.PagerSize }} {{ i18n "media.perPage" }} · {{ i18n "media.page" }} {{ $pag.PageNumber }} {{ i18n "media.of" }} {{ $pag.TotalPages }}</div>
       {{ partial "pager.html" . }}
-      <p class="vote-note">Vote counts are tallied by the site owner when feedback is reviewed. To make your voice count, send a comment via the form below.</p>
+      <p class="vote-note">{{ i18n "feedback.voteNote" }}</p>
       {{ else }}
       <div class="comment-empty">
         <div class="ce-icon">{{ partial "icon" (dict "name" "chat") }}</div>
-        <b>No feedback yet</b>
-        <span>Be the first player to share your thoughts — use the form below.</span>
+        <b>{{ i18n "feedback.noFeedback" }}</b>
+        <span>{{ i18n "feedback.beFirst" }}</span>
       </div>
       {{ end }}
 
       <div class="feedback-form">
-        <h2>Send Your Feedback</h2>
-        <label for="fbName">Your name (optional)</label>
-        <input id="fbName" type="text" placeholder="e.g. NightOwl99" maxlength="40">
-        <label for="fbText">Your comment or review</label>
-        <textarea id="fbText" rows="5" placeholder="What helped you? What should we fix or add next?" maxlength="800"></textarea>
-        <button class="btn-primary" id="fbSend" type="button">Send Feedback {{ partial "icon" (dict "name" "send") }}</button>
-        <p class="fb-note">Opens your email app with the message pre-filled. Published comments appear here after review.</p>
+        <h2>{{ i18n "feedback.formTitle" }}</h2>
+        <label for="fbName">{{ i18n "feedback.formName" }}</label>
+        <input id="fbName" type="text" placeholder="{{ i18n "feedback.formNamePh" }}" maxlength="40">
+        <label for="fbText">{{ i18n "feedback.formText" }}</label>
+        <textarea id="fbText" rows="5" placeholder="{{ i18n "feedback.formTextPh" }}" maxlength="800"></textarea>
+        <button class="btn-primary" id="fbSend" type="button">{{ i18n "feedback.sendBtn" }} {{ partial "icon" (dict "name" "send") }}</button>
+        <p class="fb-note">{{ i18n "feedback.fbNote" }}</p>
       </div>
     </div>
     <aside class="aside">
-      <div class="toc"><h4>How comments work</h4><ul>
-        <li>{{ partial "icon" (dict "name" "chat") }} Every comment on this page was sent by a real player and reviewed before publishing.</li>
-        <li>{{ partial "icon" (dict "name" "mail") }} To leave yours, use the form — it opens your email app.</li>
-        <li>{{ partial "icon" (dict "name" "refresh") }} New comments are published with each site update (target: every few days).</li>
+      <div class="toc"><h4>{{ i18n "feedback.howComments" }}</h4><ul>
+        <li>{{ partial "icon" (dict "name" "chat") }} {{ i18n "feedback.aside1" }}</li>
+        <li>{{ partial "icon" (dict "name" "mail") }} {{ i18n "feedback.aside2" }}</li>
+        <li>{{ partial "icon" (dict "name" "refresh") }} {{ i18n "feedback.aside3" }}</li>
       </ul></div>
       {{ partial "related.html" . }}
       {{ if .Site.Params.adsenseEnabled }}<div class="ad-slot">Ad space</div>{{ end }}
@@ -71,9 +71,9 @@
     send.addEventListener('click', function(){
       var name = (document.getElementById('fbName').value || '').trim();
       var text = (document.getElementById('fbText').value || '').trim();
-      if(!text){ toast('Please write a short comment first.'); return; }
-      var subject = encodeURIComponent('Player feedback for 99 Nights Guide Hub');
-      var body = encodeURIComponent('Name: ' + (name || 'Anonymous') + '\n\n' + text + '\n\n(sent from the /feedback/ page)');
+      if(!text){ toast('{{ i18n "feedback.writeFirst" }}'); return; }
+      var subject = encodeURIComponent('{{ i18n "feedback.subject" }}');
+      var body = encodeURIComponent('Name: ' + (name || 'Anonymous') + '\n\n' + text + '\n\n({{ i18n "feedback.sentFrom" }})');
       window.location.href = 'mailto:39918849@qq.com?subject=' + subject + '&body=' + body;
     });
   }
@@ -83,7 +83,7 @@
       var n = parseInt(count.textContent, 10) || 0;
       count.textContent = n + 1;
       btn.classList.add('voted');
-      toast('Thanks! {{ partial "icon" (dict "name" "thumb-up") }} Your vote is noted.');
+      toast('{{ i18n "feedback.thanks" }}');
     });
   });
 })();
