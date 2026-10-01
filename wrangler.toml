@@ -1,0 +1,16 @@
+# Reference configuration for the visitor counter.
+# Cloudflare Pages reads functions/ automatically — this file documents the
+# KV binding you must create in the dashboard:
+#
+#   Pages project > Settings > Functions > KV namespace bindings
+#     Variable name: VISITORS_KV
+#     KV namespace:  the namespace you create in Workers & Pages > KV
+#
+# (Optional) a salt to personalise the IP hash. Can be added the same way.
+#   Variable name: VISITORS_SALT   Value: any long random string
+
+name = "portalaser-visitors"
+compatibility_date = "2024-01-01"
+
+[observability]
+enabled = true

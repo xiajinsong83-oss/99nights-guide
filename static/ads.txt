@@ -1,10 +1,5 @@
 # ============================================================
-# AdSense ads.txt — ACTIVATE AFTER APPROVAL
-# 1) After your AdSense account is approved, open AdSense →
-#    Account → Settings → Account information → "Show ads.txt"
-#    and copy the exact line(s) shown there.
-# 2) Replace the placeholder line below with your real line(s).
-#    Example format:
-#    google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
-# ============================================================
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# AdSense ads.txt — owner: portalaser.com
+# Google AdSense publisher: ca-pub-3866829862674413
+# Standard Google line (keep exactly as below):
+google.com, pub-3866829862674413, DIRECT, f08c47fec0942fa0
