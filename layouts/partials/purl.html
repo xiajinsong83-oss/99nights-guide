@@ -1,0 +1,13 @@
+{{/* Language-aware internal link.
+     Usage: {{ partial "purl" (dict "p" . "path" "guide/how-to-play") }}
+     Resolves the page in the CURRENT language and returns its permalink,
+     so links inside /ja/ pages point to /ja/... instead of falling back to English.
+     Falls back to a language-prefixed URL if the page cannot be resolved. */}}
+{{- $r := .p.Site.GetPage .path -}}
+{{- if $r -}}
+{{- $r.RelPermalink -}}
+{{- else -}}
+{{- $prefix := "" -}}
+{{- if ne .p.Language.Lang "en" -}}{{- $prefix = printf "/%s" .p.Language.Lang -}}{{- end -}}
+{{- printf "%s/%s/" $prefix .path -}}
+{{- end -}}

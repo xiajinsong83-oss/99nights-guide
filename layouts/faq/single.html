@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="page-banner">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="prose" style="max-width:820px;">{{ .Content }}</div>
+  <div class="faq-list" style="margin-top:24px;">
+    {{ range .Params.faq }}
+    <details class="faq-item">
+      <summary>{{ .q }}</summary>
+      <div class="faq-a">{{ .a }}</div>
+    </details>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

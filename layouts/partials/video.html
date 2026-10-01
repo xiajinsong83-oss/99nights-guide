@@ -1,0 +1,24 @@
+{{/* Video embed card. Expects a map with: title, id, category, description */}}
+{{ $id := .id | default "" }}
+<div class="video-card">
+  <div class="video-frame">
+    {{ if or (eq $id "") (eq $id "REPLACE_WITH_REAL_ID") }}
+      <div class="video-placeholder">
+        <div class="vp-icon">{{ partial "icon" (dict "name" "video") }}</div>
+        <b>{{ .title }}</b>
+        <span>{{ i18n "video.placeholder" }}</span>
+      </div>
+    {{ else }}
+      <div class="video-cover" data-embed="https://www.youtube-nocookie.com/embed/{{ $id }}?autoplay=1&rel=0" role="button" tabindex="0" aria-label="Play video: {{ .title }}">
+        <img src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ .title }}" loading="lazy" width="480" height="360">
+        <span class="play-btn">▶</span>
+      </div>
+      <noscript><iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></noscript>
+    {{ end }}
+  </div>
+  <div class="video-body">
+    {{ with .category }}<span class="code-tag chat">{{ . }}</span>{{ end }}
+    <h3>{{ .title }}</h3>
+    {{ with .description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>

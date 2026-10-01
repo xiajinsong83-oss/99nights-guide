@@ -1,0 +1,20 @@
+{{ $p := .Paginator }}
+{{ if gt $p.TotalPages 1 }}
+<nav class="pager" aria-label="Archive pages">
+  {{ if $p.HasPrev }}
+    <a class="pager-link" href="{{ $p.First.URL }}">{{ i18n "pager.first" }}</a>
+    <a class="pager-link" href="{{ $p.Prev.URL }}">{{ i18n "pager.prev" }}</a>
+  {{ else }}
+    <span class="pager-link disabled">{{ i18n "pager.first" }}</span>
+    <span class="pager-link disabled">{{ i18n "pager.prev" }}</span>
+  {{ end }}
+  <span class="pager-info">{{ i18n "pager.page" }} {{ $p.PageNumber }} {{ i18n "pager.of" }} {{ $p.TotalPages }}</span>
+  {{ if $p.HasNext }}
+    <a class="pager-link" href="{{ $p.Next.URL }}">{{ i18n "pager.next" }}</a>
+    <a class="pager-link" href="{{ $p.Last.URL }}">{{ i18n "pager.last" }}</a>
+  {{ else }}
+    <span class="pager-link disabled">{{ i18n "pager.next" }}</span>
+    <span class="pager-link disabled">{{ i18n "pager.last" }}</span>
+  {{ end }}
+</nav>
+{{ end }}
