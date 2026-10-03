@@ -45,6 +45,7 @@
       </div>
 
       <a class="nav-item {{ if eq .Section "media" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "media") }}">{{ i18n "nav.videos" }} <span class="nav-badge" style="background:#60a5fa;">{{ i18n "badge.new" }}</span></a>
+      <a class="nav-item {{ if eq .Section "updates" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "updates") }}">{{ i18n "nav.updates" }} <span class="nav-badge" style="background:#34d399;">{{ i18n "badge.new" }}</span></a>
       <a class="nav-item {{ if eq .Section "feedback" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "feedback") }}">{{ i18n "nav.feedback" }} <span class="nav-badge" style="background:#f59e0b;">{{ i18n "badge.new" }}</span></a>
       <a class="nav-item {{ if eq .Section "faq" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "faq") }}">{{ i18n "nav.faq" }}</a>
       {{ partial "lang-switcher.html" . }}
@@ -87,6 +88,7 @@
       </div>
     </div>
     <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "media") }}">{{ i18n "nav.videos" }}</a>
+    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "updates") }}">{{ i18n "nav.updates" }}</a>
     <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "feedback") }}">{{ i18n "nav.feedback" }}</a>
     <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "faq") }}">{{ i18n "nav.faq" }}</a>
   </nav>

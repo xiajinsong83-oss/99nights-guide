@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{ $data := site.Data.updates }}
+<section class="page-banner">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ .Title }}</span></div>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="updated-note">⏱️ {{ i18n "updates.lastSynced" }} {{ $data.lastSynced }}</div>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ with $data.updates }}
+  <div class="section-head" style="margin-top:32px;margin-bottom:14px">
+    <div class="section-tag">{{ i18n "updates.live" }}</div>
+    <h2 class="section-title" style="font-size:20px">{{ i18n "updates.liveTitle" }}</h2>
+    <div class="section-sub" style="margin-top:4px">{{ i18n "updates.liveSub" }}</div>
+  </div>
+  <div class="update-list">
+    {{ range . }}
+    <div class="update-item" style="align-items:flex-start;flex-direction:column;gap:6px;">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;width:100%;">
+        <time>{{ .date }}</time>
+        <b style="font-size:14.5px;color:var(--text);">{{ .title }}</b>
+        {{ with .status }}<span style="font-size:11px;color:var(--green);border:1px solid rgba(74,222,128,.35);padding:1px 8px;border-radius:8px;">{{ . }}</span>{{ end }}
+      </div>
+      {{ with .summary }}<div style="font-size:13.5px;color:var(--sub);line-height:1.7;">{{ . }}</div>{{ end }}
+      {{ with .details }}
+      <ul style="margin:2px 0 0;padding-left:18px;color:var(--sub);font-size:13px;line-height:1.7;">
+        {{ range . }}<li style="margin:3px 0;">{{ . }}</li>{{ end }}
+      </ul>
+      {{ end }}
+      {{ with .codes }}
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:2px;">
+        {{ range . }}<span class="code-tag">{{ .code }} · {{ .reward }}</span>{{ end }}
+      </div>
+      {{ end }}
+      {{ with .source }}<a href="{{ . }}" rel="noopener" style="font-size:12px;color:var(--dim);">{{ i18n "updates.source" }} →</a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $data.upcoming }}
+  <div class="section-head" style="margin-top:40px;margin-bottom:14px">
+    <div class="section-tag">{{ i18n "updates.upcoming" }}</div>
+    <h2 class="section-title" style="font-size:20px">{{ i18n "updates.upcomingTitle" }}</h2>
+  </div>
+  <div class="update-list">
+    {{ range . }}
+    <div class="update-item" style="align-items:flex-start;flex-direction:column;gap:6px;border-color:rgba(251,191,36,.4);">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;width:100%;">
+        <time>{{ .date }}</time>
+        <b style="font-size:14.5px;color:var(--amber);">{{ .title }}</b>
+      </div>
+      {{ with .note }}<div style="font-size:13.5px;color:var(--sub);line-height:1.7;">{{ . }}</div>{{ end }}
+      {{ with .source }}<a href="{{ . }}" rel="noopener" style="font-size:12px;color:var(--dim);">{{ i18n "updates.source" }} →</a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="section-head" style="margin-top:40px;margin-bottom:10px">
+    <div class="section-tag">{{ i18n "updates.sources" }}</div>
+  </div>
+  <ul style="color:var(--sub);font-size:13.5px;line-height:1.9;margin:0;padding-left:20px;">
+    {{ range $data.sources }}<li><a href="{{ .url }}" rel="noopener">{{ .name }}</a></li>{{ end }}
+  </ul>
+  <p style="font-size:12.5px;color:var(--dim);margin-top:14px;">{{ i18n "updates.footnote" }}</p>
+</section>
+{{ end }}

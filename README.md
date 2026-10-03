@@ -92,6 +92,24 @@ A GitHub Action (`.github/workflows/freshness-reminder.yml`) runs **every 48 hou
 
 This is a genuine scheduled automation, but it **never generates or publishes content by itself**. Content stays hand-written original — that is what Google ranks and what AdSense requires.
 
+## 12-hour auto-update sync (what DOES update itself)
+
+A second GitHub Action (`.github/workflows/auto-update.yml`) runs **every 12 hours** and does the parts that are safe to automate:
+
+- fetches the **official Roblox game page** (`roblox.com/games/79546208627805`) and reads the "Updated" date + event previews;
+- fetches the **community update log** (`99-nights-in-the-forest.com/updates`) and parses every dated update into structured entries;
+- cross-checks codes with public code trackers (RoCodes.gg, Twinfinite) and **auto-ADDS new codes** to `data/codes.yaml` (never removes any — expiry stays manual);
+- merges new updates into `data/updates.yaml`, re-stamps `data/codes.yaml` `lastVerified`, then commits & pushes — Cloudflare Pages rebuilds ~1 minute later.
+
+Safety rails built into `scripts/auto_update.py`:
+
+- pure stdlib (no requests / bs4 / PyYAML) — always runs on the Actions runner;
+- **append-only**: existing updates and codes are never deleted or rewritten, only new entries are added (dedup by date+title);
+- a failed fetch is logged and skipped; nothing is pushed when nothing changed;
+- update entries are short factual summaries with the source link — full guides and strategy text remain hand-written original content (AdSense-safe).
+
+Run it locally to test: `python3 scripts/auto_update.py --dry-run` (fetches + merges, no git).
+
 ## Why the site does not auto-scrape or "spin" content
 
 The request "scrape the web for comments and publish re-written versions automatically" is **not implemented, on purpose**:
