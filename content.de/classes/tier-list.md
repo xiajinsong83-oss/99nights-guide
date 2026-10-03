@@ -3,10 +3,10 @@ title = "99 Nights in the Forest: beste Klassen — Tierlist (Community)"
 description = "Community-Tierlist der Klassen in『99 Nights in the Forest』: welche Startklasse für Solo, Gruppe, Anfänger und Hardmode am besten ist — mit Begründung."
 icon = "trophy"
 date = 2026-09-30
-lastmod = 2026-09-30
+lastmod = 2026-10-03
 +++
 
-Es gibt keine einzelne „beste Klasse" — aber es gibt eine beste für**deine Situation**. Diese Tierlist ordnet die 7 Startklassen nach ihrem Beitrag zu einem typischen Gruppen-Run, mit Solo-Notizen.
+Es gibt keine einzelne „beste Klasse" — aber es gibt eine beste für**deine Situation**. Diese Tierlist ordnet die 10 Klassen nach ihrem Beitrag zu einem typischen Gruppen-Run, mit Solo-Notizen.
 
 {{< notice title="Meinung, kein Dogma" >}}Das ist ein Community-Meinungsranking auf Basis der aktuellen Rollen. Balance-Patches können Klassen zwischen den Stufen verschieben — die Begründungen zählen mehr als der Rang. {{< /notice >}}
 
@@ -20,9 +20,14 @@ Es gibt keine einzelne „beste Klasse" — aber es gibt eine beste für**deine 
 - **Plünderer** — Nachschub-Transport hält die Schleife am Laufen; in kampflastigen Gruppen etwas schwächer.
 - **Koch** — Der Nahrungsdruck ist in langen Runs real; in kurzen Sessions weniger glänzend.
 
+- **Waldläufer** — ein zweiter Holz-Motor: die einzigartige Axt plus Holz-Lagerung und Riesen-Setzling beschleunigen Feuer- und Werkbank-Upgrades.
+
 ### B — Je nach Fall
 - **Ranger** — glänzt in Erkundungs- und Rettungsphasen; mittelmäßig in reinen Verteidigungsnächten.
 - **Assassine** — in geübten Händen spaßig und stark, aber zerbrechlich für Anfänger.
+
+- **Fluchtkünstler** — Flucht- und Erkennungsvorteile halten dich am Leben, wenn du nicht kämpfen willst; glänzt im Solo.
+- **Elementar** — Biom-Helm und Status-Vorteile sind stark, wenn das passende Biom kommt, sonst situationsabhängig.
 
 ### C — Lernwerkzeug
 - **Camper** — am Anfang völlig in Ordnung, wird aber abgehängt, wenn du die Schleife kennst.

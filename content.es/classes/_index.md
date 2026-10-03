@@ -1,11 +1,11 @@
 +++
-title = "Clases — las 7 clases iniciales de 99 Nights in the Forest"
-description = "Cada clase inicial de『99 Nights in the Forest』— Campista, Recolector, Médico, Cocinero, Explorador, Leñador y Asesino — con rol, desbloqueo y estilo de juego."
+title = "Clases — las 10 clases de 99 Nights in the Forest"
+description = "Cada clase inicial de『99 Nights in the Forest』— Campista, Recolector, Médico, Cocinero, Explorador, Leñador, Asesino, Artista del escape, Elemental y Guardabosques — con rol, desbloqueo y estilo de juego."
 date = 2026-09-30
-lastmod = 2026-09-30
+lastmod = 2026-10-03
 +++
 
-Las siete clases iniciales cubren todas las funciones que necesita un grupo de supervivientes: recolección, combate, curación, cocina y exploración. Los favoritos de los novatos son el**Campista** (gratis y equilibrado) y el**Médico** (sostenimiento del grupo).
+Las diez clases cubren todas las funciones que necesita un grupo de supervivientes: recolección, combate, curación, cocina y exploración. Los favoritos de los novatos son el**Campista** (gratis y equilibrado) y el**Médico** (sostenimiento del grupo).
 
 {{< notice title="Confírmalo en el juego" >}}Los números exactos de las ventajas y los precios de desbloqueo se reequilibran periódicamente — trata lo siguiente como una descripción de roles y confirma los precios actuales en la tienda antes de gastar gemas o Robux. {{< /notice >}}
 
@@ -20,6 +20,9 @@ Las siete clases iniciales cubren todas las funciones que necesita un grupo de s
 | Explorador | Especialista en exploración | Gemas | Cobertura del mapa, pistas |
 | Leñador | Especialista en madera | Gemas | Mejoras de base y hoguera |
 | Asesino | Especialista en combate | Robux | Enfrentar amenazas de frente |
+| Artista del escape | Especialista en huida | Gemas | Esquivar amenazas |
+| Elemental | Especialista en biomas | Gemas | Partidas con bioma |
+| Guardabosques | Especialista en madera | Gemas | Grandes proyectos de base |
 
 ## Detalle de clases
 
@@ -43,5 +46,15 @@ Corta árboles más rápido que nadie — el motor de madera detrás de las mejo
 
 ### Asesino — especialista en combate
 Clase de combate de alto daño para quien quiere enfrentar a esbirros del ciervo y cultistas de frente, no esconderse.
+
+
+### ### Artista del escape — Especialista en huida
+Ventajas de esprintar, escapar de persecuciones y detectar amenazas — la elección para sobrevivir sin pelear.
+
+### ### Elemental — Especialista en biomas
+Casco de bioma más ventajas de efectos de estado, velocidad y visión nocturna — fuerte cuando toca su bioma, situacional en el resto.
+
+### ### Guardabosques — Economía de madera
+Empieza con su Hacha de Guardabosques y suma ventajas de almacenaje de troncos y retoño gigante — un segundo motor de madera para bases grandes.
 
 > ¿Quieres saber el orden? Mira el [tier de clases de la comunidad]({{< relref "/classes/tier-list" >}}).
