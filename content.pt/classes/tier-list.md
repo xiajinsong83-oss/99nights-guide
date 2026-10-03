@@ -3,10 +3,10 @@ title = "99 Nights in the Forest: melhores classes — tier list (comunidade)"
 description = "Tier list de classes da comunidade de『99 Nights in the Forest』: qual classe inicial é melhor para solo, grupo, novatos e modo difícil, com os motivos."
 icon = "trophy"
 date = 2026-09-30
-lastmod = 2026-09-30
+lastmod = 2026-10-03
 +++
 
-Não existe uma única "melhor classe" — mas existe uma melhor para**sua situação**. Esta tier list ordena as 7 classes iniciais pela contribuição a uma partida típica de grupo, com notas de solo.
+Não existe uma única "melhor classe" — mas existe uma melhor para**sua situação**. Esta tier list ordena as 10 classes pela contribuição a uma partida típica de grupo, com notas de solo.
 
 {{< notice title="É opinião, não dogma" >}}É um ranking de opinião da comunidade baseado nos papéis atuais. Patches de balanceamento podem mover classes entre níveis — os motivos importam mais que a posição. {{< /notice >}}
 
@@ -20,9 +20,14 @@ Não existe uma única "melhor classe" — mas existe uma melhor para**sua situa
 - **Coletor** — o transporte de suprimentos mantém o ciclo; um pouco mais fraco em grupos de combate.
 - **Cozinheiro** — a pressão de comida é real em runs longos; brilha menos em sessões curtas.
 
+- **Guarda-florestal** — um segundo motor de madeira: seu Machado único mais armazenamento de troncos e mudas gigantes aceleram melhorias de fogueira e bancada.
+
 ### B — Depende do caso
 - **Explorador** — brilha nas fases de exploração e resgate; mediano em noites de pura defesa.
 - **Assassino** — divertido e forte em mãos experientes, mas frágil para novatos.
+
+- **Artista da fuga** — vantagens de fuga e detecção mantêm você vivo quando não quer lutar; brilha em solo.
+- **Elemental** — capacete de bioma e vantagens de status são fortes quando o bioma certo aparece, situacionais no resto.
 
 ### C — Ferramenta de aprendizado
 - **Campista** — perfeitamente ok no começo, mas superado quando você conhece o ciclo.
