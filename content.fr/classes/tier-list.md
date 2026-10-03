@@ -3,10 +3,10 @@ title = "99 Nights in the Forest : meilleures classes — tier list (communauté
 description = "Tier list des classes de la communauté de『99 Nights in the Forest』: quelle classe de départ est la meilleure en solo, en groupe, pour les débutants et en mode difficile, avec les raisons."
 icon = "trophy"
 date = 2026-09-30
-lastmod = 2026-09-30
+lastmod = 2026-10-03
 +++
 
-Il n'y a pas de « meilleure classe » unique — mais il y en a une pour**ta situation**. Cette tier list ordonne les 7 classes de départ par leur contribution à une partie de groupe typique, avec des notes solo.
+Il n'y a pas de « meilleure classe » unique — mais il y en a une pour**ta situation**. Cette tier list ordonne les 10 classes par leur contribution à une partie de groupe typique, avec des notes solo.
 
 {{< notice title="C'est un avis, pas un dogme" >}}C'est un classement d'opinion de la communauté basé sur les rôles actuels. Les patchs d'équilibrage peuvent déplacer des classes entre les paliers — les raisons comptent plus que le rang. {{< /notice >}}
 
@@ -20,9 +20,14 @@ Il n'y a pas de « meilleure classe » unique — mais il y en a une pour**ta si
 - **Fouilleur** — le transport de ravitaillement fait tourner la boucle ; un peu plus faible dans les groupes de combat.
 - **Cuisinier** — la pression de la faim est réelle en longues parties ; brille moins en sessions courtes.
 
+- **Forestier** — un second moteur de bois : sa Hache unique plus le stockage de bûches et les pousses géantes accélèrent les améliorations de feu et d'établi.
+
 ### B — Selon le cas
 - **Explorateur** — brille dans les phases d'exploration et de sauvetage ; médiocre dans les nuits de pure défense.
 - **Assassin** — amusant et fort en mains expertes, mais fragile pour les débutants.
+
+- **Artiste de l'évasion** — ses aptitudes de fuite et de détection te gardent en vie quand tu ne veux pas combattre ; brille en solo.
+- **Élémentaire** — casque de biome et aptitudes d'état sont forts quand le bon biome apparaît, situationnels sinon.
 
 ### C — Outil d'apprentissage
 - **Campeur** — parfaitement bien au début, mais distancé quand tu connais la boucle.
