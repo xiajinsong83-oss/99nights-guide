@@ -1,0 +1,25 @@
+name: Content Freshness Reminder
+
+on:
+  schedule:
+    # Every 48 hours (every 2 days) at 08:00 UTC
+    - cron: "0 8 */2 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run freshness check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: python3 .github/scripts/freshness_check.py
