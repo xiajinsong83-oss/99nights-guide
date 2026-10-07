@@ -5,7 +5,7 @@
 #   update log, appends NEW updates only, never removes history.
 # ============================================================
 
-lastSynced: "2026-10-03"
+lastSynced: "2026-10-07"
 
 sources:
   - name: "Roblox Official Game Page"
@@ -14,6 +14,31 @@ sources:
     url: "https://99-nights-in-the-forest.com/updates"
 
 updates:
+  - date: "2026-10-17"
+    title: "HALLOWEEN BEGINS (Preview)"
+    status: "live"
+    summary: "HALLOWEEN BEGINS is scheduled for October 17 at 17:00 UTC (October 18 at 01:00 in Shanghai), with the official event window ending October 24 at 12:00 UTC."
+    details:
+      - "HALLOWEEN BEGINS is scheduled for October 17 at 17:00 UTC (October 18 at 01:00 in Shanghai), with the official event window ending October 24 at 12:00 UTC."
+    source: "https://99-nights-in-the-forest.com/updates"
+
+  - date: "2026-10-03"
+    title: "Helping Happy"
+    status: "live"
+    summary: "Pick up Happy’s Scythe near camp and level it through combat and web clearing. Unlock Happy’s Cart furniture by completing all three event badges. A web-covered barn holding Happy’s Left Leg during the Helping Happy quest. A timber-framed windmill…"
+    details:
+      - "Pick up Happy’s Scythe near camp and level it through combat and web clearing."
+      - "Unlock Happy’s Cart furniture by completing all three event badges."
+      - "A web-covered barn holding Happy’s Left Leg during the Helping Happy quest."
+      - "A timber-framed windmill containing Happy’s Right Leg during Helping Happy."
+      - "A gray stone quest building with Happy’s Left Arm inside."
+      - "A fenced pumpkin patch where Happy’s Torso is trapped beneath a cart."
+      - "Reaping: Level up Happy's Scythe to max level."
+      - "Strawcraft: Help your team assemble Happy back together again."
+      - "Sweeping: Destroy 200 webs with Happy's Scythe."
+      - "Help Happy recover six scattered body parts, then retrieve his head from the Ram to finish the rescue."
+    source: "https://99-nights-in-the-forest.com/updates"
+
   - date: "2026-09-19"
     title: "2x Diamond Weekend"
     status: "live"
