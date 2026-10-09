@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auto-update engine for the 99 Nights Guide Hub (portalaser.com).
+Auto-update engine for the 99 Nights Guide Hub (www.portalaser.com).
 
 Runs every 12 hours via .github/workflows/auto-update.yml and:
 
@@ -43,7 +43,7 @@ CODES_YAML = os.path.join(ROOT, "data", "codes.yaml")
 STATE_JSON = os.path.join(ROOT, "data", ".updates_state.json")
 
 UA = ("Mozilla/5.0 (compatible; PortalaserAutoUpdate/1.0; "
-      "+https://portalaser.com)")
+      "+https://www.portalaser.com)")
 
 # ---------------------------------------------------------------- sources
 SOURCES = [
