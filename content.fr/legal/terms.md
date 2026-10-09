@@ -5,7 +5,7 @@ date = 2026-10-01
 lastmod = 2026-10-01
 +++
 
-Les présentes conditions d'utilisation (« Conditions ») régissent votre usage de **99 Nights Guide Hub** (`https://portalaser.com`). En accédant au site ou en l'utilisant, vous acceptez ces Conditions.
+Les présentes conditions d'utilisation (« Conditions ») régissent votre usage de **99 Nights Guide Hub** (`https://www.portalaser.com`). En accédant au site ou en l'utilisant, vous acceptez ces Conditions.
 
 ## 1. Nature du site
 
