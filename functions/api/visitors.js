@@ -1,5 +1,5 @@
 /**
- * Visitor counter for portalaser.com (Cloudflare Pages Function)
+ * Visitor counter for www.portalaser.com (Cloudflare Pages Function)
  *
  * Route:  /api/visitors
  * Method: GET
