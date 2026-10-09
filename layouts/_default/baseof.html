@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d2a1c">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ printf "%simg/hero.jpg" .Site.BaseURL }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ end }}">
+  <meta name="twitter:image" content="{{ printf "%simg/hero.jpg" .Site.BaseURL }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.Home.Permalink | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }}
+  }
+  </script>
+  {{ if not .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":{{ .Site.Home.Permalink | jsonify }}}{{ if and .IsNode (not .Parent.IsHome) }},
+      {"@type":"ListItem","position":2,"name":{{ .Title | jsonify }},"item":{{ .Permalink | jsonify }}}{{ else if .Parent.IsHome }},
+      {"@type":"ListItem","position":2,"name":{{ .Title | jsonify }},"item":{{ .Permalink | jsonify }}}{{ else }},
+      {"@type":"ListItem","position":2,"name":{{ .Parent.Title | jsonify }},"item":{{ .Parent.Permalink | jsonify }}},
+      {"@type":"ListItem","position":3,"name":{{ .Title | jsonify }},"item":{{ .Permalink | jsonify }}}{{ end }}
+    ]
+  }
+  </script>
+  {{ end }}
   {{ partial "seo.html" . }}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/main.css">
+  <!-- cache-busting version tag: bump ?v= whenever main.css changes, so visitors never see stale CSS -->
+  <link rel="stylesheet" href="/css/main.css?v=9">
+  <!-- Inline fallback for the language menu + visitor stats: keeps them correct even if main.css is stale/cached.
+       Values match main.css, so there is no conflict when both load. -->
+  <style>
+  .lang-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;left:auto;background:#0b2014;border:1px solid rgba(46,125,70,.45);border-radius:12px;min-width:180px;padding:6px;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:999;flex-direction:column}
+  .lang-menu.show{display:flex;flex-direction:column}
+  .lang-opt{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;color:#d8ecdd;font-size:13px;text-decoration:none;white-space:nowrap}
+  .lang-opt:hover{background:rgba(46,125,70,.3)}
+  .lang-opt.active{background:rgba(159,232,112,.14);color:#9fe870;font-weight:700}
+  .lang-opt.active::before{content:'✓';color:#9fe870;font-weight:800}
+  @media(max-width:960px){.lang-switcher{display:none}}
+  .footer-stats{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:center;padding:12px 16px;background:#0f1720;border-top:1px solid rgba(255,255,255,.08);font-size:13px;color:#cbd5e1}
+  .footer-stats .fs-label{font-weight:700;color:#fbbf24;text-transform:uppercase;letter-spacing:.06em;font-size:12px}
+  .footer-stats b{color:#fff;font-size:14px;font-variant-numeric:tabular-nums}
+  </style>
   {{ if .Site.Params.adsenseEnabled }}
-  <!-- Google AdSense auto ads (enable in hugo.toml after approval) -->
+  <!-- Google AdSense loader (auto ads; ads appear after the account is approved) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsenseClient }}" crossorigin="anonymous"></script>
   {{ end }}
 </head>
@@ -61,6 +108,37 @@
     clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2000);
   }
   window.toast=toast;
+
+  // Language switcher: open/close menu; the options are plain links to the
+  // same page in the chosen language (see layouts/partials/lang-switcher.html).
+  var langBtn=document.getElementById('langBtn');
+  var langMenu=document.getElementById('langMenu');
+  if(langBtn && langMenu){
+    langBtn.addEventListener('click',function(e){e.stopPropagation();langMenu.classList.toggle('show');langBtn.setAttribute('aria-expanded',langMenu.classList.contains('show'));});
+    document.addEventListener('click',function(e){ if(!e.target.closest('.lang-switcher')){langMenu.classList.remove('show');langBtn.setAttribute('aria-expanded','false');} });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'){langMenu.classList.remove('show');langBtn.setAttribute('aria-expanded','false');} });
+    langMenu.addEventListener('click',function(e){ e.stopPropagation(); if(e.target.closest('a')){langMenu.classList.remove('show');langBtn.setAttribute('aria-expanded','false');} });
+  }
+  // Remember the visitor's manual language choice (harmless; kept for future use)
+  var knownLangs=['en','zh-cn','zh-tw','ja','ko','es','fr','de','pt'];
+  document.querySelectorAll('.lang-opt').forEach(function(a){
+    a.addEventListener('click',function(){
+      var code=a.getAttribute('data-lang');
+      try{document.cookie='site_lang='+code+';path=/;max-age=31536000;samesite=lax';}catch(e){}
+    });
+  });
+  // Fallback navigator: switch the current page path to another language.
+  // Strips any existing language prefix so URLs never double up (/ja//ja/...).
+  window.setLang=function(code){
+    try{document.cookie='site_lang='+code+';path=/;max-age=31536000;samesite=lax';}catch(e){}
+    var p=location.pathname||'/';
+    for(var i=0;i<knownLangs.length;i++){
+      var pre='/'+knownLangs[i]+'/';
+      if(knownLangs[i]!=='en' && p.indexOf(pre)===0){ p=p.slice(pre.length-1); break; }
+    }
+    if(p.charAt(p.length-1)!=='/'){p+='/';}
+    location.href=(code==='en'?'/':'/'+code+'/')+ (p==='/'?'':p.slice(1));
+  };
 })();
 </script>
 </body>
