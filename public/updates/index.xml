@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Updates &amp; Roadmap on 99 Nights Guide Hub — 99 Nights in the Forest Guides</title><link>https://portalaser.com/updates/</link><description>Recent content in Updates &amp; Roadmap on 99 Nights Guide Hub — 99 Nights in the Forest Guides</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://portalaser.com/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Update — September 2026: New Architecture, Codes Verified, Videos Coming</title><link>https://portalaser.com/updates/patch-notes-september-2026/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://portalaser.com/updates/patch-notes-september-2026/</guid><description>&lt;p>Big month for the hub. Here&amp;rsquo;s what changed:&lt;/p>
-&lt;h2 id="whats-new">What&amp;rsquo;s new&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>New architecture&lt;/strong> — the site moved to a data-driven static build (Route A): every page is generated from content files, and the Codes page now renders from a single data file. Updating a code is now a one-file change.&lt;/li>
-&lt;li>&lt;strong>Codes re-verified&lt;/strong> — &lt;code>forestwakesup26&lt;/code>, &lt;code>afterparty&lt;/code> and the &lt;code>yay fishing&lt;/code> chat code remain working; the expired archive keeps &lt;code>happyhalloween&lt;/code> with context.&lt;/li>
-&lt;li>&lt;strong>Video section prepared&lt;/strong> — the &lt;a href="https://portalaser.com/media/">Videos page&lt;/a> is live with embed slots ready for quest walkthroughs and boss guides.&lt;/li>
-&lt;/ul>
-&lt;h2 id="whats-in-the-writing-queue">What&amp;rsquo;s in the writing queue&lt;/h2>
-&lt;ul>
-&lt;li>Spawn timetable (night-by-night monster schedule).&lt;/li>
-&lt;li>Full taming list and pet roles.&lt;/li>
-&lt;li>Forest Rage hard mode numbers (Corruption rates, Rift timers, Research Outpost costs).&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-updates-work-now">How updates work now&lt;/h2>
-&lt;p>Codes, videos and freshness dates live in &lt;code>data/&lt;/code> files. A single push rebuilds the whole site in about a minute — no server, no CMS, no database.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Game Updates — 99 Nights in the Forest on 99 Nights Guide Hub — 99 Nights in the Forest Guides</title><link>https://www.portalaser.com/updates/</link><description>Recent content in Game Updates — 99 Nights in the Forest on 99 Nights Guide Hub — 99 Nights in the Forest Guides</description><generator>Hugo</generator><language>en-us</language><lastBuildDate/><atom:link href="https://www.portalaser.com/updates/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
