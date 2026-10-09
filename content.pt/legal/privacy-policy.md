@@ -5,7 +5,7 @@ date = 2026-09-30
 lastmod = 2026-09-30
 +++
 
-**99 Nights Guide Hub** ("nós") opera o site `https://portalaser.com`. Esta página explica quais informações são coletadas ao visitar o site e como são usadas.
+**99 Nights Guide Hub** ("nós") opera o site `https://www.portalaser.com`. Esta página explica quais informações são coletadas ao visitar o site e como são usadas.
 
 ## Informações que coletamos
 
