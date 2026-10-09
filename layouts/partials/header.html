@@ -1,95 +1,92 @@
 <header class="header">
   <div class="header-inner">
     <a class="logo" href="{{ .Site.Home.RelPermalink }}">
-      <div class="logo-icon">{{ partial "icon" (dict "name" "tree") }}</div>
+      <div class="logo-icon">🌲</div>
       <div class="logo-text">{{ .Site.Title | truncate 22 }}<small>{{ .Site.Params.game }} · Fan Guides</small></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a class="nav-item {{ if .IsHome }}active{{ end }}" href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav.home" }}</a>
-      <a class="nav-item {{ if eq .Section "codes" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "codes") }}">{{ i18n "nav.codes" }} <span class="nav-badge">HOT</span></a>
+      <a class="nav-item {{ if .IsHome }}active{{ end }}" href="{{ .Site.Home.RelPermalink }}">Home</a>
+      <a class="nav-item {{ if eq .Section "codes" }}active{{ end }}" href="{{ "codes/" | relURL }}">Codes <span class="nav-badge">HOT</span></a>
 
       <div class="nav-item has-dropdown {{ if eq .Section "guide" }}active{{ end }}">
-        <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "guide") }}">{{ i18n "nav.guides" }} <span class="arrow">▼</span></a>
+        <a class="drop-toggle" href="{{ "guide/" | relURL }}">Guides <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ partial "purl" (dict "p" . "path" "guide/how-to-play") }}">{{ partial "icon" (dict "name" "gamepad") }} {{ i18n "nav.howToPlay" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "guide/first-10-nights") }}">{{ partial "icon" (dict "name" "tent") }} {{ i18n "nav.first10" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "guide/campfire-upgrades") }}">{{ partial "icon" (dict "name" "fire") }} {{ i18n "nav.campfire" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "guide/base-building") }}">{{ partial "icon" (dict "name" "wall") }} {{ i18n "nav.baseBuilding" }}</a>
+          <a href="{{ "guide/how-to-play/" | relURL }}">🎮 How to Play</a>
+          <a href="{{ "guide/first-10-nights/" | relURL }}">🏕️ First 10 Nights Route</a>
+          <a href="{{ "guide/campfire-upgrades/" | relURL }}">🔥 Campfire Upgrades</a>
+          <a href="{{ "guide/base-building/" | relURL }}">🧱 Base Building</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "classes" }}active{{ end }}">
-        <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "classes") }}">{{ i18n "nav.classes" }} <span class="arrow">▼</span></a>
+        <a class="drop-toggle" href="{{ "classes/" | relURL }}">Classes <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ partial "purl" (dict "p" . "path" "classes") }}">{{ partial "icon" (dict "name" "users") }} {{ i18n "nav.compendium" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "classes/tier-list") }}">{{ partial "icon" (dict "name" "trophy") }} {{ i18n "nav.tierList" }}</a>
+          <a href="{{ "classes/" | relURL }}">👥 Class Compendium</a>
+          <a href="{{ "classes/tier-list/" | relURL }}">🏆 Tier List</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "monsters" }}active{{ end }}">
-        <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "monsters") }}">{{ i18n "nav.monsters" }} <span class="arrow">▼</span></a>
+        <a class="drop-toggle" href="{{ "monsters/" | relURL }}">Monsters <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ partial "purl" (dict "p" . "path" "monsters") }}">{{ partial "icon" (dict "name" "paw") }} {{ i18n "nav.counterGuide" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "monsters/deer") }}">{{ partial "icon" (dict "name" "target") }} {{ i18n "nav.beatDeer" }}</a>
+          <a href="{{ "monsters/" | relURL }}">🦌 Counter Guide</a>
+          <a href="{{ "monsters/deer/" | relURL }}">🎯 How to Beat The Deer</a>
         </div>
       </div>
 
       <div class="nav-item has-dropdown {{ if eq .Section "advanced" }}active{{ end }}">
-        <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "advanced") }}">{{ i18n "nav.advanced" }} <span class="arrow">▼</span></a>
+        <a class="drop-toggle" href="{{ "advanced/" | relURL }}">Advanced <span class="arrow">▼</span></a>
         <div class="dropdown">
-          <a href="{{ partial "purl" (dict "p" . "path" "advanced/weapons-tools") }}">{{ partial "icon" (dict "name" "axe") }} {{ i18n "nav.weapons" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "advanced/modifier-flames") }}">{{ partial "icon" (dict "name" "fire") }} {{ i18n "nav.flames" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "advanced/fishing-taming") }}">{{ partial "icon" (dict "name" "fish") }} {{ i18n "nav.fishing" }}</a>
-          <a href="{{ partial "purl" (dict "p" . "path" "advanced/forest-rage-hard-mode") }}">{{ partial "icon" (dict "name" "skull") }} {{ i18n "nav.forestRage" }}</a>
+          <a href="{{ "advanced/weapons-tools/" | relURL }}">🪓 Weapons &amp; Tools</a>
+          <a href="{{ "advanced/modifier-flames/" | relURL }}">🔥 Modifier Flames</a>
+          <a href="{{ "advanced/fishing-taming/" | relURL }}">🎣 Fishing &amp; Taming</a>
+          <a href="{{ "advanced/forest-rage-hard-mode/" | relURL }}">💀 Forest Rage (Hard Mode)</a>
         </div>
       </div>
 
-      <a class="nav-item {{ if eq .Section "media" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "media") }}">{{ i18n "nav.videos" }} <span class="nav-badge" style="background:#60a5fa;">{{ i18n "badge.new" }}</span></a>
-      <a class="nav-item {{ if eq .Section "updates" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "updates") }}">{{ i18n "nav.updates" }} <span class="nav-badge" style="background:#34d399;">{{ i18n "badge.new" }}</span></a>
-      <a class="nav-item {{ if eq .Section "feedback" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "feedback") }}">{{ i18n "nav.feedback" }} <span class="nav-badge" style="background:#f59e0b;">{{ i18n "badge.new" }}</span></a>
-      <a class="nav-item {{ if eq .Section "faq" }}active{{ end }}" href="{{ partial "purl" (dict "p" . "path" "faq") }}">{{ i18n "nav.faq" }}</a>
-      {{ partial "lang-switcher.html" . }}
+      <a class="nav-item {{ if eq .Section "media" }}active{{ end }}" href="{{ "media/" | relURL }}">Videos <span class="nav-badge" style="background:#60a5fa;">NEW</span></a>
+      <a class="nav-item {{ if eq .Section "faq" }}active{{ end }}" href="{{ "faq/" | relURL }}">FAQ</a>
+      <a class="nav-item {{ if eq .Section "updates" }}active{{ end }}" href="{{ "updates/" | relURL }}">Updates</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu">☰</button>
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-    <a class="nav-item" href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav.home" }}</a>
-    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "codes") }}">{{ i18n "nav.codes" }} <span class="nav-badge">HOT</span></a>
+    <a class="nav-item" href="{{ .Site.Home.RelPermalink }}">Home</a>
+    <a class="nav-item" href="{{ "codes/" | relURL }}">Codes <span class="nav-badge">HOT</span></a>
     <div class="nav-item">
-      <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "guide") }}">{{ i18n "nav.guides" }} <span class="arrow">▼</span></a>
+      <a class="drop-toggle" href="{{ "guide/" | relURL }}">Guides <span class="arrow">▼</span></a>
       <div class="dropdown">
-        <a href="{{ partial "purl" (dict "p" . "path" "guide/how-to-play") }}">{{ i18n "nav.howToPlay" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "guide/first-10-nights") }}">{{ i18n "nav.first10" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "guide/campfire-upgrades") }}">{{ i18n "nav.campfire" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "guide/base-building") }}">{{ i18n "nav.baseBuilding" }}</a>
+        <a href="{{ "guide/how-to-play/" | relURL }}">How to Play</a>
+        <a href="{{ "guide/first-10-nights/" | relURL }}">First 10 Nights Route</a>
+        <a href="{{ "guide/campfire-upgrades/" | relURL }}">Campfire Upgrades</a>
+        <a href="{{ "guide/base-building/" | relURL }}">Base Building</a>
       </div>
     </div>
     <div class="nav-item">
-      <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "classes") }}">{{ i18n "nav.classes" }} <span class="arrow">▼</span></a>
+      <a class="drop-toggle" href="{{ "classes/" | relURL }}">Classes <span class="arrow">▼</span></a>
       <div class="dropdown">
-        <a href="{{ partial "purl" (dict "p" . "path" "classes") }}">{{ i18n "nav.compendium" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "classes/tier-list") }}">{{ i18n "nav.tierList" }}</a>
+        <a href="{{ "classes/" | relURL }}">Class Compendium</a>
+        <a href="{{ "classes/tier-list/" | relURL }}">Tier List</a>
       </div>
     </div>
     <div class="nav-item">
-      <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "monsters") }}">{{ i18n "nav.monsters" }} <span class="arrow">▼</span></a>
+      <a class="drop-toggle" href="{{ "monsters/" | relURL }}">Monsters <span class="arrow">▼</span></a>
       <div class="dropdown">
-        <a href="{{ partial "purl" (dict "p" . "path" "monsters") }}">{{ i18n "nav.counterGuide" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "monsters/deer") }}">{{ i18n "nav.beatDeer" }}</a>
+        <a href="{{ "monsters/" | relURL }}">Counter Guide</a>
+        <a href="{{ "monsters/deer/" | relURL }}">How to Beat The Deer</a>
       </div>
     </div>
     <div class="nav-item">
-      <a class="drop-toggle" href="{{ partial "purl" (dict "p" . "path" "advanced") }}">{{ i18n "nav.advanced" }} <span class="arrow">▼</span></a>
+      <a class="drop-toggle" href="{{ "advanced/" | relURL }}">Advanced <span class="arrow">▼</span></a>
       <div class="dropdown">
-        <a href="{{ partial "purl" (dict "p" . "path" "advanced/weapons-tools") }}">{{ i18n "nav.weapons" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "advanced/modifier-flames") }}">{{ i18n "nav.flames" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "advanced/fishing-taming") }}">{{ i18n "nav.fishing" }}</a>
-        <a href="{{ partial "purl" (dict "p" . "path" "advanced/forest-rage-hard-mode") }}">{{ i18n "nav.forestRage" }}</a>
+        <a href="{{ "advanced/weapons-tools/" | relURL }}">Weapons &amp; Tools</a>
+        <a href="{{ "advanced/modifier-flames/" | relURL }}">Modifier Flames</a>
+        <a href="{{ "advanced/fishing-taming/" | relURL }}">Fishing &amp; Taming</a>
+        <a href="{{ "advanced/forest-rage-hard-mode/" | relURL }}">Forest Rage (Hard Mode)</a>
       </div>
     </div>
-    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "media") }}">{{ i18n "nav.videos" }}</a>
-    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "updates") }}">{{ i18n "nav.updates" }}</a>
-    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "feedback") }}">{{ i18n "nav.feedback" }}</a>
-    <a class="nav-item" href="{{ partial "purl" (dict "p" . "path" "faq") }}">{{ i18n "nav.faq" }}</a>
+    <a class="nav-item" href="{{ "media/" | relURL }}">Videos</a>
+    <a class="nav-item" href="{{ "faq/" | relURL }}">FAQ</a>
+    <a class="nav-item" href="{{ "updates/" | relURL }}">Updates</a>
   </nav>
 </header>

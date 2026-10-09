@@ -1,11 +1,11 @@
 +++
-title = "Class Compendium — All 10 Classes in 99 Nights in the Forest"
-description = "Every starter class in 99 Nights in the Forest — Camper, Scavenger, Medic, Cook, Ranger, Lumberjack, Assassin, Escape Artist, Elemental and Woodsman — with roles, unlock methods and playstyles."
+title = "Class Compendium — All 7 Starter Classes in 99 Nights in the Forest"
+description = "Every starter class in 99 Nights in the Forest — Camper, Scavenger, Medic, Cook, Ranger, Lumberjack and Assassin — with roles, unlock methods and playstyles."
 date = 2026-09-30
-lastmod = 2026-10-03
+lastmod = 2026-09-30
 +++
 
-Ten classes now cover every job a survivor squad needs — gathering, combat, healing, cooking and exploration. New-player favourites are **Camper** (free, balanced) and **Medic** (team sustain).
+Seven starter classes cover every job a survivor squad needs — gathering, combat, healing, cooking and exploration. New-player favourites are **Camper** (free, balanced) and **Medic** (team sustain).
 
 {{< notice title="Verify in-game" >}}Exact perk numbers and unlock prices are balanced regularly — treat the descriptions below as role overviews and confirm current costs in the shop before spending Gems or Robux.{{< /notice >}}
 
@@ -20,9 +20,6 @@ Ten classes now cover every job a survivor squad needs — gathering, combat, he
 | Ranger | Exploration specialist | Gems | Map coverage, clues |
 | Lumberjack | Wood specialist | Gems | Base and campfire upgrades |
 | Assassin | Combat specialist | Robux | Fighting threats head-on |
-| Escape Artist | Escape specialist | Gems | Outrunning threats |
-| Elemental | Biome specialist | Gems | Biome-heavy runs |
-| Woodsman | Wood specialist | Gems | Big base projects |
 
 ## Class breakdowns
 
@@ -47,14 +44,4 @@ Chops faster than anyone — the engine behind campfire and base upgrades that d
 ### Assassin — Combat specialist
 High-damage combat class for players who want to fight The Deer's minions and Cultists head-on instead of hiding.
 
-
-### ### Escape Artist — Escape specialist
-Perks for sprinting, escaping chases and detecting threats — the pick for players who want to survive nights without fighting.
-
-### ### Elemental — Biome specialist
-A biome helmet plus status-effect, speed and night-vision perks — strong when the right biome rolls, situational otherwise.
-
-### ### Woodsman — Wood economy
-Starts with the unique Woodsman's Axe and adds log-storage and giant-sapling perks — a second wood engine for heavy base projects.
-
-> Want a pick order? See the community [Class Tier List]({{< relref "/classes/tier-list" >}}).
+> Want a pick order? See the community [Class Tier List](/classes/tier-list/).

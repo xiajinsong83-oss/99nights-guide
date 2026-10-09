@@ -2,7 +2,7 @@
 {{ $related := where (where .Site.RegularPages "Section" .Section) "Permalink" "!=" .Permalink }}
 {{ if gt (len $related) 0 }}
 <div class="related">
-  <h4>{{ i18n "common.relatedGuides" }}</h4>
+  <h4>Related guides</h4>
   <ul>
     {{ range first 4 $related }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

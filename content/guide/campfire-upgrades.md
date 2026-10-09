@@ -1,7 +1,7 @@
 +++
 title = "Campfire Upgrades in 99 Nights in the Forest — What to Level First"
 description = "Why the campfire is the most important upgrade in 99 Nights in the Forest: what each level does, the level 2 fishing unlock, and the order to level it in."
-icon = "fire"
+icon = "🔥"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -26,4 +26,4 @@ The campfire is your light, heat and anchor. Upgrading it changes how safely you
 
 - Assign a **dedicated fire-keeper** in squads so upgrades aren't forgotten mid-day.
 - Stock **fire fuel / wood** before dusk — running out at night is a run-ender.
-- The campfire upgrade path pairs with the [Crafting Bench upgrades]({{< relref "/guide/base-building" >}}) — do both, bench first.
+- The campfire upgrade path pairs with the [Crafting Bench upgrades](/guide/base-building/) — do both, bench first.

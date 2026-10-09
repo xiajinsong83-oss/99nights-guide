@@ -1,21 +1,19 @@
 baseURL = "https://portalaser.com/"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+languageCode = "en-us"
+title = "99 Nights Guide Hub — 99 Nights in the Forest Guides"
 enableRobotsTXT = false
 buildDrafts = false
 pygmentsCodeFences = true
 disableKinds = ["taxonomy", "term"]
 
-[pagination]
-  pagerSize = 15
-  path = "page"
-
 [params]
+  description = "99 Nights in the Forest fan guides: working Roblox codes, first-10-nights survival route, class tier list, monster counter guide, crafting, modifier flames, fishing, Forest Rage hard mode and quest walkthrough videos."
   author = "99 Nights Guide Hub"
   game = "99 Nights in the Forest"
   gameUrl = "https://www.roblox.com/games/"
-  adsenseEnabled = true
-  adsenseClient = "ca-pub-3866829862674413"
+  lastVerified = "late August 2026"
+  adsenseEnabled = false
+  adsenseClient = "ca-pub-0000000000000000"
   adSlotInArticle = "0000000000"
 
 [taxonomies]
@@ -31,94 +29,3 @@ disableKinds = ["taxonomy", "term"]
 
 [markup.goldmark.renderer]
   unsafe = true
-
-[languages]
-[languages.en]
-  weight = 10
-  languageName = "English"
-  languageCode = "en-us"
-  contentDir = "content"
-  title = "99 Nights Guide Hub — 99 Nights in the Forest Guides"
-  [languages.en.params]
-    description = "99 Nights in the Forest fan guides: working Roblox codes, first-10-nights survival route, class tier list, monster counter guide, crafting, modifier flames, fishing, Forest Rage hard mode and quest walkthrough videos."
-    lastVerified = "early October 2026"
-
-[languages.zh-cn]
-  weight = 20
-  languageName = "简体中文"
-  languageCode = "zh-cn"
-  contentDir = "content.zh-cn"
-  title = "99 Nights 攻略站 — 99 Nights in the Forest 中文指南"
-  [languages.zh-cn.params]
-    description = "《99 Nights in the Forest》中文粉丝攻略站：可用 Roblox 兑换码、前十夜生存路线、职业强度榜、怪物应对指南、制作、Modifier Flames、钓鱼、Forest Rage 困难模式与流程视频。"
-    lastVerified = "2026年10月上旬"
-
-[languages.zh-tw]
-  weight = 30
-  languageName = "繁體中文"
-  languageCode = "zh-tw"
-  contentDir = "content.zh-tw"
-  title = "99 Nights 攻略站 — 99 Nights in the Forest 中文指南"
-  [languages.zh-tw.params]
-    description = "《99 Nights in the Forest》中文粉絲攻略站：可用 Roblox 兌換碼、前十夜生存路線、職業強度榜、怪物應對指南、製作、Modifier Flames、釣魚、Forest Rage 困難模式與流程影片。"
-    lastVerified = "2026年10月上旬"
-
-[languages.ja]
-  weight = 40
-  languageName = "日本語"
-  languageCode = "ja"
-  contentDir = "content.ja"
-  title = "99 Nights ガイドハブ — 99 Nights in the Forest 攻略"
-  [languages.ja.params]
-    description = "『99 Nights in the Forest』のファン攻略サイト：使える Roblox コード、最初の10夜の生存ルート、クラス強度ランキング、モンスター対策、クラフト、Modifier Flames、釣り、Forest Rage ハードモード、攻略動画。"
-    lastVerified = "2026年10月上旬"
-
-[languages.ko]
-  weight = 50
-  languageName = "한국어"
-  languageCode = "ko"
-  contentDir = "content.ko"
-  title = "99 Nights 가이드 허브 — 99 Nights in the Forest 공략"
-  [languages.ko.params]
-    description = "99 Nights in the Forest 팬 공략 사이트: 작동하는 Roblox 코드, 첫 10일 생존 루트, 클래스 티어 리스트, 몬스터 공략, 제작, Modifier Flames, 낚시, Forest Rage 하드 모드, 공략 영상."
-    lastVerified = "2026년 10월 초순"
-
-[languages.es]
-  weight = 60
-  languageName = "Español"
-  languageCode = "es"
-  contentDir = "content.es"
-  title = "99 Nights Guide Hub — Guías de 99 Nights in the Forest"
-  [languages.es.params]
-    description = "Guías de fans de 99 Nights in the Forest: códigos de Roblox que funcionan, ruta de supervivencia de las primeras 10 noches, tier list de clases, guía de monstruos, creación, Modifier Flames, pesca, modo difícil Forest Rage y vídeos."
-    lastVerified = "principios de octubre de 2026"
-
-[languages.fr]
-  weight = 70
-  languageName = "Français"
-  languageCode = "fr"
-  contentDir = "content.fr"
-  title = "99 Nights Guide Hub — Guides de 99 Nights in the Forest"
-  [languages.fr.params]
-    description = "Guides de fans de 99 Nights in the Forest : codes Roblox fonctionnels, route de survie des 10 premières nuits, tier list des classes, guide des monstres, artisanat, Modifier Flames, pêche, mode difficile Forest Rage et vidéos."
-    lastVerified = "début octobre 2026"
-
-[languages.de]
-  weight = 80
-  languageName = "Deutsch"
-  languageCode = "de"
-  contentDir = "content.de"
-  title = "99 Nights Guide Hub — 99 Nights in the Forest Anleitungen"
-  [languages.de.params]
-    description = "Fan-Anleitungen für 99 Nights in the Forest: funktionierende Roblox-Codes, Überlebensroute für die ersten 10 Nächte, Klassen-Tierlist, Monster-Guide, Handwerk, Modifier Flames, Angeln, Forest-Rage-Schweremodus und Videos."
-    lastVerified = "Anfang Oktober 2026"
-
-[languages.pt]
-  weight = 90
-  languageName = "Português"
-  languageCode = "pt"
-  contentDir = "content.pt"
-  title = "99 Nights Guide Hub — Guias de 99 Nights in the Forest"
-  [languages.pt.params]
-    description = "Guias de fãs de 99 Nights in the Forest: códigos Roblox funcionando, rota de sobrevivência das primeiras 10 noites, tier list de classes, guia de monstros, criação, Modifier Flames, pesca, modo difícil Forest Rage e vídeos."
-    lastVerified = "início de outubro de 2026"

@@ -1,7 +1,7 @@
 +++
 title = "Weapons & Tools in 99 Nights in the Forest — Crafting Tiers and Loadouts"
 description = "Weapons and tools in 99 Nights in the Forest: axe, spear, guns and armor tiers, the crafting bench upgrade path, and the loadouts that work for each phase."
-icon = "axe"
+icon = "🪓"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -41,4 +41,4 @@ The bench upgrades unlock recipe groups in order. The exact item names and mater
 - **Gathering day**: axe + food + no heavy armor.
 - **Rescue run**: weapons + map/compass + light + partner.
 
-> Defense loadouts pair with [Base Building]({{< relref "/guide/base-building" >}}); damage builds pair with [Modifier Flames]({{< relref "/advanced/modifier-flames" >}}).
+> Defense loadouts pair with [Base Building](/guide/base-building/); damage builds pair with [Modifier Flames](/advanced/modifier-flames/).

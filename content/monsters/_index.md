@@ -13,18 +13,18 @@ Know your enemy. These are the night threats in 99 Nights in the Forest, what ea
 
 | Monster | Threat | What it does |
 |---|---|---|
-| The Deer | ⚠⚠⚠⚠ | Signature night stalker — circles your fire |
-| Cultists | ⚠⚠⚠⚠ | Attack the camp in groups on a timer |
-| The Owl | ⚠⚠⚠ | Messes with your light sources |
-| Ram | ⚠⚠⚠ | Charges and breaks wooden walls |
-| Wolves | ⚠⚠⚠ | Pack hunters, lethal to solo explorers |
-| Bear | ⚠⚠⚠⚠⚠ | Apex threat — do not engage early |
-| Bats | ⚠⚠ | Cave swarm — weak but numerous |
+| The Deer | ⚠️⚠️⚠️⚠️ | Signature night stalker — circles your fire |
+| Cultists | ⚠️⚠️⚠️⚠️ | Attack the camp in groups on a timer |
+| The Owl | ⚠️⚠️⚠️ | Messes with your light sources |
+| Ram | ⚠️⚠️⚠️ | Charges and breaks wooden walls |
+| Wolves | ⚠️⚠️⚠️ | Pack hunters, lethal to solo explorers |
+| Bear | ⚠️⚠️⚠️⚠️⚠️ | Apex threat — do not engage early |
+| Bats | ⚠️⚠️ | Cave swarm — weak but numerous |
 
 ## Counter summaries
 
 ### The Deer
-The main predator circling your fire. Keep the campfire bright and walls intact, and never wander off alone at night. Deep dive: [How to Beat The Deer]({{< relref "/monsters/deer" >}}).
+The main predator circling your fire. Keep the campfire bright and walls intact, and never wander off alone at night. Deep dive: [How to Beat The Deer](/monsters/deer/).
 
 ### Cultists
 Attack the camp in groups on a timer. Fight them through traps and fortifications — trading blows in the open gets expensive.
@@ -46,4 +46,4 @@ Low individual threat but they swarm cave biomes at night. Bring a light source 
 
 ## Night-by-night schedule
 
-A full spawn timetable (which night each entity first appears and how spawns scale) ships as part of the [Forest Rage hard mode]({{< relref "/advanced/forest-rage-hard-mode" >}}) research. Early rule of thumb: **the Owl and Ram show up after night 5; the Bear stays late-game**.
+A full spawn timetable (which night each entity first appears and how spawns scale) ships as part of the [Forest Rage hard mode](/advanced/forest-rage-hard-mode/) research. Early rule of thumb: **the Owl and Ram show up after night 5; the Bear stays late-game**.

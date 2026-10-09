@@ -4,26 +4,20 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
     <div class="crumb">
-      <a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span>
+      <a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span>
       {{ with .Parent }}{{ if not .IsHome }}<a href="{{ .RelPermalink }}">{{ .Title }}</a><span>/</span>{{ end }}{{ end }}
       <span>{{ .Title }}</span>
     </div>
   </div>
 </section>
 <section class="wrap section">
-  {{ with .Params.image }}
-  <figure class="featured-img">
-    <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="lazy">
-    {{ with $.Params.imageCredit }}<figcaption>{{ partial "icon" (dict "name" "camera") }} {{ . }}</figcaption>{{ end }}
-  </figure>
-  {{ end }}
   <div class="layout-2col">
     <article class="prose">
-      {{ if .Lastmod }}<div class="lastmod">{{ i18n "common.lastUpdated" }} {{ .Lastmod.Format "January 2, 2006" }}</div>{{ end }}
+      {{ if .Lastmod }}<div class="lastmod">Last updated: {{ .Lastmod.Format "January 2, 2006" }}</div>{{ end }}
       {{ .Content }}
     </article>
     <aside class="aside">
-      {{ if .TableOfContents }}<div class="toc"><h4>{{ i18n "common.onThisPage" }}</h4>{{ .TableOfContents }}</div>{{ end }}
+      {{ if .TableOfContents }}<div class="toc"><h4>On this page</h4>{{ .TableOfContents }}</div>{{ end }}
       {{ partial "related.html" . }}
       {{ if .Site.Params.adsenseEnabled }}<div class="ad-slot">Ad space</div>{{ end }}
     </aside>

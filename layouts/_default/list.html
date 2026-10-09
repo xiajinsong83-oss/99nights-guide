@@ -3,7 +3,7 @@
   <div class="wrap">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "common.home" }}</a><span>/</span><span>{{ .Title }}</span></div>
+    <div class="crumb"><a href="{{ .Site.Home.RelPermalink }}">Home</a><span>/</span><span>{{ .Title }}</span></div>
   </div>
 </section>
 <section class="wrap section">
@@ -12,10 +12,10 @@
   <div class="grid grid-3" style="margin-top:28px;">
     {{ range .Pages.ByWeight }}
     <a class="entry-card" href="{{ .RelPermalink }}">
-      <div class="ic">{{ partial "icon" (dict "name" (.Params.icon | default "doc")) }}</div>
+      <div class="ic">{{ .Params.icon | default "📄" }}</div>
       <h3>{{ .Title }}</h3>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      <span class="go">{{ i18n "common.readGuide" }}</span>
+      <span class="go">Read guide →</span>
     </a>
     {{ end }}
   </div>

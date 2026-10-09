@@ -1,91 +1,37 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-about">
-      <div class="logo"><div class="logo-icon">{{ partial "icon" (dict "name" "tree") }}</div><div class="logo-text">{{ .Site.Title }}</div></div>
-      <p>{{ i18n "footer.tagline" }}</p>
+      <div class="logo"><div class="logo-icon">🌲</div><div class="logo-text">{{ .Site.Title }}</div></div>
+      <p>A fan-made guide site for {{ .Site.Params.game }} on Roblox. Not affiliated with Grandma's Favourite Games or Roblox Corporation. All game content belongs to its respective owners.</p>
     </div>
     <div>
-      <h4>{{ i18n "footer.coreGuides" }}</h4>
+      <h4>Core Guides</h4>
       <ul>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "codes") }}">{{ i18n "footer.latestCodes" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "guide/how-to-play") }}">{{ i18n "nav.howToPlay" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "guide/first-10-nights") }}">{{ i18n "nav.first10" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "classes/tier-list") }}">{{ i18n "nav.tierList" }}</a></li>
+        <li><a href="{{ "codes/" | relURL }}">Latest Codes</a></li>
+        <li><a href="{{ "guide/how-to-play/" | relURL }}">How to Play</a></li>
+        <li><a href="{{ "guide/first-10-nights/" | relURL }}">First 10 Nights Route</a></li>
+        <li><a href="{{ "classes/tier-list/" | relURL }}">Class Tier List</a></li>
       </ul>
     </div>
     <div>
-      <h4>{{ i18n "footer.advanced" }}</h4>
+      <h4>Advanced</h4>
       <ul>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "advanced/weapons-tools") }}">{{ i18n "nav.weapons" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "advanced/modifier-flames") }}">{{ i18n "nav.flames" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "advanced/fishing-taming") }}">{{ i18n "nav.fishing" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "advanced/forest-rage-hard-mode") }}">{{ i18n "nav.forestRage" }}</a></li>
+        <li><a href="{{ "advanced/weapons-tools/" | relURL }}">Weapons &amp; Tools</a></li>
+        <li><a href="{{ "advanced/modifier-flames/" | relURL }}">Modifier Flames</a></li>
+        <li><a href="{{ "advanced/fishing-taming/" | relURL }}">Fishing &amp; Taming</a></li>
+        <li><a href="{{ "advanced/forest-rage-hard-mode/" | relURL }}">Forest Rage (Hard Mode)</a></li>
       </ul>
     </div>
     <div>
-      <h4>{{ i18n "footer.more" }}</h4>
+      <h4>More</h4>
       <ul>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "media") }}">{{ i18n "footer.questVideos" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "updates") }}">{{ i18n "nav.updates" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "feedback") }}">{{ i18n "footer.playerFeedback" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "faq") }}">{{ i18n "footer.gameFaq" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "codes/redeem") }}">{{ i18n "footer.howToRedeem" }}</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>{{ i18n "footer.legal" }}</h4>
-      <ul>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "legal/privacy-policy") }}">{{ i18n "footer.privacy" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "legal/terms") }}">{{ i18n "footer.terms" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "legal/about") }}">{{ i18n "footer.about" }}</a></li>
-        <li><a href="{{ partial "purl" (dict "p" . "path" "legal/contact") }}">{{ i18n "footer.contact" }}</a></li>
+        <li><a href="{{ "media/" | relURL }}">Quest Videos</a></li>
+        <li><a href="{{ "faq/" | relURL }}">Game FAQ</a></li>
+        <li><a href="{{ "updates/" | relURL }}">Updates &amp; Roadmap</a></li>
+        <li><a href="{{ "codes/redeem/" | relURL }}">How to Redeem Codes</a></li>
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 {{ .Site.Title }} · {{ i18n "footer.rights" }} · {{ i18n "footer.verified" }} {{ .Site.Params.lastVerified }} · <a href="{{ partial "purl" (dict "p" . "path" "legal/privacy-policy") }}">{{ i18n "footer.privacy" }}</a> · <a href="{{ partial "purl" (dict "p" . "path" "legal/terms") }}">{{ i18n "footer.terms" }}</a> · <a href="{{ partial "purl" (dict "p" . "path" "legal/contact") }}">{{ i18n "footer.contact" }}</a></div>
-  <div class="footer-stats">
-    <span class="fs-label">{{ i18n "stats.title" }}</span>
-    <span class="fs-item">{{ i18n "stats.today" }}: <b id="stToday">…</b></span>
-    <span class="fs-item">{{ i18n "stats.week" }}: <b id="stWeek">…</b></span>
-    <span class="fs-item">{{ i18n "stats.total" }}: <b id="stTotal">…</b></span>
-  </div>
+  <div class="footer-bottom">© 2026 {{ .Site.Title }} · Fan site · Codes verified as of {{ .Site.Params.lastVerified }}</div>
 </footer>
-<script>
-(function(){
-  var el = { t: document.getElementById('stToday'), w: document.getElementById('stWeek'), n: document.getElementById('stTotal') };
-  if(!el.t) return;
-  fetch('/api/visitors', { cache: 'no-store' })
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      if(d && typeof d.today === 'number'){ el.t.textContent = d.today.toLocaleString(); }
-      if(d && typeof d.week === 'number'){ el.w.textContent = d.week.toLocaleString(); }
-      if(d && typeof d.total === 'number'){ el.n.textContent = d.total.toLocaleString(); }
-    })
-    .catch(function(){ /* stats stay as … if the API is unavailable */ });
-})();
-</script>
 <div class="toast" id="toast"></div>
-<script>
-(function(){
-  function loadVideo(card){
-    var embed = card.getAttribute('data-embed');
-    if(!embed) return;
-    var f = document.createElement('iframe');
-    f.src = embed; f.title = '99 Nights in the Forest guide video';
-    f.loading = 'lazy'; f.setAttribute('frameborder','0');
-    f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-    f.allowFullscreen = true;
-    f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
-    card.innerHTML = ''; card.appendChild(f);
-  }
-  document.addEventListener('click', function(e){
-    var t = e.target && e.target.closest ? e.target.closest('.video-cover') : null;
-    if(t) loadVideo(t);
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key !== 'Enter' && e.key !== ' ') return;
-    var t = e.target && e.target.closest ? e.target.closest('.video-cover') : null;
-    if(t){ e.preventDefault(); loadVideo(t); }
-  });
-})();
-</script>

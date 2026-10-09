@@ -1,7 +1,7 @@
 +++
 title = "Modifier Flames in 99 Nights in the Forest — What They Do and How to Use Them"
 description = "Modifier Flames in 99 Nights in the Forest: what they are, how you get them (including the forestwakesup26 code rewards), and how to apply them to your loadout."
-icon = "fire"
+icon = "🔥"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -16,7 +16,7 @@ Modifier Flames are upgrade items that attach to your weapons and tools to chang
 
 ## How to get Flames
 
-- **Code rewards** — e.g. the current working code gives **3 random Flames** (see [Codes]({{< relref "/codes" >}})).
+- **Code rewards** — e.g. the current working code gives **3 random Flames** (see [Codes](/codes/)).
 - **Gameplay drops** — late-night kills and event content drop Flames.
 
 ## How to apply them
@@ -30,6 +30,6 @@ Modifier Flames are upgrade items that attach to your weapons and tools to chang
 
 - **Don't waste good Flames on starter tools** — wait until mid-tier at least.
 - **Match Flame type to role** — combat classes want damage Flames; Lumberjack/Scavenger prefer resource-yield Flames.
-- **Flames are often the difference** in [Forest Rage hard mode]({{< relref "/advanced/forest-rage-hard-mode" >}}) — start collecting early.
+- **Flames are often the difference** in [Forest Rage hard mode](/advanced/forest-rage-hard-mode/) — start collecting early.
 
 {{< notice title="Verify in-game" >}}Flame names, effects and compatibility are balance-sensitive — confirm the current behavior in-game before planning builds around a specific Flame.{{< /notice >}}

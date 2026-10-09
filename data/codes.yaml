@@ -1,32 +1,23 @@
 # ============================================================
 # Working & expired codes for 99 Nights in the Forest
-# ROUTE A: edit this file, git push, Cloudflare Pages rebuilds.
-# Auto-maintained by scripts/auto_update.py (every 12h):
-#   - re-stamps lastVerified on every run
-#   - auto-ADDS codes found in new official/community update
-#     entries (never removes codes — expiry stays manual)
-# Last verified: October 3, 2026 (re-check on every game update)
+# ROUTE A: edit this file, git push, Cloudflare Pages rebuilds
+# Last verified: late August 2026 (re-check on every game update)
 # ============================================================
-lastVerified: "October 7, 2026"
+lastVerified: "late August 2026"
 
 working:
-  - code: "awardwinner_yay"
-    reward: "15 Diamonds + 3 Flames (Frog, Thanksgiving, Fairy)"
-    method: "lobby"
-    note: "Added with the Class Shop Revamp update (Sep 19, 2026). Redeem in the lobby via the diamond icon."
-
   - code: "forestwakesup26"
-    reward: "15 Diamonds + 3 Flames (Frog, Fairy, Pet)"
+    reward: "15 Gems + 3 random Flames"
     method: "lobby"
     note: "Redeem in the lobby via the diamond icon."
 
   - code: "afterparty"
-    reward: "15 Diamonds"
+    reward: "15 Gems"
     method: "lobby"
     note: "Redeem in the lobby via the diamond icon."
 
   - code: "yay fishing"
-    reward: "2 Diamonds"
+    reward: "2 Gems"
     method: "chat"
     note: "Special chat code — type it (with the space) while the fishing rod is in the water at a fishing spot. Requires Campfire level 2."
 
