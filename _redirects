@@ -1,0 +1,5 @@
+# Canonical host: www.portalaser.com
+# Every request to the bare apex (http or https) gets a 301 to the www host.
+# Cloudflare Pages serves this file at the site root and applies the rules.
+https://portalaser.com/* https://www.portalaser.com/:splat 301
+http://portalaser.com/* https://www.portalaser.com/:splat 301
