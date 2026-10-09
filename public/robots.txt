@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portalaser.com/sitemap.xml
+Sitemap: https://www.portalaser.com/sitemap.xml
