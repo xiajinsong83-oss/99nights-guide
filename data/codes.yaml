@@ -7,7 +7,7 @@
 #     entries (never removes codes — expiry stays manual)
 # Last verified: October 3, 2026 (re-check on every game update)
 # ============================================================
-lastVerified: "October 3, 2026"
+lastVerified: "October 9, 2026"
 
 working:
   - code: "awardwinner_yay"
