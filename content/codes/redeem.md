@@ -43,4 +43,4 @@ The space between "yay" and "fishing" is required. Try it at any fishing spot wi
 
 ## Why codes expire
 
-Developers retire codes with game updates to keep the reward economy balanced. When a code dies, we move it to the **Expired Codes** archive on the [Codes page](/codes/) so players don't waste time on outdated lists from other sites.
+Developers retire codes with game updates to keep the reward economy balanced. When a code dies, we move it to the **Expired Codes** archive on the [Codes page]({{< relref "/codes" >}}) so players don't waste time on outdated lists from other sites.

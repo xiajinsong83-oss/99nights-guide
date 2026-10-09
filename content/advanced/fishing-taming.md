@@ -1,7 +1,9 @@
 +++
 title = "Fishing & Animal Taming in 99 Nights in the Forest"
 description = "Fishing and animal taming in 99 Nights in the Forest: campfire level 2, the fishing rod, the yay fishing chat code trick, and how taming works."
-icon = "🎣"
+icon = "fish"
+image = "/img/fishing.jpg"
+imageCredit = "Game screenshot via Backyard Drunkard"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++

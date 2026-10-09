@@ -1,7 +1,9 @@
 +++
 title = "How to Beat The Deer in 99 Nights in the Forest — Full Strategy"
 description = "How to survive and beat The Deer in 99 Nights in the Forest: its behavior, the safe counter strategy for solo and squad play, and the gear you need."
-icon = "🎯"
+icon = "target"
+image = "/img/deer-winter.jpg"
+imageCredit = "Game screenshot via Sportskeeda"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -45,4 +47,4 @@ The Deer is the signature threat of 99 Nights in the Forest — it circles your 
 | Wall gap | Repair check every morning |
 | Ran out of food mid-siege | Food buffer in a crate by the fire |
 
-> Pair this with [Base Building](/guide/base-building/) and the [Monster Counter Guide](/monsters/) for the full picture.
+> Pair this with [Base Building]({{< relref "/guide/base-building" >}}) and the [Monster Counter Guide]({{< relref "/monsters" >}}) for the full picture.

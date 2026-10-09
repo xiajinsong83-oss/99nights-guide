@@ -1,7 +1,7 @@
 +++
 title = "Base Building in 99 Nights in the Forest — Walls, Traps and Layout"
 description = "How to build a defendable base in 99 Nights in the Forest: wall rings, trap lanes, shelves and crates, night-watch rotation, and common layout mistakes."
-icon = "🧱"
+icon = "wall"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -48,4 +48,4 @@ A good base in 99 Nights in the Forest is a ring of defenses around a strong cam
 | No repair stock | Keep wood crate accessible from inside |
 | All players fighting | One watches the fire at all times |
 
-> See also: [Campfire Upgrades](/guide/campfire-upgrades/) for what to level first, and [Weapons & Tools](/advanced/weapons-tools/) for the loadouts that make defense work.
+> See also: [Campfire Upgrades]({{< relref "/guide/campfire-upgrades" >}}) for what to level first, and [Weapons & Tools]({{< relref "/advanced/weapons-tools" >}}) for the loadouts that make defense work.

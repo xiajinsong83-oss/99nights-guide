@@ -5,7 +5,7 @@ date = 2026-10-01
 lastmod = 2026-10-01
 +++
 
-These Terms of Service ("Terms") govern your use of **99 Nights Guide Hub** (`https://portalaser.com`). By accessing or using the site, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of **99 Nights Guide Hub** (`https://www.portalaser.com`). By accessing or using the site, you agree to these Terms.
 
 ## 1. What this site is
 

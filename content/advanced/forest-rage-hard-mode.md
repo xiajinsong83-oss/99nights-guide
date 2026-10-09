@@ -1,7 +1,7 @@
 +++
 title = "Forest Rage Hard Mode in 99 Nights in the Forest — Corruption, Rifts & Research Outpost"
 description = "Forest Rage hard mode in 99 Nights in the Forest: Corruption spread, Rift clearing and the Research Outpost — what changes and how to prepare."
-icon = "💀"
+icon = "skull"
 date = 2026-09-30
 lastmod = 2026-09-30
 +++
@@ -21,7 +21,7 @@ Forest Rage is the hard-mode layer of 99 Nights in the Forest — reached after 
 
 1. **Max the campfire and bench** before entering — hard mode punishes weak cores.
 2. **Stockpile wood and food** — double what a normal run needs.
-3. **Collect Modifier Flames early** — [Flames](/advanced/modifier-flames/) are the real damage multiplier in hard mode.
+3. **Collect Modifier Flames early** — [Flames]({{< relref "/advanced/modifier-flames" >}}) are the real damage multiplier in hard mode.
 4. **Squad up** — hard mode is brutal solo.
 
 ## The hard-mode loop (framework)
@@ -37,4 +37,4 @@ Forest Rage is the hard-mode layer of 99 Nights in the Forest — reached after 
 - Research Outpost repair costs — **being verified**.
 - Whether late nights change the spawn schedule — **being verified**.
 
-> New findings land in [Updates](/updates/) — and in the video section as walkthroughs become available.
+> New findings land in the [video section]({{< relref "/media" >}}) as walkthroughs become available.

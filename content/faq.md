@@ -40,4 +40,4 @@ type = "faq"
   a = "It's the late-game hard mode with higher threat scaling, the Corruption mechanic, Rift clearing and the Research Outpost objective. See the Forest Rage guide for details."
 +++
 
-Quick answers for new players. If you don't see your question here, the guides and the [Updates](/updates/) page probably cover it.
+Quick answers for new players. If you don't see your question here, the guides section probably covers it.
