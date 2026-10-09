@@ -5,7 +5,7 @@ date = 2026-10-01
 lastmod = 2026-10-01
 +++
 
-Diese Nutzungsbedingungen („Bedingungen") gelten für deine Nutzung des **99 Nights Guide Hub** (`https://portalaser.com`). Durch den Zugriff auf die Website oder ihre Nutzung stimmst du diesen Bedingungen zu.
+Diese Nutzungsbedingungen („Bedingungen") gelten für deine Nutzung des **99 Nights Guide Hub** (`https://www.portalaser.com`). Durch den Zugriff auf die Website oder ihre Nutzung stimmst du diesen Bedingungen zu.
 
 ## 1. Art der Website
 
