@@ -1,60 +1,48 @@
 +++
-title = "Class Compendium — All 10 Classes in 99 Nights in the Forest"
-description = "Every starter class in 99 Nights in the Forest — Camper, Scavenger, Medic, Cook, Ranger, Lumberjack, Assassin, Escape Artist, Elemental and Woodsman — with roles, unlock methods and playstyles."
+title = "Classes in 99 Nights in the Forest — Roles, Unlocks and How to Pick One"
+description = "Every starter class in 99 Nights in the Forest: Camper, Medic, Lumberjack, Scavenger, Cook, Ranger, Assassin, Woodsman, Escape Artist and Elemental — what each does, how the revamped shop sells them now, and how to pick for your squad."
 date = 2026-09-30
-lastmod = 2026-10-03
+lastmod = 2026-10-20
+author = "PortalAser Team"
 +++
 
-Ten classes now cover every job a survivor squad needs — gathering, combat, healing, cooking and exploration. New-player favourites are **Camper** (free, balanced) and **Medic** (team sustain).
+Ten starter classes now cover every job a survival squad needs: wood, food, healing, scouting, combat and escape. The big September changes matter a lot here. On September 5 the devs shipped Woodsman, Escape Artist and Elemental with daily quests and fire offerings, and on September 19 the Class Shop Revamp made every class permanently available instead of rotating stock — so the old "wait for the rotation" plan is dead. What you see in the shop is what you can buy today.
 
-{{< notice title="Verify in-game" >}}Exact perk numbers and unlock prices are balanced regularly — treat the descriptions below as role overviews and confirm current costs in the shop before spending Gems or Robux.{{< /notice >}}
+## The ten classes at a glance
 
-## The classes at a glance
+| Class | Role | Why you pick it |
+|---|---|---|
+| Camper | Balanced starter | Free, no weak spots, learn the loop first |
+| Medic | Healing and revives | The difference between a wipe and a recovery |
+| Lumberjack | Wood economy | Fast chopping funds every upgrade |
+| Scavenger | Supplies | Keeps food and scraps flowing |
+| Cook | Food processing | Makes long runs cheaper to feed |
+| Ranger | Exploration | Covers map ground and tracks clues |
+| Assassin | Burst damage | High damage, glassy, skilled hands only |
+| Woodsman | Wood economy, v2 | Starts with the unique Woodsman's Axe, plus log-storage and giant-sapling perks |
+| Escape Artist | Survival escape | Sprinting, chase-escape and detection perks |
+| Elemental | Biome utility | Biome helmet, status effects, speed and night vision |
 
-| Class | Role | Unlock | Best for |
-|---|---|---|---|
-| Camper | Balanced starter | Free | Learning the loop |
-| Scavenger | Resource specialist | Gems | Supply running |
-| Medic | Team sustain | Gems | Recovering after sieges |
-| Cook | Food specialist | Gems | Cheap long runs |
-| Ranger | Exploration specialist | Gems | Map coverage, clues |
-| Lumberjack | Wood specialist | Gems | Base and campfire upgrades |
-| Assassin | Combat specialist | Robux | Fighting threats head-on |
-| Escape Artist | Escape specialist | Gems | Outrunning threats |
-| Elemental | Biome specialist | Gems | Biome-heavy runs |
-| Woodsman | Wood specialist | Gems | Big base projects |
+## The role breakdown
 
-## Class breakdowns
+**Medic** is the unsung S-tier. Healing and revives decide night outcomes more than any weapon does, and any serious squad wants one.
 
-### Camper — Starter class
-A balanced default with no weak spots — ideal for learning the full gather-build-defend loop before specializing.
+**Lumberjack** and **Woodsman** are both wood engines, and they stack. Lumberjack chops faster from the start; Woodsman arrives with the Woodsman's Axe as its unique starting tool and adds storage and giant-sapling perks. A squad running both turns its base-building phase into a sprint.
 
-### Scavenger — Resource specialist
-Built for looting and exploration efficiency — the natural supply runner keeping the whole squad stocked.
+**Scavenger** and **Cook** are the support economy. Scavenger keeps supplies flowing; Cook turns food into cheap long-run fuel. Both feel quiet until you run out of food mid-siege.
 
-### Medic — Team sustain
-Healing and revive specialist. The backbone of any squad that wants to recover fast after a night siege.
+**Ranger** earns its keep during exploration and rescue phases, when map coverage matters more than holding a wall.
 
-### Cook — Food specialist
-Focused on food processing and hunger management — makes long runs cheaper and keeps the team fed on less.
+**Assassin** is the fun class with the sharpest learning curve. High burst, low margin for error. New players who pick it as their first buy usually regret the price.
 
-### Ranger — Exploration specialist
-Strong at traversal and map coverage — the pick for tracking missing-children clues and pushing into far zones.
+**Escape Artist** and **Elemental** are the September 5 arrivals. Escape Artist's quest line has you chased by seven Alpha Wolves at once — a great quest, a brutal test. Elemental's quest asks you to apply poison, ice or fire to 50 different enemies. Both feel strong in the right conditions and ordinary otherwise.
 
-### Lumberjack — Wood specialist
-Chops faster than anyone — the engine behind campfire and base upgrades that demand huge wood counts.
+## How to pick for your squad
 
-### Assassin — Combat specialist
-High-damage combat class for players who want to fight The Deer's minions and Cultists head-on instead of hiding.
+The rule we keep repeating: **a squad with zero Medics is a squad volunteering to wipe**. After that, you want one wood engine (Lumberjack or Woodsman), one support (Scavenger or Cook), and the last slot filled by whatever the run needs — Ranger if you are pushing rescues, Assassin if you already know the loop.
 
+Event-only classes like the Bunny (900 Eggs in the Easter Shop), Egg Hunter, Elf and Alien Scientist (a visible 600-Diamond unlock) show up around events and in the gem shop. They are worth tracking, but they are not the core ten.
 
-### ### Escape Artist — Escape specialist
-Perks for sprinting, escaping chases and detecting threats — the pick for players who want to survive nights without fighting.
+{{< notice title="Verify in-game" >}}Exact perk numbers and prices are re-tuned regularly, and the September Class Shop Revamp adjusted sale pricing. Treat this page as role judgment and confirm current costs in the shop before spending.{{< /notice >}}
 
-### ### Elemental — Biome specialist
-A biome helmet plus status-effect, speed and night-vision perks — strong when the right biome rolls, situational otherwise.
-
-### ### Woodsman — Wood economy
-Starts with the unique Woodsman's Axe and adds log-storage and giant-sapling perks — a second wood engine for heavy base projects.
-
-> Want a pick order? See the community [Class Tier List]({{< relref "/classes/tier-list" >}}).
+> Want a ranked pick order? That is what the [Class Tier List]({{< relref "/classes/tier-list" >}}) is for.
