@@ -1,60 +1,48 @@
 +++
-title = "Clases — las 10 clases de 99 Nights in the Forest"
-description = "Cada clase inicial de『99 Nights in the Forest』— Campista, Recolector, Médico, Cocinero, Explorador, Leñador, Asesino, Artista del escape, Elemental y Guardabosques — con rol, desbloqueo y estilo de juego."
+title = "Clases de 99 Nights in the Forest — roles, desbloqueo y cómo elegir"
+description = "Cada clase inicial de 99 Nights in the Forest: Camper, Medic, Lumberjack, Scavenger, Cook, Ranger, Assassin, Woodsman, Escape Artist y Elemental — qué hace cada una, cómo las vende ahora la tienda renovada y cómo elegir para tu escuadra."
 date = 2026-09-30
-lastmod = 2026-10-03
+lastmod = 2026-10-20
+author = "PortalAser Team"
 +++
 
-Las diez clases cubren todas las funciones que necesita un grupo de supervivientes: recolección, combate, curación, cocina y exploración. Los favoritos de los novatos son el**Campista** (gratis y equilibrado) y el**Médico** (sostenimiento del grupo).
+Diez clases iniciales cubren ahora todos los trabajos que necesita una escuadra de supervivencia: madera, comida, curación, exploración, combate y huida. Los cambios grandes de septiembre importan mucho aquí. El 5 de septiembre los devs sacaron Woodsman, Escape Artist y Elemental con misiones diarias y ofrendas para la hoguera, y el 19 de septiembre el Class Shop Revamp dejó todas las clases disponibles de forma permanente en vez de rotar stock. Así que el viejo plan de «espera a que rote» se acabó: lo que ves en la tienda es lo que puedes comprar hoy.
 
-{{< notice title="Confírmalo en el juego" >}}Los números exactos de las ventajas y los precios de desbloqueo se reequilibran periódicamente — trata lo siguiente como una descripción de roles y confirma los precios actuales en la tienda antes de gastar gemas o Robux. {{< /notice >}}
+## Las diez clases de un vistazo
 
-## Resumen de clases
+| Clase | Rol | Por qué la eliges |
+|---|---|---|
+| Camper | Equilibrada inicial | Gratis, sin puntos flojos, aprende el bucle primero |
+| Medic | Curación y reanimación | La diferencia entre un wipe y una recuperación |
+| Lumberjack | Economía de madera | Talar rápido financia cada mejora |
+| Scavenger | Suministros | Mantiene fluyendo comida y chatarra |
+| Cook | Procesado de comida | Abarata las partidas largas |
+| Ranger | Exploración | Cubre mapa y rastrea pistas |
+| Assassin | Daño en ráfaga | Mucho daño, muy frágil, solo para manos finas |
+| Woodsman | Economía de madera, v2 | Empieza con el hacha única Woodsman's Axe, más almacén de troncos y ventaja de retoño gigante |
+| Escape Artist | Supervivencia en huida | Ventajas de esprint, escape de persecución y detección |
+| Elemental | Utilidad de bioma | Casco de bioma, efectos de estado, velocidad y visión nocturna |
 
-| Clase | Rol | Desbloqueo | Ideal para |
-|---|---|---|---|
-| Campista | Novato equilibrado | Gratis | Aprender el bucle |
-| Recolector | Especialista en recursos | Gemas | Transportar suministros |
-| Médico | Sostenimiento del grupo | Gemas | Recuperarse tras asedios |
-| Cocinero | Especialista en comida | Gemas | Partidas largas baratas |
-| Explorador | Especialista en exploración | Gemas | Cobertura del mapa, pistas |
-| Leñador | Especialista en madera | Gemas | Mejoras de base y hoguera |
-| Asesino | Especialista en combate | Robux | Enfrentar amenazas de frente |
-| Artista del escape | Especialista en huida | Gemas | Esquivar amenazas |
-| Elemental | Especialista en biomas | Gemas | Partidas con bioma |
-| Guardabosques | Especialista en madera | Gemas | Grandes proyectos de base |
+## El desglose por rol
 
-## Detalle de clases
+**Medic** es la S-tier callada. Curar y reanimar decide el desenlace de una noche más que cualquier arma, y toda escuadra seria quiere una.
 
-### Campista — la clase novata
-La opción equilibrada por defecto, sin debilidades — ideal para aprender todo el bucle de recolectar-construir-defender antes de especializarte.
+**Lumberjack** y **Woodsman** son los dos motores de madera, y se apilan. Lumberjack tala más rápido desde el principio; Woodsman llega con la Woodsman's Axe como herramienta inicial única y suma almacenaje de troncos y ventaja de retoño gigante. Una escuadra que corre con los dos convierte su fase de construcción en una carrera.
 
-### Recolector — especialista en recursos
-Hecho para saquear y explorar con eficiencia — el suministrador natural que mantiene al grupo abastecido.
+**Scavenger** y **Cook** son la economía de apoyo. Scavenger mantiene los suministros fluyendo; Cook convierte la comida en combustible barato para partidas largas. Los dos se sienten tranquilos hasta que te quedas sin comida en medio de un asedio.
 
-### Médico — sostenimiento del grupo
-Especialista en curar y revivir. La columna de cualquier grupo que quiera recuperarse rápido tras un ataque nocturno.
+**Ranger** se gana el sueldo durante la exploración y el rescate, cuando cubrir mapa importa más que aguantar un muro.
 
-### Cocinero — especialista en comida
-Centrado en procesar comida y gestionar el hambre — hace baratas las partidas largas y alimenta al grupo con menos comida.
+**Assassin** es la clase divertida con la curva de aprendizaje más afilada. Ráfaga alta, margen de error ridículo. El jugador nuevo que la compra como primera adquisición normalmente acaba lamentando el precio.
 
-### Explorador — especialista en exploración
-Fuerte en desplazamiento y cobertura del mapa — ideal para seguir pistas de niños desaparecidos y adentrarse en zonas remotas.
+**Escape Artist** y **Elemental** son las llegadas del 5 de septiembre. La cadena de Escape Artist te persiguen siete Alpha Wolf a la vez —una misión estupenda, una prueba brutal. La de Elemental pide aplicar veneno, hielo o fuego a 50 enemigos distintos. Las dos se sienten fuertes en las condiciones justas y normalitas en el resto.
 
-### Leñador — especialista en madera
-Corta árboles más rápido que nadie — el motor de madera detrás de las mejoras de hoguera y base.
+## Cómo elegir para tu escuadra
 
-### Asesino — especialista en combate
-Clase de combate de alto daño para quien quiere enfrentar a esbirros del ciervo y cultistas de frente, no esconderse.
+La regla que repetimos: **una escuadra sin ningún Medic es una escuadra apuntándose al wipe**. Después quieres un motor de madera (Lumberjack o Woodsman), un apoyo (Scavenger o Cook), y el último hueco lo llena lo que pida la partida: Ranger si vas a por rescates, Assassin si ya te sabes el bucle.
 
+Las clases solo de evento, como la Bunny (900 Huevos en la Easter Shop), Egg Hunter, Elf y Alien Scientist (un desbloqueo visible de 600 Diamantes), aparecen alrededor de eventos y en la tienda de gemas. Merece la pena seguirles la pista, pero no forman el núcleo de diez.
 
-### ### Artista del escape — Especialista en huida
-Ventajas de esprintar, escapar de persecuciones y detectar amenazas — la elección para sobrevivir sin pelear.
+{{< notice title="Confírmalo en el juego" >}}Los números exactos de ventajas y precios se reajustan con frecuencia, y el Class Shop Revamp de septiembre cambió los precios de oferta. Trata esta página como un criterio de rol y confirma los costes actuales en la tienda antes de gastar.{{< /notice >}}
 
-### ### Elemental — Especialista en biomas
-Casco de bioma más ventajas de efectos de estado, velocidad y visión nocturna — fuerte cuando toca su bioma, situacional en el resto.
-
-### ### Guardabosques — Economía de madera
-Empieza con su Hacha de Guardabosques y suma ventajas de almacenaje de troncos y retoño gigante — un segundo motor de madera para bases grandes.
-
-> ¿Quieres saber el orden? Mira el [tier de clases de la comunidad]({{< relref "/classes/tier-list" >}}).
+> ¿Quieres un orden de prioridad? Para eso está la [tier list de clases]({{< relref "/classes/tier-list" >}}).
