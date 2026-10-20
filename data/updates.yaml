@@ -5,7 +5,7 @@
 #   update log, appends NEW updates only, never removes history.
 # ============================================================
 
-lastSynced: "2026-10-09"
+lastSynced: "2026-10-20"
 
 sources:
   - name: "Roblox Official Game Page"
@@ -15,28 +15,26 @@ sources:
 
 updates:
   - date: "2026-10-17"
-    title: "HALLOWEEN BEGINS (Preview)"
+    title: "Trick or Treat (Halloween Begins)"
     status: "live"
-    summary: "HALLOWEEN BEGINS is scheduled for October 17 at 17:00 UTC (October 18 at 01:00 in Shanghai), with the official event window ending October 24 at 12:00 UTC."
+    summary: "Launched the Trick or Treat Halloween event with trick-or-treating, the new Fancy Dressed class, a full Halloween furniture set, and two pet outfits. The HALLOWEEN BEGINS event runs from October 17 17:00 UTC to October 24 12:00 UTC."
     details:
-      - "HALLOWEEN BEGINS is scheduled for October 17 at 17:00 UTC (October 18 at 01:00 in Shanghai), with the official event window ending October 24 at 12:00 UTC."
-    source: "https://99-nights-in-the-forest.com/updates"
+      - "Added the Trick or Treating activity for the Halloween event window"
+      - "Added the Fancy Dressed class for 30 Candy at Happy's Halloween shop in the lobby"
+      - "Added Halloween furniture: Halloween Decor, Spooky Crock Pot, Standing Coffins, Spooky Braziers, Coffin Chair, and Pile of Skulls"
+      - "Added pet outfits: Candy Corn Bunny and Vampire Alpha Wolf"
+      - "HALLOWEEN BEGINS runs October 17 17:00 UTC to October 24 12:00 UTC (October 18 01:00 to October 24 20:00 Beijing time)"
+    source: "https://www.pockettactics.com/99-nights-in-the-forest-update"
 
   - date: "2026-10-03"
     title: "Helping Happy"
     status: "live"
-    summary: "Pick up Happy’s Scythe near camp and level it through combat and web clearing. Unlock Happy’s Cart furniture by completing all three event badges. A web-covered barn holding Happy’s Left Leg during the Helping Happy quest. A timber-framed windmill…"
+    summary: "Launched the Helping Happy quest: recover Happy's scattered body parts, level up his Scythe, and retrieve his head from the Ram. Complete the Reaping, Strawcraft, and Sweeping tasks to unlock Happy's Cart."
     details:
-      - "Pick up Happy’s Scythe near camp and level it through combat and web clearing."
-      - "Unlock Happy’s Cart furniture by completing all three event badges."
-      - "A web-covered barn holding Happy’s Left Leg during the Helping Happy quest."
-      - "A timber-framed windmill containing Happy’s Right Leg during Helping Happy."
-      - "A gray stone quest building with Happy’s Left Arm inside."
-      - "A fenced pumpkin patch where Happy’s Torso is trapped beneath a cart."
-      - "Reaping: Level up Happy's Scythe to max level."
-      - "Strawcraft: Help your team assemble Happy back together again."
-      - "Sweeping: Destroy 200 webs with Happy's Scythe."
-      - "Help Happy recover six scattered body parts, then retrieve his head from the Ram to finish the rescue."
+      - "Recover Happy's scattered body parts across the forest"
+      - "Level up Happy's Scythe through the quest progression"
+      - "Retrieve Happy's head from the Ram"
+      - "Complete Reaping, Strawcraft, and Sweeping to unlock Happy's Cart"
     source: "https://99-nights-in-the-forest.com/updates"
 
   - date: "2026-09-19"
@@ -276,7 +274,7 @@ updates:
     source: "https://99-nights-in-the-forest.com/updates"
 
 upcoming:
-  - date: "2026-10-04"
-    title: "Helping Happy (new quest)"
-    note: "A new quest previewed on the official Roblox page (starts Oct 4, 1:00 AM). Halloween plans have also been teased in the lobby."
-    source: "https://www.roblox.com/games/79546208627805"
+  - date: "2026-10-31"
+    title: "Halloween Event Part 2 (expected)"
+    note: "Pocket Tactics expects the next update on Saturday, October 31, 2026, likely the second part of the Halloween event. Official details pending."
+    source: "https://www.pockettactics.com/99-nights-in-the-forest-update"

@@ -5,9 +5,9 @@
 #   - re-stamps lastVerified on every run
 #   - auto-ADDS codes found in new official/community update
 #     entries (never removes codes — expiry stays manual)
-# Last verified: October 3, 2026 (re-check on every game update)
+# Last verified: October 20, 2026 (re-check on every game update)
 # ============================================================
-lastVerified: "October 9, 2026"
+lastVerified: "October 20, 2026"
 
 working:
   - code: "awardwinner_yay"
@@ -28,7 +28,7 @@ working:
   - code: "yay fishing"
     reward: "2 Diamonds"
     method: "chat"
-    note: "Special chat code — type it (with the space) while the fishing rod is in the water at a fishing spot. Requires Campfire level 2."
+    note: "Special chat code — type it (with the space) while the fishing rod is in the water at a fishing spot. Requires Campfire level 2. Status disputed: UrGameTips (Oct 10) lists it as working while Destructoid (Oct 12) marks it expired — verify in-game."
 
 expired:
   - code: "happyhalloween"
