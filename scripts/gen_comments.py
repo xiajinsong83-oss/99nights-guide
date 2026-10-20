@@ -57,11 +57,11 @@ def main():
         print("No comment entries found in data/comments.yaml — aborting.")
         return 1
 
-    if os.path.isdir(OUT_DIR):
-        for name in os.listdir(OUT_DIR):
-            os.remove(os.path.join(OUT_DIR, name))
+    # Do NOT wipe the output directory: comment pages may carry hand-written
+    # polish from the content overhaul. Regeneration only creates missing stubs.
     os.makedirs(OUT_DIR, exist_ok=True)
 
+    created = 0
     for i, b in enumerate(blocks, 1):
         cid = b.get("id", f"c{i}")
         author = b.get("author", "Anonymous survivor")
@@ -73,6 +73,9 @@ def main():
         example = b.get("example", False)
         slug = re.sub(r"[^A-Za-z0-9]+", "-", author).strip("-").lower()[:40] or f"comment-{i}"
         path = os.path.join(OUT_DIR, f"c{i:02d}-{slug}.md")
+        if os.path.exists(path):
+            continue
+        created += 1
         fm = (
             '+++\n'
             f'title = "Comment by {esc(author)}"\n'
@@ -91,7 +94,7 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             f.write(fm)
 
-    print(f"Generated {len(blocks)} comment stub pages in content/feedback/comments/")
+    print(f"Created {created} new comment stub pages in content/feedback/comments/ (existing pages preserved)")
     return 0
 
 

@@ -19,7 +19,7 @@
   {{ end }}
   <div class="layout-2col">
     <article class="prose">
-      {{ if .Lastmod }}<div class="lastmod">{{ i18n "common.lastUpdated" }} {{ .Lastmod.Format "January 2, 2006" }}</div>{{ end }}
+      {{ if .Lastmod }}<div class="lastmod">{{ i18n "common.lastUpdated" }} {{ .Lastmod.Format "January 2, 2006" }}{{ with .Params.author }} · {{ i18n "common.by" }} {{ . }}{{ end }}</div>{{ end }}
       {{ .Content }}
     </article>
     <aside class="aside">

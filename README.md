@@ -123,7 +123,7 @@ The legitimate equivalent: collect feedback **through the site's own channels** 
 ## AdSense activation checklist
 
 1. Get the site live at `https://www.portalaser.com` (canonical host — DNS on Cloudflare, Pages project active, `apex` → `www` 301 redirect in place via `static/_redirects`).
-2. **Policy pages are live** — Privacy Policy / About Us / Contact are in the footer at `/legal/…` (required for AdSense review). Before applying: confirm the contact mailbox `39918849@qq.com` is actively monitored (it is set in `content/legal/` and `layouts/feedback/list.html`).
+2. **Policy pages are live** — Privacy Policy / About Us / Contact are in the footer at `/legal/…` (required for AdSense review). Before applying: confirm the contact mailbox `merrysee888@qq.com` is actively monitored (it is set in `content/legal/` and `layouts/feedback/list.html`).
 3. Replace the two **example comments** in `data/comments.yaml` with real player feedback (or delete them — `example: true` entries render with an amber tag).
 4. Submit to AdSense with the live URL and wait for approval.
 5. **AdSense loader is already live sitewide (v9)**: `hugo.toml` has `params.adsenseEnabled = true` and

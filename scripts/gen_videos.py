@@ -49,11 +49,12 @@ def main():
         print("No video entries found in data/videos.yaml — aborting.")
         return 1
 
-    if os.path.isdir(OUT_DIR):
-        for name in os.listdir(OUT_DIR):
-            os.remove(os.path.join(OUT_DIR, name))
+    # Do NOT wipe the output directory: the video pages now carry hand-written
+    # bodies and frontmatter (author, lastmod) from the content overhaul.
+    # Regeneration only creates stubs for entries that have no page yet.
     os.makedirs(OUT_DIR, exist_ok=True)
 
+    created = 0
     for i, b in enumerate(blocks, 1):
         title = b.get("title", "Untitled video")
         vid = b.get("id", "")
@@ -61,6 +62,9 @@ def main():
         desc = b.get("description", "")
         slug = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-").lower()[:60] or f"video-{i}"
         path = os.path.join(OUT_DIR, f"v{i:02d}-{slug}.md")
+        if os.path.exists(path):
+            continue
+        created += 1
         fm = (
             '+++\n'
             f'title = "{esc(title)}"\n'
@@ -74,7 +78,7 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             f.write(fm)
 
-    print(f"Generated {len(blocks)} video stub pages in content/media/videos/")
+    print(f"Created {created} new video stub pages in content/media/videos/ (existing pages preserved)")
     return 0
 
 
