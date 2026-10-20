@@ -1,49 +1,41 @@
 +++
-title = "Monster-Guide — jede nächtliche Bedrohung in 99 Nights in the Forest"
-description = "Jedes Monster in『99 Nights in the Forest』— Hirsch, Kultisten, Eule, Widder, Wölfe, Bär und Fledermäuse — mit Bedrohungsstufe, Spawn-Mustern und Gegenmaßnahmen."
+title = "Monster in 99 Nights in the Forest – wer angreift und wie du es überlebst"
+description = "Die nächtlichen Bedrohungen von 99 Nights in the Forest erklärt: der Hirsch, Kultisten und der Rauch-Takt, der wandbrechende Widder, Wölfe, Bären, Schnee-Biom-Tiere und Höhlen-Fledermäuse – mit der Gegenwehr, die am wenigsten Holz kostet."
 date = 2026-09-30
-lastmod = 2026-09-30
+lastmod = 2026-10-20
+author = "PortalAser Team"
 +++
 
-Kenne deinen Feind. Das sind die nächtlichen Bedrohungen in『99 Nights in the Forest』, ihr Verhalten und wie man überlebt.
+Die Hälfte des Überlebens von 99 Nächten ist zu wissen, was auf deine Basis zuwächst. Das Spiel sagt dir nicht, in welcher Nacht der Widder kommt, warum der Hirsch plötzlich am helllichten Tag unterwegs ist, oder dass Kultisten tatsächlich in einem groben 3- bis 4-Tage-Takt rauchen. Diese Seite ist das Gegner-Verzeichnis: was jede Bedrohung tut, wann sie auftaucht und die Gegenwehr, die am wenigsten Holz frisst.
 
-{{< notice title="Im Spiel verifizieren" >}}Die Bedrohungsstufen sind ein Rahmen auf Basis typischen Verhaltens — die genauen Spawn-Muster ändern sich mit Spiel-Updates und Schwierigkeitseinstellungen. {{< /notice >}}
+## Die Bedrohungs-Tabelle
 
-## Bedrohungs-Übersicht
-
-| Monster | Bedrohung | Verhalten |
+| Bedrohung | Gefährlichkeit | Was sie wirklich tut |
 |---|---|---|
-| Hirsch | ⚠⚠⚠⚠ | Das Aushängeschild der Nacht — patrouilliert ums Feuer |
-| Kultisten | ⚠⚠⚠⚠ | Greifen das Lager in Gruppen zu festen Zeiten an |
-| Eule | ⚠⚠⚠ | Stört deine Lichtquellen |
-| Widder | ⚠⚠⚠ | Rammt und bricht Holzwände |
-| Wölfe | ⚠⚠⚠ | Rudeljäger, tödlich für Einzelgänger |
-| Bär | ⚠⚠⚠⚠⚠ | Höchste Bedrohung — am Anfang nicht anfassen |
-| Fledermäuse | ⚠⚠ | Höhlenschwärme — schwach, aber zahlreich |
+| Der Hirsch | Extrem | Signatur-Nachtjäger, umkreist dein Feuer, holt jeden aus dem Dunkel |
+| Kultisten | Hoch | Räuchen das Lager in Gruppen im 3–4-Tage-Zyklus |
+| Kultisten-König | Boss | Spawnt über die Rauch-Kette; Fernkampf-Kiting-Boss |
+| Bär / Eisbär | Hoch | Apex, bestraft schwaches Gear schnell |
+| Alpha-Wolf | Hoch | Rudelführer, tödlich für Solo-Erkunder |
+| Widder | Hoch | Renner, der Holzwände demoliert |
+| Wölfe | Mittel | Rudeljäger, gefährlich abseits des Feuers |
+| Eule | Mittel | Stört deine Lichtquellen |
+| Fledermäuse | Niedrig | Höhlen-Schwärme, einzeln schwach, unterirdisch zahlreich |
+| Schnee-Biom-Tiere | Mittel | Friert-Debuff-Druck auf exponierte Spieler |
 
-## Zusammenfassung der Gegenmaßnahmen
+## Die Kurzfassung jedes Kampfes
 
-### Hirsch
-Der Hauptjäger, der ums Feuer patrouilliert. Halte das Feuer hell, die Wände heil und geh nachts nie allein raus. Tiefgang: [So besiegst du den Hirsch]({{< relref "/monsters/deer" >}}).
+- **Der Hirsch** will keinen fairen Kampf. Er umkreist den Lichtradius und wartet auf eine Lücke. Community-Tests haben eine versteckte Skalierungs-Mechanik gefunden, die an deinen Fortschritt gebunden ist – deshalb fühlt sich ein Hirsch in Spätläufen völlig anders an als in frühen. Er kommandiert auf schwereren Nächten obendrein Kultisten-Gruppen. Die komplette Aufteilung lebt auf der [Hirsch-Seite]({{< relref "/monsters/deer" >}}).
+- **Kultisten rauchen nach Takt.** Nicht jede Nacht, grob alle 3 bis 4 Tage, in wachsenden Gruppen. Wände leiten sie in Fallen, und die Kill-Funnel-Labyrinth-Basis der Community übersteht 500-plus Tage genau dieser Räuche.
+- **Der Widder** ist ein Wand-Problem, kein Kampf-Problem. Er rast geradewegs durch Zäune. Halt Reparaturholz innen im Ring und pass auf die Bahn, die er wählt.
+- **Wölfe** jagen im Rudel und zerlegen Solo-Erkunder. Reise ab Nacht 5 zu zweit.
+- **Bären** sind die frühe „nicht angreifen"-Bedrohung. Community-Gewehr-Tests zählen, wie viele Schüsse jedes Tier wirklich braucht – die Erkenntnis für neue Gruppen ist unumwunden: ein schwaches Gewehr frisst den Großteil eines Magazins an einem Wolf, und an einem Bär noch mal deutlich mehr. Bären bleiben also Kiten- und Fallen-Problem, bis deine Waffen nachgezogen haben.
+- **Fledermäuse** wohnen in den Höhlen, die du nach Lagerfeuer-Stufe 3 freischaltest. Nimm Taschenlampe, Nahrung und Gewehr mit, und lass dich unter der Erde nie in die Enge treiben.
 
-### Kultisten
-Greifen in Gruppen zu festen Zeiten an. Empfange sie mit Fallen und Befestigungen — im Freien zu kämpfen ist teuer.
+## Wann jeweils was auftaucht
 
-### Eule
-Wände stoppen sie nicht. Sie stört deine Lichter — bleib in hellen Zonen und schau beim Wachen nach oben.
+Die frühe Faustregel: Der Hirsch und kleiner Kultisten-Druck kommen ab den ersten Nächten, Wölfe und der wandbrechende Widder zeigen sich im mittleren Abschnitt ab Nacht 5 aufwärts, Bären bleiben eine späte Bedrohung, und die Eule plus Schnee- und Höhlen-Gegner öffnen sich, sobald du ihre Biome erkundest. Die Nacht-Spawns skalieren damit, wie viele Nächte du überlebt hast – eine Basis, die in Nacht 10 hielt, kann bei identischem Layout in Nacht 30 fallen.
 
-### Widder
-Rammt direkt die Holzverteidigung. Verstärke schwache Abschnitte, bevor er seine Bahn wählt.
+{{< notice title="Im Spiel verifizieren" >}}Spawn-Muster und Balance verschieben sich mit Updates und Schwierigkeits-Einstellungen. Behandle die Wertungen als unsere Lesart des aktuellen Patches, nicht als festen Zeitplan.{{< /notice >}}
 
-### Wölfe
-Gefährlich abseits des Feuers und tödlich für Einzelgänger. Geh zu zweit und schalte sie einzeln aus.
-
-### Bär
-Am Anfang nicht anfassen. Mit schwacher Ausrüstung kite ihn mit Gelände und Fallen; ein volles Team und die besten Waffen sind das Minimum für einen fairen Kampf.
-
-### Fledermäuse
-Einzelbedrohung gering, aber nachts schwärmen sie im Höhlen-Biom. Nimm Licht mit und lass dich unter der Erde nicht in die Enge treiben.
-
-## Nacht-für-Nacht-Zeitplan
-
-Der vollständige Spawn-Zeitplan (in welcher Nacht jede Entität zuerst erscheint und wie Spawns zunehmen) wird mit der Forschung zum [Forest-Rage-Hardmode]({{< relref "/advanced/forest-rage-hard-mode" >}}) veröffentlicht. Frühe Faustregel: **Eule und Widder kommen nach Nacht 5; der Bär ist für später**.
+> Der Hirsch verdient seine eigene Seite. Fang mit [So besiegst du den Hirsch]({{< relref "/monsters/deer" >}}) an, dann wechsle zu [Forest-Rage-Hardmode]({{< relref "/advanced/forest-rage-hard-mode" >}}) für die korrumpierten Spätspiel-Varianten.

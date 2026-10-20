@@ -1,60 +1,48 @@
 +++
-title = "Klassen — alle 10 Klassen in 99 Nights in the Forest"
-description = "Jede Startklasse in『99 Nights in the Forest』— Camper, Plünderer, Medic, Koch, Ranger, Holzfäller, Assassine, Fluchtkünstler, Elementar und Waldläufer — mit Rolle, Freischaltung und Spielstil."
+title = "Klassen in 99 Nights in the Forest – Rollen, Freischaltungen und die richtige Wahl"
+description = "Jede Startklasse in 99 Nights in the Forest: Camper, Medic, Holzfäller, Plünderer, Koch, Ranger, Assassine, Waldläufer, Fluchtkünstler und Elementar – was sie tun, wie der überarbeitete Shop sie verkauft und wie du für deine Gruppe auswählst."
 date = 2026-09-30
-lastmod = 2026-10-03
+lastmod = 2026-10-20
+author = "PortalAser Team"
 +++
 
-Die zehn Klassen decken alle Aufgaben ab, die eine Überlebensgruppe braucht: Sammeln, Kampf, Heilung, Kochen und Erkunden. Anfängerfavoriten sind der**Camper** (kostenlos und ausgewogen) und der**Medic** (Gruppen-Unterstützung).
+Zehn Startklassen decken inzwischen jeden Job ab, den eine Überlebensgruppe braucht: Holz, Nahrung, Heilung, Erkundung, Kampf und Flucht. Die großen September-Änderungen spielen hier eine große Rolle. Am 5. September haben die Entwickler Waldläufer, Fluchtkünstler und Elementar mit Tagesquests und Feuer-Opfergaben ausgeliefert, und am 19. September hat das Class Shop Revamp dafür gesorgt, dass jede Klasse dauerhaft im Shop steht statt im Rotations-Bestand zu kommen und zu gehen – die alte Strategie „warte auf die Rotation" ist damit tot. Was du im Shop siehst, das kannst du heute kaufen.
 
-{{< notice title="Im Spiel verifizieren" >}}Die genauen Bonus-Zahlen und Freischalt-Preise werden regelmäßig neu balanciert — behandle das Folgende als Rollenübersicht und prüfe die aktuellen Preise im Shop, bevor du Edelsteine oder Robux ausgibst. {{< /notice >}}
+## Die zehn Klassen im Überblick
 
-## Klassen-Übersicht
+| Klasse | Rolle | Warum du sie nimmst |
+|---|---|---|
+| Camper | Ausgewogener Starter | Kostenlos, keine Schwachstellen, erst die Schleife lernen |
+| Medic | Heilung und Wiederbelebung | Der Unterschied zwischen einem Wipe und einer Erholung |
+| Holzfäller | Holz-Ökonomie | Schnelles Fällen finanziert jedes Upgrade |
+| Plünderer | Nachschub | Hält Nahrung und Schrott am Laufen |
+| Koch | Nahrungsverarbeitung | Macht lange Runs billiger zu füttern |
+| Ranger | Erkundung | Deckt Kartenfläche ab und verfolgt Hinweise |
+| Assassine | Burst-Schaden | Viel Schaden, dünnes Fell, nur für geübte Hände |
+| Waldläufer | Holz-Ökonomie, Version 2 | Startet mit der einzigartigen Waldläufer-Axt plus Holz-Lagerung und Riesen-Setzling-Perk |
+| Fluchtkünstler | Flucht-Überleben | Sprint-, Verfolgungs-Flucht- und Erkennungs-Perk |
+| Elementar | Biom-Nutzen | Biom-Helm, Statuseffekte, Tempo und Nachtsicht |
 
-| Klasse | Rolle | Freischaltung | Ideal für |
-|---|---|---|---|
-| Camper | Ausgewogener Anfänger | Kostenlos | Die Schleife lernen |
-| Plünderer | Ressourcen-Spezialist | Edelsteine | Nachschub transportieren |
-| Medic | Gruppen-Unterstützung | Edelsteine | Erholung nach Belagerungen |
-| Koch | Nahrungs-Spezialist | Edelsteine | Günstige lange Runs |
-| Ranger | Erkundungs-Spezialist | Edelsteine | Kartenabdeckung, Hinweise |
-| Holzfäller | Holz-Spezialist | Edelsteine | Basis- und Feuer-Upgrades |
-| Assassine | Kampf-Spezialist | Robux | Bedrohungen frontal stellen |
-| Fluchtkünstler | Fluchtspezialist | Edelsteine | Bedrohungen ausweichen |
-| Elementar | Biomspezialist | Edelsteine | Biom-Läufe |
-| Waldläufer | Holzspezialist | Edelsteine | Große Basisprojekte |
+## Die Rollen im Detail
 
-## Klassen im Detail
+Der **Medic** ist der unbesungene S-Tier. Heilung und Wiederbelebung entscheiden den Ausgang einer Nacht stärker als jede Waffe, und jeder ernsthafte Lauf will einen dabei haben.
 
-### Camper — die Anfänger-Klasse
-Die ausgewogene Standard-Option ohne Schwächen — ideal, um die ganze Sammel-Bau-Verteidigungs-Schleife zu lernen, bevor man sich spezialisiert.
+**Holzfäller** und **Waldläufer** sind beide Holz-Motoren, und sie stapeln sich. Der Holzfäller hackt von Anfang an schneller; der Waldläufer kommt mit der Waldläufer-Axt als einzigartigem Start-Werkzeug dazu und bringt Lagerung und Riesen-Setzling-Perk mit. Eine Gruppe, die beide fährt, verwandelt ihre Bau-Phase in einen Sprint.
 
-### Plünderer — Ressourcen-Spezialist
-Gemacht für effizientes Plündern und Erkunden — der natürliche Versorger, der die Gruppe gefüllt hält.
+**Plünderer** und **Koch** sind die Unterstützungs-Ökonomie. Der Plünderer hält den Nachschub am Laufen; der Koch verwandelt Nahrung in billigen Treibstoff für lange Runs. Beide fühlen sich still an, bis dir mitten in der Belagerung das Essen ausgeht.
 
-### Medic — Gruppen-Unterstützung
-Spezialist für Heilung und Wiederbelebung. Das Rückgrat jeder Gruppe, die sich nach einem Nachtangriff schnell erholen will.
+Der **Ranger** verdient sein Geld in den Erkundungs- und Rettungs-Phasen, wenn Kartenabdeckung wichtiger ist als eine Wand zu halten.
 
-### Koch — Nahrungs-Spezialist
-Fokussiert auf Nahrungsverarbeitung und Hunger-Management — macht lange Runs günstig und füttert die Gruppe mit weniger Nahrung.
+Der **Assassine** ist die Spaß-Klasse mit der schärfsten Lernkurve. Hoher Burst, geringe Fehlertoleranz. Neue Spieler, die ihn als ersten Kauf nehmen, bereuen den Preis meist.
 
-### Ranger — Erkundungs-Spezialist
-Stark in Bewegung und Kartenabdeckung — ideal, um Hinweise auf vermisste Kinder zu verfolgen und in abgelegene Zonen vorzudringen.
+**Fluchtkünstler** und **Elementar** sind die Neuzugänge vom 5. September. Die Quest des Fluchtkünstlers lässt dich von sieben Alpha-Wölfen gleichzeitig jagen – eine großartige Quest, ein brutaler Test. Die Quest des Elementars verlangt, 50 verschiedene Gegner mit Gift, Eis oder Feuer zu belegen. Beide fühlen sich stark an, wenn die Bedingungen passen, und alltäglich sonst.
 
-### Holzfäller — Holz-Spezialist
-Fällt Bäume schneller als jeder andere — der Holz-Motor hinter Feuer- und Basen-Upgrades.
+## Wie du für deine Gruppe auswählst
 
-### Assassine — Kampf-Spezialist
-Hochschadens-Kampfklasse für Spieler, die Handlanger des Hirsches und Kultisten frontal bekämpfen wollen, statt sich zu verstecken.
+Die Regel, die wir immer wiederholen: **Eine Gruppe ohne Medic ist eine Gruppe, die sich freiwillig zum Wipe anmeldet.** Danach willst du einen Holz-Motor (Holzfäller oder Waldläufer), einen Unterstützer (Plünderer oder Koch), und der letzte Slot wird das, was der Lauf braucht – Ranger, wenn ihr Rettungen vorantreibt, Assassine, wenn du die Schleife schon kennst.
 
+Event-Only-Klassen wie der Bunny (900 Eier im Oster-Shop), Egg Hunter, Elf und Alien Scientist (sichtbare 600-Edelstein-Freischaltung) tauchen rund um Events und im Edelstein-Shop auf. Die lohnen sich im Blick, aber sie sind nicht die Kern-Zehn.
 
-### ### Fluchtkünstler — Fluchtspezialist
-Vorteile für Sprint, Flucht aus Verfolgungen und Erkennung von Bedrohungen — die Wahl, wenn du ohne Kämpfen überleben willst.
+{{< notice title="Im Spiel verifizieren" >}}Genauere Perk-Zahlen und Preise werden regelmäßig neu justiert, und das Class Shop Revamp im September hat die Sale-Preise angepasst. Behandle diese Seite als Rollen-Urteil und prüfe die aktuellen Kosten im Shop, bevor du ausgibst.{{< /notice >}}
 
-### ### Elementar — Biomspezialist
-Biom-Helm plus Status-Effekt-, Geschwindigkeits- und Nachtsicht-Vorteile — stark, wenn das passende Biom kommt, sonst situationsabhängig.
-
-### ### Waldläufer — Holzwirtschaft
-Startet mit seiner einzigartigen Waldläufer-Axt und bietet Holz-Lagerung und Riesen-Setzling-Vorteile — ein zweiter Holz-Motor für große Bauprojekte.
-
-> Du willst die Reihenfolge? Sieh die [Klassen-Tierlist der Community]({{< relref "/classes/tier-list" >}}).
+> Du willst eine gerankte Kauf-Reihenfolge? Dafür ist die [Klassen-Tierlist]({{< relref "/classes/tier-list" >}}) da.
