@@ -1,60 +1,48 @@
 +++
-title = "Classes — as 10 classes de 99 Nights in the Forest"
-description = "Cada classe inicial de『99 Nights in the Forest』— Campista, Coletor, Médico, Cozinheiro, Explorador, Lenhador, Assassino, Artista da fuga, Elemental e Guarda-florestal — com papel, desbloqueio e estilo de jogo."
+title = "Classes em 99 Nights in the Forest — papéis, desbloqueios e como escolher"
+description = "Cada classe inicial de 99 Nights in the Forest: Campista, Médico, Lenhador, Coletor, Cozinheiro, Explorador, Assassino, Guarda-florestal, Artista da Fuga e Elemental — o que cada uma faz, como a loja revampada vende agora e como montar o seu grupo."
 date = 2026-09-30
-lastmod = 2026-10-03
+lastmod = 2026-10-20
+author = "PortalAser Team"
 +++
 
-As dez classes cobrem todas as funções que um grupo de sobreviventes precisa: coleta, combate, cura, culinária e exploração. Os favoritos de novatos são o**Campista** (grátis e equilibrado) e o**Médico** (sustento do grupo).
+Dez classes iniciais cobrem agora todo serviço que um grupo de sobrevivência precisa: madeira, comida, cura, scout, combate e fuga. As grandes mudanças de setembro importam bastante aqui. Em 5 de setembro os devs lançaram Woodsman, Escape Artist e Elemental com quests diárias e ofertas de fogo, e em 19 de setembro o Class Shop Revamp deixou toda classe disponível permanentemente em vez de estoque rotativo — então o velho plano de «esperar a rotação» morreu. O que você vê na loja é o que dá pra comprar hoje.
 
-{{< notice title="Confira no jogo" >}}Os números exatos das vantagens e os preços de desbloqueio são rebalanceados periodicamente — trate o que segue como descrição de papéis e confirme os preços atuais na loja antes de gastar gemas ou Robux. {{< /notice >}}
+## As dez classes num relance
 
-## Visão geral das classes
+| Classe | Papel | Por que você escolhe ela |
+|---|---|---|
+| Campista | Equilibrada, inicial | Grátis, sem pontos fracos, aprenda o ciclo primeiro |
+| Médico | Cura e reviver | A diferença entre wipe e recuperação |
+| Lenhador | Economia de madeira | Corte rápido financia todo upgrade |
+| Coletor | Suprimentos | Mantém comida e sucata fluindo |
+| Cozinheiro | Processamento de comida | Deixa runs longas mais baratas de alimentar |
+| Explorador | Exploração | Cobre terreno do mapa e rastreia pistas |
+| Assassino | Dano explosivo | Dano alto, frágil, mão treinada só |
+| Guarda-florestal | Economia de madeira, v2 | Começa com o Machado do Guarda-florestal, mais perks de armazenamento de toras e muda-gigante |
+| Artista da Fuga | Fuga de sobrevivência | Sprint, escape de perseguição e perks de detecção |
+| Elemental | Utilidade de bioma | Capacete de bioma, efeitos de status, velocidade e visão noturna |
 
-| Classe | Papel | Desbloqueio | Ideal para |
-|---|---|---|---|
-| Campista | Novato equilibrado | Grátis | Aprender o ciclo |
-| Coletor | Especialista em recursos | Gemas | Transportar suprimentos |
-| Médico | Sustento do grupo | Gemas | Recuperar após cercos |
-| Cozinheiro | Especialista em comida | Gemas | Runs longos baratos |
-| Explorador | Especialista em exploração | Gemas | Cobertura de mapa, pistas |
-| Lenhador | Especialista em madeira | Gemas | Melhorias de base e fogueira |
-| Assassino | Especialista em combate | Robux | Enfrentar ameaças de frente |
-| Artista da fuga | Especialista em fugas | Gemas | Evitar ameaças |
-| Elemental | Especialista em biomas | Gemas | Partidas com bioma |
-| Guarda-florestal | Especialista em madeira | Gemas | Grandes projetos de base |
+## O detalhe dos papéis
 
-## Detalhe das classes
+**Médico** é a S-tier subestimada. Cura e reviver decidem o resultado da noite mais do que qualquer arma, e todo grupo sério quer um.
 
-### Campista — a classe novata
-A opção padrão equilibrada, sem fraquezas — ideal para aprender todo o ciclo de coletar-construir-defender antes de se especializar.
+**Lenhador** e **Guarda-florestal** são os dois motores de madeira, e eles empilham. O Lenhador corta mais rápido desde o começo; o Guarda-florestal chega com o Machado do Guarda-florestal como ferramenta inicial única e soma armazenamento e perks de muda-gigante. Um grupo com os dois transforma a fase de construção da base num sprint.
 
-### Coletor — especialista em recursos
-Feito para saquear e explorar com eficiência — o fornecedor natural que mantém o grupo abastecido.
+**Coletor** e **Cozinheiro** são a economia de suporte. O Coletor mantém suprimentos fluindo; o Cozinheiro transforma comida em combustível barato de run longa. Os dois parecem quietos até você ficar sem comida no meio do cerco.
 
-### Médico — sustento do grupo
-Especialista em curar e reviver. A espinha dorsal de qualquer grupo que queira se recuperar rápido após um ataque noturno.
+**Explorador** ganha seu dinheiro durante as fases de exploração e resgate, quando cobertura de mapa importa mais que segurar muro.
 
-### Cozinheiro — especialista em comida
-Focado em processar comida e gerenciar a fome — torna runs longos baratos e alimenta o grupo com menos comida.
+**Assassino** é a classe divertida com curva de aprendizado mais afiada. Dano alto, margem de erro baixa. Jogadores novos que compram ela como primeira compra quase sempre se arrependem do preço.
 
-### Explorador — especialista em exploração
-Forte em deslocamento e cobertura de mapa — ideal para seguir pistas de crianças desaparecidas e entrar em áreas remotas.
+**Artista da Fuga** e **Elemental** são as chegadas de 5 de setembro. A quest do Artista da Fuga te manda ser perseguido por sete Lobos Alpha ao mesmo tempo — uma quest ótima, um teste brutal. A quest do Elemental pede pra você aplicar veneno, gelo ou fogo em 50 inimigos diferentes. As duas se sentem fortes nas condições certas e normais no resto.
 
-### Lenhador — especialista em madeira
-Corta árvores mais rápido que qualquer um — o motor de madeira por trás das melhorias de fogueira e base.
+## Como escolher pro seu grupo
 
-### Assassino — especialista em combate
-Classe de combate de alto dano para quem quer enfrentar capangas do veado e cultistas de frente, não se esconder.
+A regra que a gente repete: **um grupo com zero Médicos é um grupo se oferecendo pra wipe**. Depois disso, você quer um motor de madeira (Lenhador ou Guarda-florestal), um suporte (Coletor ou Cozinheiro), e a última vaga com o que a run precisar — Explorador se você tá empurrando resgates, Assassino se você já conhece o ciclo.
 
+Classes só de evento, tipo o Coelho (900 ovos na Easter Shop), o Caçador de Ovos, o Elfo e o Cientista Alien (um desbloqueio visível de 600 Diamantes), aparecem por volta dos eventos e na loja de gemas. Vale a pena rastrear, mas não são as dez núcleo.
 
-### ### Artista da fuga — Especialista em fugas
-Vantagens de corrida, escape de perseguições e detecção de ameaças — a escolha para sobreviver sem lutar.
+{{< notice title="Confira no jogo" >}}Os números exatos dos perks e os preços são rebalanceados com frequência, e o Class Shop Revamp de setembro ajustou os preços das promoções. Trate esta página como julgamento de papel e confira os custos atuais na loja antes de gastar.{{< /notice >}}
 
-### ### Elemental — Especialista em biomas
-Capacete de bioma mais vantagens de efeitos de status, velocidade e visão noturna — forte quando o bioma certo aparece, situacional no resto.
-
-### ### Guarda-florestal — Economia de madeira
-Começa com seu Machado de Guarda-florestal e adiciona armazenamento de troncos e mudas gigantes — um segundo motor de madeira para bases grandes.
-
-> Quer a ordem de escolha? Veja o [tier de classes da comunidade]({{< relref "/classes/tier-list" >}}).
+> Quer uma ordem de compra ranqueada? É pra isso que existe a [Tier list de classes]({{< relref "/classes/tier-list" >}}).
