@@ -1,14 +1,17 @@
 {{/* Language switcher: lists all site languages. Links to the current page's translation when one exists,
-       otherwise to the language home. Clicking stores site_lang so the auto-IP-switch respects manual choice. */}}
-{{ $trans := .Translations }}
-{{ $isHome := .IsHome }}
+       otherwise to the language home. Clicking stores site_lang so the auto-IP-switch respects manual choice.
+       Called with (dict "p" .) or (dict "p" . "idSuffix" "-m") so desktop and mobile instances keep unique IDs. */}}
+{{ $p := .p }}
+{{ $id := .idSuffix | default "" }}
+{{ $trans := $p.Translations }}
+{{ $isHome := $p.IsHome }}
 <div class="lang-switcher">
-  <button class="lang-current" type="button" id="langBtn" aria-haspopup="true" aria-expanded="false">
+  <button class="lang-current" type="button" id="langBtn{{ $id }}" aria-haspopup="true" aria-expanded="false">
     <span class="globe">{{ partial "icon" (dict "name" "compass") }}</span>
-    {{ .Language.LanguageName }}<span class="arrow">▼</span>
+    {{ $p.Language.LanguageName }}<span class="arrow">▼</span>
   </button>
-  <div class="lang-menu" id="langMenu">
-    {{ range .Site.Home.AllTranslations }}
+  <div class="lang-menu" id="langMenu{{ $id }}">
+    {{ range $p.Site.Home.AllTranslations }}
       {{ $code := .Language.Lang }}
       {{ $link := "" }}
       {{ if $isHome }}
@@ -17,7 +20,7 @@
         {{ range $trans }}{{ if eq .Language.Lang $code }}{{ $link = .RelPermalink }}{{ end }}{{ end }}
         {{ if not $link }}{{ $link = (printf "/%s/" $code) }}{{ end }}
       {{ end }}
-      <a class="lang-opt {{ if eq $code $.Language.Lang }}active{{ end }}" href="{{ $link }}" data-lang="{{ $code }}">{{ .Language.LanguageName }}</a>
+      <a class="lang-opt {{ if eq $code $p.Language.Lang }}active{{ end }}" href="{{ $link }}" data-lang="{{ $code }}">{{ .Language.LanguageName }}</a>
     {{ end }}
   </div>
 </div>
